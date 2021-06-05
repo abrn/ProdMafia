@@ -73,7 +73,7 @@ package io.decagames.rotmg.supportCampaign.tab.donate.popup {
       
       private function donateClick(param1:BaseButton) : void {
          this.showFade.dispatch();
-         var _loc2_:Object = this.account.getCredentials();
+         var _loc2_:Object = this.account.getAccessToken();
          _loc2_.amount = this.view.gold;
          this.client.sendRequest("/supportCampaign/donate",_loc2_);
          this.client.complete.addOnce(this.onDonateComplete);

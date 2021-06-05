@@ -251,8 +251,10 @@ public class SocketServer {
                 message.parseFromInput(data);
                 if (data.bytesAvailable > 0) {
                     bytesStr = "";
-                    for (i = 0; i < data.bytesAvailable; i++)
-                        bytesStr += data.readByte().toString() + ", ";
+                    var bytesAvailable:int = data.bytesAvailable;
+                    for (i = 0; i < bytesAvailable; i++)
+                        bytesStr += (i == 0 ? "[" : "") + data.readByte().toString()
+                                + (i == bytesAvailable - 1 ? "]" : ", ");
                     trace("Read-only packet (id: " + messageId + ") has unread data left over: " + bytesStr)
                 }
             }

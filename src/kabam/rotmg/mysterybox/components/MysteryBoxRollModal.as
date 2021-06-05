@@ -330,7 +330,7 @@ package kabam.rotmg.mysterybox.components {
          }
          this.state = 1;
          this.closeButton.visible = false;
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          _loc1_.boxId = this.mbi.id;
          if(this.mbi.isOnSale()) {
             _loc1_.quantity = this.quantity_;

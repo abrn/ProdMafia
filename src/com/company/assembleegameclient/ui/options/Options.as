@@ -311,10 +311,6 @@ package com.company.assembleegameclient.ui.options {
          return new <StringBuilder>[new StaticStringBuilder("Off"),new StaticStringBuilder("All"),new StaticStringBuilder("Fame"),new StaticStringBuilder("HP/MP")];
       }
       
-      private static function onVSyncToggle() : void {
-         //Main.STAGE.vsyncEnabled = Parameters.data.vSync;
-      }
-      
       private static function onFullscreenToggle() : void {
          Main.STAGE.displayState = !!Parameters.data.fullscreen?"fullScreenInteractive":"normal";
       }
@@ -884,7 +880,6 @@ package com.company.assembleegameclient.ui.options {
          this.addOptionAndPosition(new ChoiceOption("expandRealmQuestsDisplay",makeOnOffLabels(),[true,false],"Expand Realm Quests","Expand the Realm Quests Display when entering the realm",null));
          this.addOptionAndPosition(new ChoiceOption("projFace",makeOnOffLabels(),[true,false],"Projectile Rotation","This toggles whether to force projectiles to face the direction they\'re heading to",null));
          this.addOptionAndPosition(new ChoiceOption("disableSorting",makeOnOffLabels(),[false,true],"Object Sorting","This toggles whether to disable object sorting, increasing performance in the process",null));
-         this.addOptionAndPosition(new ChoiceOption("vSync",makeOnOffLabels(),[true,false],"Toggle VSync","This toggles whether to enable Vertical Sync",onVSyncToggle));
          this.addOptionAndPosition(new ChoiceOption("fullscreen",makeOnOffLabels(),[true,false],"Toggle Fullscreen","This toggles whether to set the window mode to Fullscreen",onFullscreenToggle));
       }
       

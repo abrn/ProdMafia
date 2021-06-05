@@ -20,8 +20,9 @@ package kabam.rotmg.text.view.stringBuilder {
       }
       
       public static function fromJSON(param1:String) : LineBuilder {
+         param1 = param1.replace("\",}}", "\"}}");
          var _loc2_:Object = JSON.parse(param1);
-         return new LineBuilder().setParams(_loc2_.key,_loc2_.tokens);
+         return new LineBuilder().setParams(_loc2_.k,_loc2_.t);
       }
       
       public static function getLocalizedStringFromKey(param1:String, param2:Object = null) : String {

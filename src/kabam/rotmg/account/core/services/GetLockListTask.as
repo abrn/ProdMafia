@@ -39,8 +39,7 @@ package kabam.rotmg.account.core.services {
          _loc1_.game_net = this.account.gameNetwork();
          _loc1_.play_platform = this.account.playPlatform();
          _loc1_.type = 0;
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         _loc1_.accessToken = this.account.getAccessToken();
          return _loc1_;
       }
       

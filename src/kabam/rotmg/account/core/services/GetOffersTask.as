@@ -52,7 +52,7 @@ package kabam.rotmg.account.core.services {
       }
       
       private function makeRequestDataPacket() : Object {
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          _loc1_.time = this.model.lastOfferRequestTime;
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();

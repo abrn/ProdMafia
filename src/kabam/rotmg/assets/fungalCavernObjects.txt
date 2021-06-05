@@ -2987,6 +2987,7 @@
       <Index>1</Index>
     </AnimatedTexture>
     <Size>0</Size>
+    <BlockPlayerPortals />
   </Object>
   <Object type="0xb30e" id="GC Small Blue Mushroom">
     <Class>GameObject</Class>

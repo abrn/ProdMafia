@@ -74,7 +74,7 @@ package kabam.rotmg.external.service {
       
       private function makeRequestObject() : Object {
          var _loc1_:* = {};
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         MoreObjectUtil.addToObject(_loc1_,this.account.getAccessToken());
          return _loc1_;
       }
       

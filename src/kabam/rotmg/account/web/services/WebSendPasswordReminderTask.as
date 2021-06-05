@@ -23,7 +23,12 @@ package kabam.rotmg.account.web.services {
       
       override protected function startTask() : void {
          this.client.complete.addOnce(this.onComplete);
-         this.client.sendRequest("/account/forgotPassword",{"guid":this.email});
+         this.client.sendRequest("/account/forgotPassword", {
+            "guid": this.email,
+            "game_net":"Unity",
+            "play_platform":"Unity",
+            "game_net_user_id":""
+         }, true);
       }
       
       private function onComplete(param1:Boolean, param2:*) : void {

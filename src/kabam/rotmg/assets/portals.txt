@@ -23,9 +23,53 @@
     <DisplayId>Sprite World</DisplayId>
     <DungeonName>Sprite World</DungeonName>
     <Texture>
-      <File>lofiEnvironment2</File>
-      <Index>0x36</Index>
+      <File>spriteWorldObjects8x8</File>
+      <Index>0x09</Index>
     </Texture>
+    <Animation prob="1" period="0">
+      <Frame time="0.1">
+        <Texture>
+          <File>spriteWorldObjects8x8</File>
+          <Index>0x03</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>spriteWorldObjects8x8</File>
+          <Index>0x04</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>spriteWorldObjects8x8</File>
+          <Index>0x05</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>spriteWorldObjects8x8</File>
+          <Index>0x06</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>spriteWorldObjects8x8</File>
+          <Index>0x07</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>spriteWorldObjects8x8</File>
+          <Index>0x08</Index>
+        </Texture>
+      </Frame>
+      <Frame time="30">
+        <Texture>
+          <File>spriteWorldObjects8x8</File>
+          <Index>0x09</Index>
+        </Texture>
+      </Frame>
+    </Animation>
   </Object>
   <Object type="0x070d" id="Glowing Portal of Cowardice">
     <Class>Portal</Class>
@@ -306,6 +350,7 @@
   <Object type="0x0721" id="Locked Wine Cellar Portal">
     <Class>Portal</Class>
     <LockedPortal />
+    <BlockPlayerPortals />
     <Texture>
       <File>lofiEnvironment</File>
       <Index>0x7d</Index>
@@ -777,15 +822,6 @@
       <Index>0x54F</Index>
     </Texture>
   </Object>
-  <Object type="0x753f" id="Inner Sanctum Portal Temp">
-    <Class>Portal</Class>
-    <IntergamePortal />
-    <DungeonName>The Inner Sanctum</DungeonName>
-    <Texture>
-      <File>lofiObj3</File>
-      <Index>0x54F</Index>
-    </Texture>
-  </Object>
   <Object type="0x753E" id="Old Lair of Draconis Portal">
     <Class>Portal</Class>
     <IntergamePortal />
@@ -803,6 +839,15 @@
     <Texture>
       <File>lofiObj3</File>
       <Index>0x3ae</Index>
+    </Texture>
+  </Object>
+  <Object type="0x753F" id="Consolation of Draconis Portal">
+    <Class>Portal</Class>
+    <IntergamePortal />
+    <DungeonName>Consolation of Draconis</DungeonName>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x3fa</Index>
     </Texture>
   </Object>
   <Object type="0x075c" id="Woodland Labyrinth">
@@ -913,9 +958,53 @@
     <DisplayId>Deadwater Docks</DisplayId>
     <DungeonName>Deadwater Docks</DungeonName>
     <Texture>
-      <File>lofiObj3</File>
-      <Index>0x3ea</Index>
+      <File>deadwaterDocksObjects8x8</File>
+      <Index>0x02</Index>
     </Texture>
+    <Animation prob="1" period="0">
+      <Frame time="2.0">
+        <Texture>
+          <File>deadwaterDocksObjects8x8</File>
+          <Index>0x02</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>deadwaterDocksObjects8x8</File>
+          <Index>0x06</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>deadwaterDocksObjects8x8</File>
+          <Index>0x07</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>deadwaterDocksObjects8x8</File>
+          <Index>0x08</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>deadwaterDocksObjects8x8</File>
+          <Index>0x09</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>deadwaterDocksObjects8x8</File>
+          <Index>0x0a</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.1">
+        <Texture>
+          <File>deadwaterDocksObjects8x8</File>
+          <Index>0x0b</Index>
+        </Texture>
+      </Frame>
+    </Animation>
   </Object>
   <Object type="0x708b" id="Bilgewater's Grotto Portal">
     <Class>Portal</Class>

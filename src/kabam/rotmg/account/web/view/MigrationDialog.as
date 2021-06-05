@@ -63,7 +63,7 @@ package kabam.rotmg.account.web.view {
          var _loc1_:* = null;
          this.rightButton_.setEnabled(false);
          if(this.status == 1) {
-            _loc1_ = this.account.getCredentials();
+            _loc1_ = this.account.getAccessToken();
             this.client.complete.addOnce(this.onMigrateStartComplete);
             this.client.sendRequest("/migrate/doMigration",_loc1_);
          }
@@ -208,7 +208,7 @@ package kabam.rotmg.account.web.view {
       }
       
       private function percentLoop(param1:TimerEvent) : void {
-         var _loc2_:Object = this.account.getCredentials();
+         var _loc2_:Object = this.account.getAccessToken();
          this.progressCheckClient.complete.addOnce(this.onUpdateStatusComplete);
          this.progressCheckClient.sendRequest("/migrate/progress",_loc2_);
       }

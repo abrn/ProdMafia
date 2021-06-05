@@ -408,4 +408,29 @@
     </Projectile>
     <KillStat stat="UndeadKills" />
   </Object>
+  <Object type="0x3791" id="Zombie Summoner">
+    <Class>Character</Class>
+    <Group>Zombies</Group>
+    <Enemy />
+    <AnimatedTexture>
+      <File>chars8x8rEncounters</File>
+      <Index>162</Index>
+    </AnimatedTexture>
+    <HitSound>monster/slimes_death</HitSound>
+    <DeathSound>monster/flying_brain_death</DeathSound>
+    <Size>100</Size>
+    <ShadowSize>0</ShadowSize>
+    <MaxHitPoints>2500</MaxHitPoints>
+    <Defense>20</Defense>
+    <Exp>20</Exp>
+    <TrackLoot />
+    <Projectile id="0">
+      <ObjectId>Rimmed Mystic Shot</ObjectId>
+      <Damage>55</Damage>
+      <Speed>65</Speed>
+      <LifetimeMS>1000</LifetimeMS>
+      <Size>80</Size>
+    </Projectile>
+    <KillStat stat="UndeadKills" />
+  </Object>
 </Objects>

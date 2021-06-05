@@ -1060,8 +1060,54 @@
       <LifetimeMS>2500</LifetimeMS>
       <MultiHit />
     </Projectile>
-      e
-      <Projectile id="52"><ObjectId>O3 Exalted Slash</ObjectId><Damage>230</Damage><Speed>70</Speed><LifetimeMS>2500</LifetimeMS><MultiHit /></Projectile><Projectile id="53"><ObjectId>O3 Exalted Big Wave</ObjectId><Damage>285</Damage><Speed>90</Speed><LifetimeMS>3000</LifetimeMS><Size>140</Size><MultiHit /><ArmorPiercing /></Projectile><Projectile id="54"><ObjectId>O3 Exalted Big Bash</ObjectId><Damage>210</Damage><Speed>70</Speed><LifetimeMS>3000</LifetimeMS><Size>140</Size><MultiHit /><ArmorPiercing /></Projectile><Projectile id="55"><ObjectId>O3 Exalted Big Spear</ObjectId><Damage>150</Damage><Speed>50</Speed><LifetimeMS>3000</LifetimeMS><Size>140</Size><MultiHit /><ArmorPiercing /></Projectile><Projectile id="56"><ObjectId>O3 White Big Spear</ObjectId><Damage>0</Damage><Speed>0</Speed><LifetimeMS>0</LifetimeMS><Size>0</Size><MultiHit /><ArmorPiercing /></Projectile><HealthBarBoss radius="50" /><KillStat stat="OryxKills" /><KillStat stat="GodKills" /><DamageBasedXP /></Object>
+    <Projectile id="52">
+      <ObjectId>O3 Exalted Slash</ObjectId>
+      <Damage>230</Damage>
+      <Speed>70</Speed>
+      <LifetimeMS>2500</LifetimeMS>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="53">
+      <ObjectId>O3 Exalted Big Wave</ObjectId>
+      <Damage>285</Damage>
+      <Speed>90</Speed>
+      <LifetimeMS>3000</LifetimeMS>
+      <Size>140</Size>
+      <MultiHit />
+      <ArmorPiercing />
+    </Projectile>
+    <Projectile id="54">
+      <ObjectId>O3 Exalted Big Bash</ObjectId>
+      <Damage>210</Damage>
+      <Speed>70</Speed>
+      <LifetimeMS>3000</LifetimeMS>
+      <Size>140</Size>
+      <MultiHit />
+      <ArmorPiercing />
+    </Projectile>
+    <Projectile id="55">
+      <ObjectId>O3 Exalted Big Spear</ObjectId>
+      <Damage>150</Damage>
+      <Speed>50</Speed>
+      <LifetimeMS>3000</LifetimeMS>
+      <Size>140</Size>
+      <MultiHit />
+      <ArmorPiercing />
+    </Projectile>
+    <Projectile id="56">
+      <ObjectId>O3 White Big Spear</ObjectId>
+      <Damage>0</Damage>
+      <Speed>0</Speed>
+      <LifetimeMS>0</LifetimeMS>
+      <Size>0</Size>
+      <MultiHit />
+      <ArmorPiercing />
+    </Projectile>
+    <HealthBarBoss radius="50" xOffset="1" yOffset="6" />
+    <KillStat stat="OryxKills" />
+    <KillStat stat="GodKills" />
+    <DamageBasedXP />
+  </Object>
   <Object type="0xb1cf" id="O3 Meteor">
     <DisplayId>Meteor</DisplayId>
     <Enemy />
@@ -5852,6 +5898,7 @@
     </Texture>
     <Size>100</Size>
     <ShadowSize>0</ShadowSize>
+    <BlockPlayerPortals />
     <Animation prob="1.0">
       <Frame time="0.1">
         <Texture>
@@ -5932,6 +5979,7 @@
     <DisplayId>Oryx's Sanctuary</DisplayId>
     <Class>Portal</Class>
     <IntergamePortal />
+    <BlockPlayerPortals />
     <DungeonName>Oryx's Sanctuary</DungeonName>
     <Texture>
       <File>oryxSanctuaryObjects32x32</File>
@@ -5983,7 +6031,7 @@
     <Class>Equipment</Class>
     <Item />
     <DisplayId>Oryx Sanctuary Key</DisplayId>
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>oryxSanctuaryObjects8x8</File>
       <Index>0x48</Index>
     </Texture>

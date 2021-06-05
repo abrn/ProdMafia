@@ -59,7 +59,7 @@ package com.company.assembleegameclient.account.ui {
       
       private function sendNameToServer() : void {
          var _loc1_:Object = {"name":this.name};
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         MoreObjectUtil.addToObject(_loc1_,this.account.getAccessToken());
          this.client.complete.addOnce(this.onComplete);
          this.client.sendRequest("/account/setName",_loc1_);
          this.view.disable();

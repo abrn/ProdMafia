@@ -85,9 +85,6 @@ import kabam.rotmg.messaging.impl.incoming.MapInfo;
       
       public static const DISPLAY_AREA_Y_SPACE:int = 32;
       
-      protected static const PAUSED_FILTER:ColorMatrixFilter = new ColorMatrixFilter(MoreColorUtil.greyscaleFilterMatrix);
-       
-      
       protected const EMPTY_FILTER:DropShadowFilter = new DropShadowFilter(0,0,0);
       
       public const monitor:Signal = new Signal(String,int);
@@ -451,7 +448,6 @@ import kabam.rotmg.messaging.impl.incoming.MapInfo;
             stage.scaleMode = "noScale";
             stage.addEventListener("resize",this.onScreenResize,false,0,true);
             stage.dispatchEvent(new Event("resize"));
-            Main.STAGE.vsyncEnabled = Parameters.data.vSync;
          }
       }
       
@@ -1042,13 +1038,7 @@ import kabam.rotmg.messaging.impl.incoming.MapInfo;
             } else {
                this.creditDisplay_.visible = false;
             }
-            if(_loc7_.isPaused) {
-               map.mouseEnabled = false;
-               map.mouseChildren = false;
-               hudView.filters = [PAUSED_FILTER];
-               hudView.mouseEnabled = false;
-               hudView.mouseChildren = false;
-            } else if(map.filters.length > 0 || hudView.filters.length > 0) {
+            if(map.filters.length > 0 || hudView.filters.length > 0) {
                map.filters = [];
                map.mouseEnabled = true;
                map.mouseChildren = true;

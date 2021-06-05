@@ -24,7 +24,7 @@ public class GetLegacySeasonsTask extends BaseTask {
 
     override protected function startTask():void {
         this.logger.info("GetLegacySeasons start");
-        var _local1:Object = this.account.getCredentials();
+        var _local1:Object = this.account.getAccessToken();
         this.client.complete.addOnce(this.onComplete);
         this.client.sendRequest("/fame/challengerSeasonList", _local1);
     }

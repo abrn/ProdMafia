@@ -1640,7 +1640,7 @@
     <NoMiniMap />
     <MaxHitPoints>100</MaxHitPoints>
     <Exp>0</Exp>
-    <Size>140</Size>
+    <Size>40</Size>
     <AnimatedTexture>
       <File>playerskins16</File>
       <Index>20</Index>
@@ -1655,7 +1655,7 @@
     <NoMiniMap />
     <MaxHitPoints>100</MaxHitPoints>
     <Exp>0</Exp>
-    <Size>140</Size>
+    <Size>40</Size>
     <AnimatedTexture>
       <File>players</File>
       <Index>13</Index>

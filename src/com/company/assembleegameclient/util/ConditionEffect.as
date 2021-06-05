@@ -170,7 +170,7 @@ package com.company.assembleegameclient.util {
       
       public static const BERSERK_BIT:uint = 524288;
       
-      public static const PAUSED_BIT:uint = 1048576;
+      public static const IN_COMBAT_BIT:uint = 1048576;
       
       public static const STASIS_BIT:uint = 2097152;
       

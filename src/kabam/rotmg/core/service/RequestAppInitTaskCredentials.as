@@ -28,7 +28,12 @@ package kabam.rotmg.core.service {
       override protected function startTask() : void {
          this.client.setMaxRetries(2);
          this.client.complete.addOnce(this.onComplete);
-         this.client.sendRequest("/app/init?platform=standalonewindows64&key=9KnJFxtTvLu2frXv",this.account.getCredentials(),true);
+         this.client.sendRequest("/app/init?platform=standalonewindows64&key=9KnJFxtTvLu2frXv", {
+            "accessToken":this.account.getAccessToken(),
+            "game_net":"Unity",
+            "play_platform":"Unity",
+            "game_net_user_id":""
+         },true);
       }
       
       private function onComplete(param1:Boolean, param2:*) : void {

@@ -120,8 +120,11 @@ public class GameServerConnection {
    public static const FORGE_REQUEST:int = 118;
    public static const FORGE_RESULT:int = 119;
    public static const FORGE_UNLOCKED_BLUEPRINTS:int = 120;
-   public static const UNLOCK_NEW_SLOT:int = 121;
+   public static const SHOOTACK_COUNTER:int = 121;
    public static const CHANGE_ALLY_SHOOT:int = 122;
+   public static const GET_PLAYERS_LIST_MESSAGE:int = 123;
+   public static const MODERATOR_ACTION_MESSAGE:int = 124;
+   public static const CREEP_MOVE_MESSAGE:int = 126;
 
    public static const CHAT_HELLO_MSG:int = 206;
    public static const CHAT_TOKEN_MSG:int = 207;
@@ -253,7 +256,7 @@ public class GameServerConnection {
    public function playerHit(param1:int, param2:int) : void {
    }
 
-   public function enemyHit(param1:int, param2:int, param3:int, param4:Boolean) : void {
+   public function enemyHit(param1:int, param2:int, param3:int, param4:Boolean, ownerId:int, containerType:int) : void {
    }
 
    public function otherHit(param1:int, param2:int, param3:int, param4:int) : void {

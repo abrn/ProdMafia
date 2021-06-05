@@ -31,7 +31,8 @@ package kabam.rotmg.account.web {
    import kabam.rotmg.account.web.services.WebRegisterAccountTask;
    import kabam.rotmg.account.web.services.WebSendPasswordReminderTask;
    import kabam.rotmg.account.web.services.WebSendVerificationEmailTask;
-   import kabam.rotmg.account.web.signals.WebChangePasswordSignal;
+import kabam.rotmg.account.web.signals.LoginSuccessSignal;
+import kabam.rotmg.account.web.signals.WebChangePasswordSignal;
    import kabam.rotmg.account.web.view.WebAccountDetailDialog;
    import kabam.rotmg.account.web.view.WebAccountDetailMediator;
    import kabam.rotmg.account.web.view.WebAccountInfoMediator;
@@ -81,6 +82,7 @@ package kabam.rotmg.account.web {
       protected function mapModel() : void {
          this.injector.map(Account).toSingleton(WebAccount);
          this.injector.map(MoneyConfig).toSingleton(WebMoneyConfig);
+         this.injector.map(LoginSuccessSignal).asSingleton();
       }
       
       protected function mapCommands() : void {

@@ -186,9 +186,7 @@ package kabam.rotmg.minimap.view {
             if(!(_loc4_.props_.noMiniMap_ || _loc4_ == this.focus)) {
                _loc1_ = _loc4_ as Player;
                if(_loc1_) {
-                  if(_loc1_.isPaused) {
-                     _loc9_ = 8355711;
-                  } else if(Parameters.data.newMiniMapColors && _loc1_.isFellowGuild_ && !_loc1_.starred_) {
+                  if(Parameters.data.newMiniMapColors && _loc1_.isFellowGuild_ && !_loc1_.starred_) {
                      _loc9_ = 52992;
                   } else if(_loc1_.isFellowGuild_) {
                      _loc9_ = 65280;

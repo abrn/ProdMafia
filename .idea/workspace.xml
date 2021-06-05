@@ -5,18 +5,284 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ad37990-70c7-42ae-b5ef-90ac04853ccc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/UnlockNewSlot.as" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/outgoing/ChangeAllyShoot.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Descriptor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/signals/LoginSuccessSignal.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/deadwaterDocksGround.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/deadwaterDocksGround.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/deadwaterDocksObjects.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/deadwaterDocksObjects.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spriteWorldGround.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spriteWorldGround.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spriteWorldObjects.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spriteWorldObjects.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/CheckForLoginTask.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/ExtendAccessTokenTaskGame.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/ExtendAccessTokenTaskLauncher.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/VerifyAccessTokenTask.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/outgoing/CreepMoveMessage.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/outgoing/ShootAckCounter.as" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/TitleScreenGif.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/account/ui/NewChooseNameFrameMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/account/ui/NewChooseNameFrameMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/game/GameSprite.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/game/GameSprite.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/game/MapUserInput.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/game/MapUserInput.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/map/Map.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/map/Map.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/GameObject.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/GameObject.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/ObjectLibrary.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/ObjectLibrary.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Player.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Player.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Projectile.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Projectile.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/parameters/Parameters.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/parameters/Parameters.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/screens/CharacterTypeSelectionMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/screens/CharacterTypeSelectionMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/ui/board/GuildBoardWindow.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/ui/board/GuildBoardWindow.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/ui/guild/GuildPlayerList.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/ui/guild/GuildPlayerList.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/ui/options/Options.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/ui/options/Options.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/characterMetrics/tracker/CharactersMetricsTracker.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/characterMetrics/tracker/CharactersMetricsTracker.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/util/ConditionEffect.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/util/ConditionEffect.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/assembleegameclient/util/TileRedrawer.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/assembleegameclient/util/TileRedrawer.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/pets/tasks/GetOwnedPetSkinsTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/pets/tasks/GetOwnedPetSkinsTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/seasonalEvent/tasks/GetLegacySeasonsTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/seasonalEvent/tasks/GetLegacySeasonsTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/seasonalEvent/tasks/GetSeasonalEventTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/seasonalEvent/tasks/GetSeasonalEventTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/shop/mysteryBox/rollModal/MysteryBoxRollModalMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/shop/mysteryBox/rollModal/MysteryBoxRollModalMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/shop/packages/PackageBoxTileMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/shop/packages/PackageBoxTileMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/social/commands/FriendActionCommand.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/social/commands/FriendActionCommand.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/social/tasks/FriendDataRequestTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/social/tasks/FriendDataRequestTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/social/tasks/GuildDataRequestTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/social/tasks/GuildDataRequestTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tab/SupporterShopTabMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tab/SupporterShopTabMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tab/donate/popup/DonateConfirmationPopupMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tab/donate/popup/DonateConfirmationPopupMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tab/tiers/preview/TiersPreviewMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tab/tiers/preview/TiersPreviewMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tasks/GetCampaignStatusTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/supportCampaign/tasks/GetCampaignStatusTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/decagames/rotmg/tos/popups/buttons/AcceptButtonMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/decagames/rotmg/tos/popups/buttons/AcceptButtonMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/lib/net/impl/SocketServer.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/lib/net/impl/SocketServer.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/AccountConfig.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/AccountConfig.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/Account.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/Account.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/commands/ExternalOpenMoneyWindowCommand.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/commands/ExternalOpenMoneyWindowCommand.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/BuyCharacterSlotTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/BuyCharacterSlotTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetCharListTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetCharListTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetConCharListTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetConCharListTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetConServersTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetServersTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetIgnoreListTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetIgnoreListTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetLockListTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetLockListTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetOffersTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetOffersTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetPublicStaticDataTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/GetPublicStaticDataTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/ListPowerUpStatsTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/ListPowerUpStatsTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/VerifyAgeTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/services/VerifyAgeTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/core/view/ConfirmEmailModal.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/core/view/ConfirmEmailModal.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/securityQuestions/tasks/SaveSecurityQuestionsTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/securityQuestions/tasks/SaveSecurityQuestionsTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/WebAccount.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/WebAccount.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/WebAccountConfig.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/WebAccountConfig.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/commands/WebLoginCommand.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/commands/WebLoginCommand.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/model/AccountData.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/model/AccountData.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebChangePasswordTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebChangePasswordTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebLoadAccountTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebLoadAccountTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebLoginTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebLoginTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebSendPasswordReminderTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebSendPasswordReminderTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebSendVerificationEmailTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/services/WebSendVerificationEmailTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/MigrationDialog.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/MigrationDialog.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebAccountDetailMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebAccountDetailMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebAccountInfoMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebAccountInfoMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebLoginDialog.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebLoginDialog.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebLoginMediatorForced.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebLoginMediatorForced.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebVerifyEmailMediator.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/account/web/view/WebVerifyEmailMediator.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/appengine/impl/AppEngineRetryLoader.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/appengine/impl/AppEngineRetryLoader.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/appengine/impl/SimpleAppEngineClient.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/appengine/impl/SimpleAppEngineClient.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/arena/service/GetArenaLeaderboardTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/arena/service/GetArenaLeaderboardTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/arena/service/GetBestArenaRunTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/arena/service/GetBestArenaRunTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/EmbeddedData.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/EmbeddedData.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/_helpers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/_helpers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/abyssOfDemons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/abyssOfDemons.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/abyssOfDemonsGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/abyssOfDemonsGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/abyssOfDemonsObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/abyssOfDemonsObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/alienInvasionGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/alienInvasionGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/alienInvasionObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/alienInvasionObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/allies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/allies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/ancientRuinsGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/ancientRuinsGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/ancientRuinsObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/ancientRuinsObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/archbishopGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/archbishopGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/archbishopObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/archbishopObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/archbishopObjectsMen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/archbishopObjectsMen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/arena.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/arena.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/autumnNexusGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/autumnNexusGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/autumnNexusObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/autumnNexusObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/bTesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/bTesting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/battleOryxGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/battleOryxGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/battleOryxObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/battleOryxObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/belladonna.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/belladonna.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/buffedBunnyObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/buffedBunnyObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/candyLand.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/candyLand.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/caveOfAThousandTreasures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/caveOfAThousandTreasures.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/characters.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/characters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/characters_masks.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/characters_masks.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/cnidarianReefGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/cnidarianReefGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/cnidarianReefObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/cnidarianReefObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/containers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/containers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/crystalCaveGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/crystalCaveGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/crystalCaveObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/crystalCaveObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/cursedLibraryGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/cursedLibraryGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/cursedLibraryObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/cursedLibraryObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/dyes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/dyes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/encounters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/encounters.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicHiveGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicHiveGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicHiveObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicHiveObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicforestMaze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicforestMaze.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicpirateCave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicpirateCave.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicspiderDen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/epicspiderDen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/equip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/equip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipEggs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipEggs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipKeys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipKeys.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipSkins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipSkins.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipmentsets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/equipmentsets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/eventChestObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/eventChestObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/forbiddenJungle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/forbiddenJungle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/forestMaze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/forestMaze.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/fungalCavernGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/fungalCavernGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/fungalCavernObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/fungalCavernObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/ghostShip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/ghostShip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/gravestones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/gravestones.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/ground.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/ground.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/groundTiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/groundTiles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/hanaminexusGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/hanaminexusGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/hanaminexusObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/hanaminexusObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/hauntedCemetery.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/hauntedCemetery.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/heroes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/heroes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/high.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/high.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/highTechTerrorGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/highTechTerrorGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/highTechTerrorObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/highTechTerrorObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/iceCaveGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/iceCaveGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/iceCaveObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/iceCaveObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/iceTomb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/iceTomb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/innerWorkingsGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/innerWorkingsGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/innerWorkingsObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/innerWorkingsObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/kTesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/kTesting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfDraconis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfDraconis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfDraconisGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfDraconisGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfDraconisObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfDraconisObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfShaitan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfShaitan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfShaitanObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/lairOfShaitanObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/lostHallsGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/lostHallsGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/lostHallsObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/lostHallsObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/low.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/low.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/mTesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/mTesting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/madLab.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/madLab.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/magicWoodsGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/magicWoodsGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/magicWoodsObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/magicWoodsObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/manorOfTheImmortals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/manorOfTheImmortals.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/mapObjects.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/mapObjects.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/mid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/mid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/miniDungeonHub.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/miniDungeonHub.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/mountainTempleGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/mountainTempleGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/mountainTempleObject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/mountainTempleObject.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/mountains.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/mountains.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/nexusDestroyed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/nexusDestroyed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/npc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/npc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/objects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/objects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oceanTrench.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oceanTrench.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxCastle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxCastle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxChamber.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxChamber.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxChickenChamber.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxChickenChamber.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxHordeGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxHordeGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxHordeObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxHordeObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxSanctuaryGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxSanctuaryGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxSanctuaryObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxSanctuaryObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxSanctuaryUObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxSanctuaryUObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxWineCellar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/oryxWineCellar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/parasiteDenGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/parasiteDenGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/parasiteDenObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/parasiteDenObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/particles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/particles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/permaFrostLord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/permaFrostLord.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/permapets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/permapets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/pets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/pets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/pirateCave.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/pirateCave.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/pirateCaveGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/pirateCaveGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/pirateCaveObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/pirateCaveObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/players.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/players.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/players_zombies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/players_zombies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/portals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/portals.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/projectiles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/projectiles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/puppetMaster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/puppetMaster.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/puppetMasterEncore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/puppetMasterEncore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/sTesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/sTesting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/santaWorkshopGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/santaWorkshopGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/santaWorkshopObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/santaWorkshopObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/secludedThicketGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/secludedThicketGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/secludedThicketObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/secludedThicketObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/shatters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/shatters.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/shore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/shore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/skins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/skins.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/snakePit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/snakePit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/spiderDen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spiderDen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/spiderDenGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spiderDenGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/spiderDenObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spiderDenObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/spriteWorld.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spriteWorld.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/spritesheet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/spritesheet.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/stPatricksGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/stPatricksGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/stPatricksObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/stPatricksObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/staticobjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/staticobjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/summerNexusGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/summerNexusGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/summerNexusObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/summerNexusObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/tTesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/tTesting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/textiles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/textiles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/theMachineGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/theMachineGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/theMachineObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/theMachineObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/thehive.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/thehive.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/thirdDimensionGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/thirdDimensionGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/thirdDimensionObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/thirdDimensionObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/token.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/token.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/tombOfTheAncients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/tombOfTheAncients.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/toxicSewersGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/toxicSewersGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/toxicSewersObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/toxicSewersObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/toxicsewers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/toxicsewers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/tutorial_monsters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/tutorial_monsters.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/tutorial_objects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/tutorial_objects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/tutorial_script.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/tutorial_script.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/undeadLair.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/undeadLair.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/undeadLairGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/undeadLairGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/undeadLairObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/undeadLairObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/willemTesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/willemTesting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/xmasNexusGround.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/xmasNexusGround.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/assets/xmasNexusObjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/assets/xmasNexusObjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/characters/deletion/service/DeleteCharacterTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/characters/deletion/service/DeleteCharacterTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/chat/control/ParseChatMessageCommand.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/chat/control/ParseChatMessageCommand.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/classes/services/BuySkinTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/classes/services/BuySkinTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/core/service/PurchaseCharacterClassTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/PurchaseCharacterClassTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestAppInitTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestAppInitTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestAppInitTaskCredentials.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestAppInitTaskCredentials.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestAppInitTaskUnity.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestAppInitTaskUnity.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestUnityNewsTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/RequestUnityNewsTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/core/service/UnityGameLoginTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/UnityGameLoginTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/core/service/UnityLauncherLoginTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/core/service/UnityLauncherLoginTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/dailyLogin/tasks/FetchPlayerCalendarTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/dailyLogin/tasks/FetchPlayerCalendarTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/external/service/RequestPlayerCreditsTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/external/service/RequestPlayerCreditsTask.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/GameServerConnection.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/GameServerConnection.as" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/GameServerConnectionConcrete.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/GameServerConnectionConcrete.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/data/ObjectData.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/data/ObjectData.as" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Update.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Update.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Failure.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Failure.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/MapInfo.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/MapInfo.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Notification.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Notification.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/QueueInformation.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/QueueInformation.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Reconnect.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Reconnect.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/ServerPlayerShoot.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/ServerPlayerShoot.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/ShowEffect.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/ShowEffect.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Text.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/Text.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/UnlockNewSlot.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/VaultContent.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming/VaultContent.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/outgoing/EnemyHit.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/outgoing/EnemyHit.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/outgoing/Hello.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/outgoing/Hello.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/minimap/view/MiniMapImp.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/minimap/view/MiniMapImp.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/mysterybox/components/MysteryBoxRollModal.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/mysterybox/components/MysteryBoxRollModal.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/mysterybox/services/GetMysteryBoxesTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/mysterybox/services/GetMysteryBoxesTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/packages/services/BuyPackageTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/packages/services/BuyPackageTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/packages/services/GetPackagesTask.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/packages/services/GetPackagesTask.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/text/view/stringBuilder/LineBuilder.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/text/view/stringBuilder/LineBuilder.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/ui/UIConfig.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/ui/UIConfig.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/ui/commands/EnterGameCommand.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/ui/commands/EnterGameCommand.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/ui/commands/PollVerifyEmailCommand.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/ui/commands/PollVerifyEmailCommand.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/Deez.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/TitleScreenGif.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/TitleView.as" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/TitleView.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/components/ScreenBase_TitleScreenBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/components/ScreenBase_TitleScreenBackground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kabam/rotmg/ui/view/deez.gif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +300,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lg5kX6wFWZFQryP3KwmUs9GttY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/kabam/rotmg/messaging/impl/incoming" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Descriptor.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,23 +329,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fltr\Documents\ProdMafia\src\kabam\rotmg\assets" />
+      <recent name="C:\Users\fltr\Documents\ProdMafia\src\kabam\rotmg\core\service" />
+      <recent name="C:\Users\fltr\Documents\ProdMafia\src\kabam\rotmg\ui" />
       <recent name="C:\Users\fltr\Documents\GitHub\ProdMafia\src\kabam\rotmg\messaging\impl\incoming" />
       <recent name="C:\Users\fltr\Documents\GitHub\ProdMafia\src\kabam\rotmg\messaging\impl\outgoing" />
-      <recent name="C:\Users\fltr\Documents\GitHub\ProdMafia\src\com\company\assembleegameclient\objects" />
-      <recent name="C:\Users\fltr\Documents\GitHub\ProdMafia\src\kabam\rotmg\assets\individual" />
-      <recent name="C:\Users\fltr\Downloads\ProdMafia\src\com\company\assembleegameclient\ui\forge" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fltr\Documents\ProdMafia\src\kabam\rotmg\messaging\impl\outgoing" />
+      <recent name="C:\Users\fltr\Documents\ProdMafia\src\kabam\rotmg\ui\view" />
       <recent name="C:\Users\fltr\Downloads\ProdMafia\src" />
       <recent name="C:\Users\fltr\Downloads\ProdMafia\src\com\company\assembleegameclient\ui\forge" />
       <recent name="C:\Users\fltr\Downloads\ProdMafia\src\com\company\assembleegameclient\ui\exaltation" />
-      <recent name="C:\Users\fltr\Downloads\ProdMafia\src\kabam\rotmg\assets\individual" />
-      <recent name="C:\Users\fltr\Downloads\ProdMafia\src\kabam\rotmg\assets\sounds\sfx" />
     </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="" />
+      <recent name="kabam.rotmg.messaging.impl.outgoing" />
+      <recent name="kabam.rotmg.account.web.signals" />
       <recent name="com.company.assembleegameclient.ui.exaltation" />
       <recent name="kabam.rotmg.messaging.impl.incoming" />
-      <recent name="kabam.rotmg.util" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,9 +370,9 @@
       <option name="launcherParameters">
         <LauncherParameters>
           <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
+          <option name="launcherType" value="Player" />
           <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+          <option name="playerPath" value="$USER_HOME$/Downloads/flashplayer_32_sa_debug.exe" />
         </LauncherParameters>
       </option>
       <option name="mobileRunTarget" value="Emulator" />
@@ -200,6 +472,27 @@
       <workItem from="1612632003467" duration="6164000" />
       <workItem from="1612661842918" duration="599000" />
       <workItem from="1612719076848" duration="2590000" />
+      <workItem from="1621560155169" duration="618000" />
+      <workItem from="1621560946648" duration="334000" />
+      <workItem from="1621561304454" duration="2192000" />
+      <workItem from="1621578806073" duration="685000" />
+      <workItem from="1621672991911" duration="3973000" />
+      <workItem from="1621684127710" duration="821000" />
+      <workItem from="1621731005523" duration="4732000" />
+      <workItem from="1621738886498" duration="25413000" />
+      <workItem from="1621820746787" duration="3406000" />
+      <workItem from="1621834834123" duration="1098000" />
+      <workItem from="1621843477560" duration="2361000" />
+      <workItem from="1621921163341" duration="5399000" />
+      <workItem from="1621933859903" duration="1494000" />
+      <workItem from="1622134353989" duration="1279000" />
+      <workItem from="1622136383905" duration="2880000" />
+      <workItem from="1622180948346" duration="2289000" />
+      <workItem from="1622193089243" duration="5877000" />
+      <workItem from="1622208662687" duration="2074000" />
+      <workItem from="1622268827910" duration="779000" />
+      <workItem from="1622376017216" duration="5000" />
+      <workItem from="1622885331790" duration="3113000" />
     </task>
     <servers />
   </component>
@@ -218,13 +511,26 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/com/company/assembleegameclient/ui/options/Options.as</url>
-          <line>857</line>
+          <line>853</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/kabam/rotmg/core/signals/TrackEventSignal.as</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/kabam/rotmg/account/web/model/AccountData.as</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -2979,7 +2979,6 @@
   </Ground>
   <Ground type="0x8f8" id="O3B Cosmic Black">
     <Color>0x000000</Color>
-    <NoWalk />
     <Texture>
       <File>oryxSanctuaryObjects8x8</File>
       <Index>0x436</Index>
@@ -2988,7 +2987,6 @@
   <Ground type="0x8f9" id="O3B Cosmic Faint">
     <Color>0x000000</Color>
     <Animate dx="-0.2">Flow</Animate>
-    <NoWalk />
     <Texture>
       <File>oryxSanctuaryObjects8x8</File>
       <Index>0x43a</Index>
@@ -2997,7 +2995,6 @@
   <Ground type="0x8fa" id="O3B Cosmic Visible">
     <Color>0x000000</Color>
     <Animate dx="-0.4">Flow</Animate>
-    <NoWalk />
     <Texture>
       <File>oryxSanctuaryObjects8x8</File>
       <Index>0x43b</Index>
@@ -3006,7 +3003,6 @@
   <Ground type="0x8fb" id="O3B Cosmic Stars">
     <Color>0x000000</Color>
     <Animate dx="-1.2">Flow</Animate>
-    <NoWalk />
     <Texture>
       <File>oryxSanctuaryObjects8x8</File>
       <Index>0x43c</Index>
@@ -10008,6 +10004,41 @@
     </Texture>
   </Ground>
   <Ground type="0xb006" id="O3 Cosmic Stars">
+    <Color>0x000000</Color>
+    <Animate dx="-1.2">Flow</Animate>
+    <Texture>
+      <File>oryxSanctuaryObjects8x8</File>
+      <Index>0x43c</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x7464" id="O3 Cosmic Black NW">
+    <NoWalk />
+    <Color>0x000000</Color>
+    <Texture>
+      <File>oryxSanctuaryObjects8x8</File>
+      <Index>0x436</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x7465" id="O3 Cosmic Faint NW">
+    <NoWalk />
+    <Color>0x000000</Color>
+    <Animate dx="-0.2">Flow</Animate>
+    <Texture>
+      <File>oryxSanctuaryObjects8x8</File>
+      <Index>0x43a</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x7466" id="O3 Cosmic Visible NW">
+    <NoWalk />
+    <Color>0x000000</Color>
+    <Animate dx="-0.4">Flow</Animate>
+    <Texture>
+      <File>oryxSanctuaryObjects8x8</File>
+      <Index>0x43b</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x7467" id="O3 Cosmic Stars NW">
+    <NoWalk />
     <Color>0x000000</Color>
     <Animate dx="-1.2">Flow</Animate>
     <Texture>

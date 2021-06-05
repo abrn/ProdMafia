@@ -3,7 +3,7 @@
   <Object type="0x3000" id="Diamond Mystery Key">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>lofiObj3</File>
       <Index>0x4FB</Index>
     </Texture>
@@ -20,7 +20,7 @@
   <Object type="0x3001" id="Ruby Mystery Key">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>lofiObj3</File>
       <Index>0x4FC</Index>
     </Texture>
@@ -37,7 +37,7 @@
   <Object type="0x3002" id="Emerald Mystery Key">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>lofiObj3</File>
       <Index>0x4FD</Index>
     </Texture>
@@ -174,8 +174,8 @@
     <Class>Equipment</Class>
     <Item />
     <Texture>
-      <File>lofiObj3</File>
-      <Index>0xf2</Index>
+      <File>spriteWorldObjects8x8</File>
+      <Index>0x76</Index>
     </Texture>
     <SlotType>10</SlotType>
     <Description>A key which opens an entrance to a Sprite World. As an entirely different plane of existence, it is meant to safeguard the sprites that watch over the realm's ecosystems.\n\nKeys can only be used once you have 10 or more stars!</Description>
@@ -466,8 +466,8 @@
     <Class>Equipment</Class>
     <Item />
     <Texture>
-      <File>lofiObj3</File>
-      <Index>0x3eb</Index>
+      <File>deadwaterDocksObjects8x8</File>
+      <Index>0x03</Index>
     </Texture>
     <SlotType>10</SlotType>
     <Description>A key which opens an entrance to Deadwater Docks. In contrast to his rival, Dreadstump, Jon Bilgewater's crew made their hideout deeper inland at the belly of a peninsula. It still reeks of cheap rum, though.\n\nKeys can only be used once you have 10 or more stars!</Description>
@@ -2007,6 +2007,174 @@
     <feedPower>200</feedPower>
     <BagType>7</BagType>
     <Activate id="The Third Dimension Portal">CreatePortal</Activate>
+    <Track />
+  </Object>
+  <Object type="0x4b6a" id="The Third Dimension Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>thirdDimensionObjects8x8</File>
+      <Index>0x12</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to The Third Dimension, an otherworldly place containing many violent cuboid creatures.\n\nKeys can only be used once you have 10 or more stars!\n\nDungeon credits:\n  Lead: Aurum\n  Art: TLMaelstrom\n  Special Thanks: Lily</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="The Third Dimension Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
+    <Track />
+  </Object>
+  <Object type="0x37c0" id="Ancient Ruins Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>0x307</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens the way to the Ancient Ruins. What was once an ancient shrine linked to the world of spirits is now a desolate ruin.\n\nKeys can only be used once you have 10 or more stars!\n\nDungeon credits:\n  Lead: Sturky\n  Art: Aurum, Bonk, Lily, Piggby,\n  TLMaelstrom, and Trensient\n  Special Thanks: Atrapper and\n  Stellalumi</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="Ancient Ruins Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
+    <Track />
+  </Object>
+  <Object type="0x37c1" id="Toxic Sewers Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>0x308</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to the Toxic Sewers. Going without proper maintenance for centuries, some of the most wretched monsters have taken these tunnels as their own.\n\nKeys can only be used once you have 10 or more stars!\n\nDungeon credits:\n Lead: Kiddforce\n Design: ViciousTwo\n Art: Phophull, Kingged</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="Toxic Sewers Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
+    <Track />
+  </Object>
+  <Object type="0x37c2" id="Sprite World Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>0x309</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to a Sprite World. As an entirely different plane of existence, it is meant to safeguard the sprites that watch over the realm's ecosystems.\n\nKeys can only be used once you have 10 or more stars!\n\nSprite Credits: Coomi</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="Glowing Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
+    <Track />
+  </Object>
+  <Object type="0x37c3" id="Candy Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>0x30a</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens the way to the Candyland Hunting Grounds. Among the most perplexing locations in the realm, this populated land is filled to the brim with sweets.\n\nKeys can only be used once you have 10 or more stars!\n\nSprite Credits: Coomi</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="Candyland Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
+    <Track />
+  </Object>
+  <Object type="0x37c4" id="Lab Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>0x30b</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which reveals the way to the Mad Lab. The grotesque beings inside have been produced by some sort of undiscovered alchemy methods.\n\nKeys can only be used once you have 10 or more stars!</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="Mad Lab Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
+    <Track />
+  </Object>
+  <Object type="0x37c5" id="Manor Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>0x30c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens a passage to the Manor of the Immortals. Lord Ruthven's gothic mansion neighbor's Oryx's own castle in the dark, distant sea.\n\nKeys can only be used once you have 10 or more stars!</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="Manor of the Immortals Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
+    <Track />
+  </Object>
+  <Object type="0x37cf" id="The Machine Enchanted Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>0x30d</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens a portal to The Machine. Accessing the rift to this hidden dimension may have severe consequences.\n\nKeys can only be used once you have 10 or more stars!\n\nDungeon credits:\n Lead: Toastrz\n Art: Aurum, Kith, Lily, Piggby,\n TLMaelstrom, Trensient, Wunderwafe</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Enchanted Key" description="Once used, the owner will receive a Mystery ST Crate!" />
+    </ExtraTooltipData>
+    <Sound>use_key</Sound>
+    <Consumable />
+    <Soulbound />
+    <Activate id="The Machine Portal">CreatePortal</Activate>
+    <Activate id="Mystery ST Crate">Exchange</Activate>
+    <feedPower>200</feedPower>
+    <BagType>7</BagType>
     <Track />
   </Object>
 </Objects>

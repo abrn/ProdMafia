@@ -16,64 +16,37 @@ import flash.utils.Dictionary;
 import flash.utils.setTimeout;
 
 public class Parameters {
-    public static const CLIENT_VERSION:String = "1.3.1.0.0";
+    public static const CLIENT_VERSION:String = "1.6.1.0.0";
     public static const PORT:int = 2050;
     public static const UNITY_LAUNCHER_VERSION:String = "2019.3.14f1";
-    public static const UNITY_GAME_VERSION:String = "2019.4.9f1";
+    public static const UNITY_GAME_VERSION:String = "2019.4.21f1";
     public static const LOG_PACKETS:Boolean = false;
-
     public static const FELLOW_GUILD_COLOR:uint = 10944349;
-
     public static const NAME_CHOSEN_COLOR:uint = 16572160;
-
     public static const PLAYER_ROTATE_SPEED:Number = 0.003;
-
     public static const BREATH_THRESH:int = 20;
-
     public static const SERVER_CHAT_NAME:String = "";
-
     public static const CLIENT_CHAT_NAME:String = "*Client*";
-
     public static const ERROR_CHAT_NAME:String = "*Error*";
-
     public static const HELP_CHAT_NAME:String = "*Help*";
-
     public static const GUILD_CHAT_NAME:String = "*Guild*";
-
     public static const NAME_CHANGE_PRICE:int = 1000;
-
     public static const GUILD_CREATION_PRICE:int = 1000;
-
     public static const TUTORIAL_GAMEID:int = -1;
-
     public static const NEXUS_GAMEID:int = -2;
-
     public static const RANDOM_REALM_GAMEID:int = -3;
-
     public static const MAPTEST_GAMEID:int = -6;
-
     public static const MAX_SINK_LEVEL:Number = 18;
-
     public static const TERMS_OF_USE_URL:String = "http://legal.decagames.com/tos/";
-
     public static const PRIVACY_POLICY_URL:String = "http://legal.decagames.com/privacy/";
-
     public static const USER_GENERATED_CONTENT_TERMS:String = "/UGDTermsofUse.html";
-
-    public static const RANDOM1:String = "5a4d2016bc16dc64883194ffd9";
-
-    public static const RANDOM2:String = "c91d9eec420160730d825604e0";
-
+    public static const OUTGOING_KEY:String = "5a4d2016bc16dc64883194ffd9";
+    public static const INCOMING_KEY:String = "c91d9eec420160730d825604e0";
     public static const RSA_PUBLIC_KEY:String = "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCKFctVrhfF3m2Kes0FBL/JFeOcmNg9eJz8k/hQy1kadD+XFUpluRqa//Uxp2s9W2qE0EoUCu59ugcf/p7lGuL99UoSGmQEynkBvZct+/M40L0E0rZ4BVgzLOJmIbXMp0J4PnPcb6VLZvxazGcmSfjauC7F3yWYqUbZd/HCBtawwIDAQAB\n-----END PUBLIC KEY-----";
-
     public static const skinTypes16:Vector.<int> = new <int>[1027,1028,1029,1030,10973,19494,19531,6346,30056,5505,7766,7769];
-
     public static const DefaultAAIgnore:Vector.<int> = new <int>[2312,2313,2370,2392,2393,2400,2401,3413,3418,3419,3420,3421,3427,3454,3638,3645,29594,29597,29710,29711,29742,29743,29746,29748,29781,30001];
-
     public static const DefaultAAException:Vector.<int> = new <int>[2309,2310,2311,3448,3449,3472,3334,5952,2354,2369,3368,3366,3367,3391,3389,3390,5920,2314,3412,3639,3634,2327,2335,2336,1755,24582,24351,24363,24135,24133,24134,24132,24136,3356,3357,3358,3359,3360,3361,3362,3363,3364,2352,2330,28780,28781,28795,28942,28957,28988,28938,29291,29018,29517,24338,29580,29712];
-
     public static const DefaultPriorityList:Vector.<int> = new Vector.<int>(0);
-
     public static const spamFilter:Vector.<String> = new <String>["reaimbags,net","r0tmg,0rg",
         "oryxsh0p.net","wh!tebag,net","wh!tebag.net","realmshop.info","realmshop.lnfo",
         "rotmgmarket.c","rpgstash,com","rpgstash.com","realmitems","reaimitems","reaimltems",
@@ -84,151 +57,78 @@ public class Parameters {
         "reaimstock.com", "rpgstash,c0m", "rotmg,network", "reaimdupe.com", "re/\\lmsh0p , inf0"];
 
     public static const defaultExclusions:Vector.<int> = new Vector.<int>(0);
-
     public static const defaultInclusions:Vector.<int> = new <int>[600,601,602,603,2295,2296,2297,2298,2524,2525,2526,2527,8608,8609,8610,8611,8615,8617,8616,8618,8962,9017,9015,9016,9055,9054,9052,9053,9059,9058,9056,9057,9063,9062,9060,9061,32697,32698,32699,32700,3004,3005,3006,3007,3088,3100,3096,3091,3113,3114,3112,3111,3032,3033,3034,3035,3177,3266];
-
     public static const hpPotions:Vector.<int> = new <int>[2736,16874,1799,2594,2868,2870,2872,2874,2876,2836,2837,2838,2839,2689,2632,2633,2795,1799,3105,3090,3164,3163,3265,9077,10244,10243,28901];
-
     public static const mpPotions:Vector.<int> = new <int>[2595,2634,2797,2798,2840,2841,2842,2843,2796,2869,2871,2873,2875,2877,3098];
-
     public static const lmPotions:Vector.<int> = new <int>[2793,9070,5471,9730,2794,9071,5472,9731];
-
     public static const raPotions:Vector.<int> = new <int>[2591,5465,9064,9729,2592,5466,9065,9727,2593,5467,9066,9726,2612,5468,9067,9724,2613,5469,9068,9725,2636,5470,9069,9728];
-
     public static var isGoto:Boolean = false;
-
     public static var lastRecon:ReconnectEvent;
-
     public static var root:DisplayObject;
-
     public static var data:Object = null;
-
     public static var drawProj_:Boolean = true;
-
     public static var giftChestLootMode:int = 0;
-
     public static var player:Player = null;
-
     public static var reconNexus:ReconnectEvent = null;
-
     public static var followName:String = "";
-
     public static var followPlayer:GameObject;
-
     public static var followingName:Boolean = false;
-
     public static var questFollow:Boolean = false;
-
     public static var lowCPUMode:Boolean = false;
-
     public static var preload:Boolean = false;
-
     public static var forceCharId:int = -1;
-
     public static var ignoringSecurityQuestions:Boolean = false;
-
     public static var ignoredShotCount:int = 0;
-
     public static var receivingPots:Boolean;
-
     public static var givingPotions:Boolean;
-
     public static var recvrName:String;
-
     public static var autoAcceptTrades:Boolean;
-
     public static var autoDrink:Boolean;
-
     public static var watchInv:Boolean;
-
     public static var timerActive:Boolean;
-
     public static var phaseChangeAt:int;
-
     public static var phaseName:String;
-
     public static var realmName:String;
-
     public static var bazaarJoining:Boolean;
-
     public static var bazaarLR:String;
-
     public static var bazaarDist:Number;
-
     public static var manualTutorial:Boolean;
-
     public static var suicideMode:Boolean = false;
-
     public static var suicideAT:int = -1;
-
     public static var fpmGain:int = 0;
-
     public static var fpmStart:int = -1;
-
     public static var warnDensity:Boolean = false;
-
     public static var VHS:int = 0;
-
     public static var VHSRecordLength:int = -1;
-
     public static var VHSIndex:int = -1;
-
     public static var abi:Boolean = true;
-
     public static var keyHolders:String;
-
     public static var needToRecalcDesireables:Boolean = false;
-
     public static var needsMapCheck:int = 0;
-
     public static var paramIPJoinedOnce:Boolean = true;
-
     public static var paramServerJoinedOnce:Boolean = true;
-
     public static var savingMap_:Boolean = false;
-
     public static var swapINVandBP:Boolean = false;
-
     public static var swapINVandBPcounter:int = 0;
-
     public static var enteringRealm:Boolean = false;
-
-    public static var RANDOM1_BA:ByteArray = new ByteArray();
-
-    public static var RANDOM2_BA:ByteArray = new ByteArray();
-
+    public static var OUTGOING_BA:ByteArray = new ByteArray();
+    public static var INCOMING_BA:ByteArray = new ByteArray();
     public static var appendage:Vector.<String> = new Vector.<String>(0);
-
     public static var filtered:Vector.<String> = new Vector.<String>(0);
-
     public static var dmgCounter:Array = [];
-
     public static var emptyOffer:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
-
     public static var potionsToTrade:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
-
     public static var timerPhaseTimes:Dictionary = new Dictionary();
-
     public static var timerPhaseNames:Dictionary = new Dictionary();
-
     public static var famePoint:Point = new Point(0,0);
-
     public static var VHSRecord:Vector.<Point> = new Vector.<Point>();
-
     public static var VHSNext:Point = new Point();
-
     public static var announcedBags:Vector.<int> = new Vector.<int>(0);
-
     public static var charNames:Vector.<String> = new Vector.<String>(0);
-
     public static var charIds:Vector.<int> = new Vector.<int>(0);
-
     public static var mystics:Vector.<String> = new Vector.<String>(0);
-
     private static var savedOptions_:SharedObject = null;
-
     private static var keyNames_:Dictionary = new Dictionary();
-
 
     public function Parameters() {
         super();
@@ -245,8 +145,8 @@ public class Parameters {
         setDefaults();
         setIgnores();
         setCustomPriorityList();
-        RANDOM1_BA = MoreStringUtil.hexStringToByteArray("5a4d2016bc16dc64883194ffd9");
-        RANDOM2_BA = MoreStringUtil.hexStringToByteArray("c91d9eec420160730d825604e0");
+        OUTGOING_BA = MoreStringUtil.hexStringToByteArray(OUTGOING_KEY);
+        INCOMING_BA = MoreStringUtil.hexStringToByteArray(INCOMING_KEY);
         setTimerPhases();
         setAutolootDesireables();
         fixFilter();
@@ -333,11 +233,11 @@ public class Parameters {
     }
 
     public static function setTimerPhases() : void {
-        timerPhaseTimes["{\"key\":\"server.oryx_closed_realm\"}"] = 120000;
-        timerPhaseTimes["{\"key\":\"server.oryx_minions_failed\"}"] = 12000;
+        timerPhaseTimes["{\"k\":\"s.oryx_closed_realm\"}"] = 120000;
+        timerPhaseTimes["{\"k\":\"s.oryx_minions_failed\"}"] = 12000;
         timerPhaseTimes["DIE! DIE! DIE!!!"] = 23000;
-        timerPhaseNames["{\"key\":\"server.oryx_closed_realm\"}"] = "Realm Closed";
-        timerPhaseNames["{\"key\":\"server.oryx_minions_failed\"}"] = "Oryx Shake";
+        timerPhaseNames["{\"k\":\"s.oryx_closed_realm\"}"] = "Realm Closed";
+        timerPhaseNames["{\"k\":\"s.oryx_minions_failed\"}"] = "Oryx Shake";
         timerPhaseNames["DIE! DIE! DIE!!!"] = "Vulnerable";
     }
 
@@ -594,6 +494,7 @@ public class Parameters {
     }
 
     public static function setDefaults() : void {
+        // Base game
         setDefaultKey("moveLeft",65);
         setDefaultKey("moveRight",68);
         setDefaultKey("moveUp",87);
@@ -700,6 +601,8 @@ public class Parameters {
         setDefault("chatNameColor",0);
         setDefault("expandRealmQuestsDisplay",true);
         setDefault("lastTab","Options.Controls");
+
+        // 059
         setDefault("ssdebuffBitmask",0);
         setDefault("ssdebuffBitmask2",0);
         setDefault("ccdebuffBitmask",0);
@@ -713,7 +616,7 @@ public class Parameters {
         setDefault("aimMode",2);
         setDefault("AutoAbilityOn",false);
         setDefault("showQuestBar",false);
-        setDefault("AutoNexus",25);
+        setDefault("AutoNexus",5);
         setDefault("AutoHeal",65);
         setDefault("autoHPPercent",40);
         setDefault("autoMPPercent",-1);
@@ -798,6 +701,7 @@ public class Parameters {
         setDefault("ignoreConfused",true);
         setDefault("ignoreUnstable",false);
         setDefault("ignoreDarkness",true);
+        Options.calculateIgnoreBitmask();
         setDefault("autoDecrementHP",false);
         setDefault("bigLootBags",false);
         setDefault("replaceCon",false);
@@ -815,14 +719,14 @@ public class Parameters {
         setDefault("tiltCam",false);
         setDefault("showBG",false);
         setDefault("BossPriority",true);
-        setDefaultKey("sayCustom1",0);
-        setDefaultKey("sayCustom2",0);
-        setDefaultKey("sayCustom3",0);
-        setDefaultKey("sayCustom4",0);
-        setDefault("customMessage1","");
-        setDefault("customMessage2","");
-        setDefault("customMessage3","");
-        setDefault("customMessage4","");
+        setDefaultKey("sayCustom1", 0);
+        setDefaultKey("sayCustom2", 0);
+        setDefaultKey("sayCustom3", 0);
+        setDefaultKey("sayCustom4", 0);
+        setDefault("customMessage1", "");
+        setDefault("customMessage2", "");
+        setDefault("customMessage3", "");
+        setDefault("customMessage4", "");
         setDefault("autoLootExcludes",Parameters.defaultExclusions);
         setDefault("autoLootIncludes",Parameters.defaultInclusions);
         setDefault("autoLootUpgrades",false);
@@ -871,46 +775,53 @@ public class Parameters {
         setDefault("autoEnterPortals",false);
         setDefault("reconnectDelay",0);
         setDefault("mysticAAShootGroup",false);
-        setDefaultKey("walkKey",16);
-        setDefault("projFace",true);
-        setDefault("disableSorting",false);
-        setDefault("noClip",false);
-        setDefaultKey("noClipKey",0);
-        setDefault("fakeLag",0);
+
+        // ProdMafia
+        setDefaultKey("walkKey", KeyCodes.SHIFT);
+        setDefault("projFace", true);
+        setDefault("disableSorting", false);
+        setDefault("noClip", false);
+        setDefaultKey("noClipKey", KeyCodes.UNSET);
+        setDefault("fakeLag", 0);
         setDefault("renderDistance",16);
-        setDefault("showRange",false);
-        setDefault("autoDodge",false);
-        setDefault("vSync",true);
-        setDefault("lastRealmIP","127.0.0.1");
-        setDefault("fullscreen",false);
-        setDefault("ipClipboard",true);
-        setDefault("timeScale",1);
-        setDefault("timeScaleArr",new Vector.<Number>(0));
-        setDefault("timeScaleArrIndex",0);
-        setDefaultKey("timeScaleKey",0);
-        setDefault("reducedLava",true);
-        setDefault("multiToggle",0);
-        setDefault("multiOn",false);
-        setDefault("depositKey",101);
-        setDefault("customName","");
-        setDefault("logErrors", false);
-        setDefault("test113Count", 0);
+        setDefault("showRange", false);
+        setDefault("lastRealmIP", "127.0.0.1");
+        setDefault("fullscreen", false);
+        setDefault("ipClipboard", true);
+        setDefault("timeScale", 1);
+        setDefault("timeScaleArr", new Vector.<Number>(0));
+        setDefault("timeScaleArrIndex", 0);
+        setDefaultKey("timeScaleKey", 0);
+        setDefault("reducedLava", true);
+        setDefault("lootKey", KeyCodes.NUMPAD_5);
+        setDefault("depositKey", KeyCodes.NUMPAD_6);
+        setDefault("customName", "");
         setDefault("tutorialMode", false);
-        setDefaultKey("pauseAnywhere", KeyCodes.UNSET);
-        Options.calculateIgnoreBitmask();
+        setDefault("lifeMul", 1);
+        setDefault("speedMul", 1.0);
+        generateClientToken();
     }
 
-    private static function setDefaultKey(param1:String, param2:uint) : void {
-        if(!(param1 in data)) {
-            data[param1] = param2;
-        }
-        keyNames_[param1] = true;
+    public static function generateClientToken(force:Boolean = false) : void {
+        if (!force && "clientToken" in data)
+            return;
+
+        var token:String = "";
+        var chars:String = "abcdefghijklmnopqrstuvwxyz0123456789";
+        for (var i:int = 0; i < 40; i++)
+            token += chars.charAt(Math.floor(Math.random() * chars.length));
+        data["clientToken"] = token;
     }
 
-    private static function setDefault(param1:String, param2:*) : void {
-        if(!(param1 in data)) {
-            data[param1] = param2;
-        }
+    private static function setDefaultKey(key:String, value:uint) : void {
+        if (!(key in data))
+            data[key] = value;
+        keyNames_[key] = true;
+    }
+
+    private static function setDefault(key:String, value:*) : void {
+        if (!(key in data))
+            data[key] = value;
     }
 }
 }

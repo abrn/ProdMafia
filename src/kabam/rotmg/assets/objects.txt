@@ -148,6 +148,7 @@
       <File>lofiObj2</File>
       <Index>0x77</Index>
     </Texture>
+    <NoMiniMap />
   </Object>
   <Object type="0x074e" id="Winter now">
     <Class>Character</Class>
@@ -322,7 +323,7 @@
   </Object>
   <Object type="0x222c" id="mb shopkeep1">
     <DisplayId>Mystery Box Shop</DisplayId>
-    <Class>Character</Class>
+    <Class>Merchant</Class>
     <ShadowSize>50</ShadowSize>
     <Size>80</Size>
     <Texture>
@@ -332,7 +333,7 @@
   </Object>
   <Object type="0x222d" id="mb shopkeep2">
     <DisplayId>Mystery Box Shop</DisplayId>
-    <Class>Character</Class>
+    <Class>Merchant</Class>
     <ShadowSize>50</ShadowSize>
     <Size>80</Size>
     <Texture>
@@ -402,6 +403,7 @@
         <Index>0</Index>
       </Texture>
     </AltTexture>
+    <NoMiniMap />
   </Object>
   <Object type="0x175C" id="Daily Login Portal">
     <Class>Portal</Class>
@@ -450,6 +452,7 @@
         <Index>0</Index>
       </Texture>
     </AltTexture>
+    <NoMiniMap />
   </Object>
   <Object type="0x1756" id="Daily Quest Portal">
     <DisplayId>Daily Quest Room</DisplayId>
@@ -1024,6 +1027,7 @@
       <File>d3LofiObjBigEmbed</File>
       <Index>0x15</Index>
     </Texture>
+    <NoMiniMap />
   </Object>
   <Object type="0x7e95" id="Blacksmith Inv Object">
     <Class>Blacksmith</Class>
@@ -1039,6 +1043,7 @@
         <Index>0</Index>
       </Texture>
     </AltTexture>
+    <NoMiniMap />
   </Object>
   <Object type="0x7e96" id="Blacksmith Magic Anvil">
     <Class>Blacksmith</Class>

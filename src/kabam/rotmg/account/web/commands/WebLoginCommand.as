@@ -62,9 +62,7 @@ package kabam.rotmg.account.web.commands {
       
       [Inject]
       public var seasonalEventModel:SeasonalEventModel;
-      
-      private var setScreenTask:DispatchSignalTask;
-      
+
       public function WebLoginCommand() {
          super();
       }
@@ -76,33 +74,16 @@ package kabam.rotmg.account.web.commands {
       }
       
       private function makeSuccessTask() : TaskSequence {
-         this.setScreenTask = new DispatchSignalTask(this.setScreenWithValidData,this.getTargetScreen());
          var _loc1_:TaskSequence = new TaskSequence();
          _loc1_.add(new DispatchSignalTask(this.closeDialogs));
          _loc1_.add(new DispatchSignalTask(this.updateLogin));
          _loc1_.add(new DispatchSignalTask(this.invalidate));
-         _loc1_.add(this.setScreenTask);
          return _loc1_;
       }
       
       private function makeFailureTask() : TaskSequence {
          var _loc1_:TaskSequence = new TaskSequence();
          _loc1_.add(new DispatchSignalTask(this.loginError,this.loginTask));
-         return _loc1_;
-      }
-      
-      private function getTargetScreen() : Sprite {
-         var _loc1_:Class = this.screenModel.getCurrentScreenType();
-         if(_loc1_ == null || _loc1_ == GameSprite) {
-            _loc1_ = !this.seasonalEventModel.isSeasonalMode?CharacterSelectionAndNewsScreen:CharacterTypeSelectionScreen;
-         }
-         return new _loc1_();
-      }
-      
-      private function getTrackingData() : TrackingData {
-         var _loc1_:TrackingData = new TrackingData();
-         _loc1_.category = "account";
-         _loc1_.action = "signedIn";
          return _loc1_;
       }
    }

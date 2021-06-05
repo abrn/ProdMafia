@@ -22,10 +22,6 @@ package kabam.rotmg.messaging.impl.incoming {
       
       public var errorDescription_:String;
       
-      public var errorPlace_:String;
-      
-      public var errorConnectionId_:String;
-      
       public function Failure(param1:uint, param2:Function) {
          super(param1,param2);
       }
@@ -33,8 +29,6 @@ package kabam.rotmg.messaging.impl.incoming {
       override public function parseFromInput(param1:IDataInput) : void {
          this.errorId_ = param1.readInt();
          this.errorDescription_ = param1.readUTF();
-         this.errorPlace_ = param1.readUTF();
-         this.errorConnectionId_ = param1.readUTF();
       }
       
       override public function toString() : String {

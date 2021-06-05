@@ -594,6 +594,7 @@
   </Object>
   <Object type="0x7526" id="Sanctuary Entry Controller">
     <Class>GameObject</Class>
+    <BlockPlayerPortals />
     <Texture>
       <File>lofiEnvironment</File>
       <Index>0xa4</Index>

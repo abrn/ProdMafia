@@ -156,7 +156,7 @@ package kabam.rotmg.account.core.commands {
       private function requestPaymentToken() : void {
          this.preparingModal = new PreparingPurchaseTransactionModal();
          this.showPopup.dispatch(this.preparingModal);
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          this.client.sendRequest("/credits/token",_loc1_);
          this.client.complete.addOnce(this.onComplete);
       }

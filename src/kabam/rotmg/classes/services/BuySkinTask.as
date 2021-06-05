@@ -42,7 +42,7 @@ package kabam.rotmg.classes.services {
       }
       
       private function makeCredentials() : Object {
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          _loc1_.skinType = this.skin.id;
          _loc1_.isChallenger = this.seasonalEventModel.isChallenger;
          return _loc1_;

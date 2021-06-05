@@ -14088,7 +14088,6 @@ A dubious candy that specially made by a certain witch. Contains strange ingredi
     <Potion />
     <BagType>5</BagType>
     <QuickslotAllowed maxstack="9" />
-    <QuickslotCooldown duration="0" />
   </Object>
   <Object type="0x41eb" id="HN WH ppkcst">
     <Class>Character</Class>

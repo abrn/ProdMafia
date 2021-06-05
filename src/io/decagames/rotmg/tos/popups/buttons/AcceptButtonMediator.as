@@ -31,7 +31,7 @@ public class AcceptButtonMediator extends Mediator {
     }
 
     private function onClickHandler(param1:BaseButton):void {
-        this.appEngineClient.sendRequest("account/acceptTOS", this.account.getCredentials());
+        this.appEngineClient.sendRequest("account/acceptTOS", this.account.getAccessToken());
         this.closePopupSignal.dispatch();
     }
 }

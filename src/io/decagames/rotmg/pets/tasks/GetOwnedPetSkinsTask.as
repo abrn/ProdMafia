@@ -45,7 +45,7 @@ package io.decagames.rotmg.pets.tasks {
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();
          _loc1_.play_platform = this.account.playPlatform();
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         _loc1_.accessToken = this.account.getAccessToken();
          return _loc1_;
       }
       

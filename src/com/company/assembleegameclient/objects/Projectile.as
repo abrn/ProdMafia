@@ -213,7 +213,7 @@ public class Projectile extends BasicObject {
       if(_loc11_) {
          _loc3_ = _loc5_ != null;
          _loc8_ = _loc11_.props_.isEnemy_;
-         _loc6_ = _loc3_ && !_loc5_.isPaused && (this.damagesPlayers_ || _loc8_ && this.ownerId_ == _loc5_.objectId_);
+         _loc6_ = _loc3_ && (this.damagesPlayers_ || _loc8_ && this.ownerId_ == _loc5_.objectId_);
          if(_loc6_) {
             _loc13_ = _loc11_.damageWithDefense(this.damage_,_loc11_.defense_,this.projProps.armorPiercing_,_loc11_.condition_);
             _loc9_ = _loc11_.hp_ <= _loc13_;
@@ -253,7 +253,7 @@ public class Projectile extends BasicObject {
                   }
                }
             } else if(_loc11_.props_.isEnemy_) {
-               gsc.enemyHit(param1,this.bulletId_,_loc11_.objectId_,_loc9_);
+               gsc.enemyHit(param1,this.bulletId_,_loc11_.objectId_,_loc9_, this.ownerId_, this.containerType_);
                _loc11_.damage(true,_loc13_,this.projProps.effects_,_loc9_,this);
                if(isNaN(Parameters.dmgCounter[_loc11_.objectId_])) {
                   Parameters.dmgCounter[_loc11_.objectId_] = 0;
@@ -318,8 +318,8 @@ public class Projectile extends BasicObject {
       this.sinAngle = Math.sin(this.angle);
       this.cosAngle = Math.cos(this.angle);
       this.startTime_ = param6;
-      this.lifeMul_ = param9;
-      this.speedMul = param10;
+      this.lifeMul_ = Parameters.data.lifeMul == 1.0 ? param9 : Parameters.data.lifeMul;
+      this.speedMul = Parameters.data.speedMul == 1.0 ? param10 : Parameters.data.speedMul;
       this.objectId_ = getNewObjId(this.ownerId_,this.bulletId_);
       z_ = 0.5;
       if(param11 == null) {
@@ -332,7 +332,7 @@ public class Projectile extends BasicObject {
       } else {
          this.projProps = param12;
       }
-      this.lifetime = this.projProps.lifetime * param9;
+      this.lifetime = this.projProps.lifetime * this.lifeMul_;
       this.halfway_ = this.lifetime * this.projProps.speed * 0.5;
       this.projHasConditions = this.projProps.effects_;
       var _loc15_:String = param7 != "" && this.projProps.objectId_ == param8?param7:this.projProps.objectId_;

@@ -314,7 +314,7 @@
       <Size>120</Size>
       <ArmorPiercing />
       <MultiHit />
-      <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+      <ConditionEffect duration="1">Stunned</ConditionEffect>
     </Projectile>
     <KillStat stat="NatureKills" />
   </Object>
@@ -360,7 +360,7 @@
       <Size>120</Size>
       <ArmorPiercing />
       <MultiHit />
-      <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+      <ConditionEffect duration="1">Stunned</ConditionEffect>
     </Projectile>
     <KillStat stat="NatureKills" />
   </Object>
@@ -406,7 +406,7 @@
       <Size>120</Size>
       <ArmorPiercing />
       <MultiHit />
-      <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+      <ConditionEffect duration="1">Stunned</ConditionEffect>
     </Projectile>
     <KillStat stat="NatureKills" />
   </Object>
@@ -452,7 +452,7 @@
       <Size>120</Size>
       <ArmorPiercing />
       <MultiHit />
-      <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+      <ConditionEffect duration="1">Stunned</ConditionEffect>
     </Projectile>
     <KillStat stat="NatureKills" />
   </Object>

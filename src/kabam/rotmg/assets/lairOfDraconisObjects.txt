@@ -6,7 +6,7 @@
     <IntergamePortal />
     <DungeonName>LOD Rock Dragon</DungeonName>
     <Texture>
-      <File>lairOfDraconisObjects8x8</File>
+      <File>lairOfDraconisObjects16x16</File>
       <Index>0x6f</Index>
     </Texture>
     <ShadowSize>0</ShadowSize>

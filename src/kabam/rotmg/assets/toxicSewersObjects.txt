@@ -879,6 +879,8 @@
       <File>toxicSewersChars8x8</File>
       <Index>8</Index>
     </AnimatedTexture>
+    <HitSound>monster/bats_hit</HitSound>
+    <DeathSound>monster/flayers_hit</DeathSound>
     <MaxHitPoints>25000</MaxHitPoints>
     <AlwaysPositiveHealth />
     <Defense>10</Defense>

@@ -34,7 +34,8 @@ package kabam.rotmg.account.core.services {
       }
       
       private function makeDataPacket() : Object {
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = [];
+         _loc1_.accessToken = this.account.getAccessToken();
          _loc1_.isAgeVerified = 1;
          return _loc1_;
       }

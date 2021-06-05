@@ -364,7 +364,7 @@ package com.company.assembleegameclient.util {
             }
             _loc3_++;
          }
-         return !!_loc7_?_loc11_:null;
+         return _loc7_?_loc11_:null;
       }
       
       private static function drawEdges(param1:Array) : BitmapData {

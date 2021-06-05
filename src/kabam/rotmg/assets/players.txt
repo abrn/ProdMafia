@@ -521,6 +521,39 @@
     <UnlockLevel level="20" type="0x031f">Paladin</UnlockLevel>
     <UnlockCost>999</UnlockCost>
   </Object>
+  <Object type="0x0331" id="Summoner">
+    <Class>Player</Class>
+    <Description>The summoner spawns monsters to fight for her and boost her damage output.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>16</Index>
+    </AnimatedTexture>
+    <HitSound>player/priest_hit</HitSound>
+    <DeathSound>player/priest_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>8, 29, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa04, 0x3843, -1, -1, 0xa22, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1</Equipment>
+    <MaxHitPoints max="670">100</MaxHitPoints>
+    <MaxMagicPoints max="385">100</MaxMagicPoints>
+    <Attack max="50">10</Attack>
+    <Defense max="25">0</Defense>
+    <Speed max="60">12</Speed>
+    <Dexterity max="75">15</Dexterity>
+    <HpRegen max="40">10</HpRegen>
+    <MpRegen max="75">15</MpRegen>
+    <LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
+    <LevelIncrease min="5" max="15">MaxMagicPoints</LevelIncrease>
+    <LevelIncrease min="1" max="2">Attack</LevelIncrease>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <LevelIncrease min="0" max="2">Speed</LevelIncrease>
+    <LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
+    <LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
+    <LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+    <UnlockLevel level="20" type="0x0325">Sorcerer</UnlockLevel>
+    <UnlockLevel level="20" type="0x0323">Mystic</UnlockLevel>
+    <UnlockCost>999</UnlockCost>
+  </Object>
   <PlayerStat id="Shots" index="0" reportEvery="100" dungeon="" displayName="Shots fired" displayColor="#27fd14" displayOnDeath="true" dungeonId="" />
   <PlayerStat id="ShotsThatDamage" index="1" reportEvery="10" dungeon="" displayName="Hits" displayColor="#27fd14" displayOnDeath="true" dungeonId="" />
   <PlayerStat id="SpecialAbilityUses" index="2" reportEvery="10" dungeon="" displayName="Ability uses" displayColor="#27fd14" displayOnDeath="true" dungeonId="" />
@@ -771,7 +804,7 @@
   </FameBonus>
   <FameBonus id="CombatNovice">
     <DisplayGroup>Stats Bonuses</DisplayGroup>
-    <DisplayCategory>Combat Profiency</DisplayCategory>
+    <DisplayCategory>Combat Proficiency</DisplayCategory>
     <DisplayName>Combat Novice</DisplayName>
     <AbsoluteBonus>20</AbsoluteBonus>
     <Description>Hit an enemy 8000 times</Description>
@@ -779,7 +812,7 @@
   </FameBonus>
   <FameBonus id="CombatBeginner">
     <DisplayGroup>Stats Bonuses</DisplayGroup>
-    <DisplayCategory>Combat Profiency</DisplayCategory>
+    <DisplayCategory>Combat Proficiency</DisplayCategory>
     <DisplayName>Combat Beginner</DisplayName>
     <AbsoluteBonus>100</AbsoluteBonus>
     <Description>Hit an enemy 40000 times</Description>
@@ -787,7 +820,7 @@
   </FameBonus>
   <FameBonus id="CombatProficient">
     <DisplayGroup>Stats Bonuses</DisplayGroup>
-    <DisplayCategory>Combat Profiency</DisplayCategory>
+    <DisplayCategory>Combat Proficiency</DisplayCategory>
     <DisplayName>Combat Proficient</DisplayName>
     <AbsoluteBonus>400</AbsoluteBonus>
     <Description>Hit an enemy 200000 times</Description>
@@ -795,7 +828,7 @@
   </FameBonus>
   <FameBonus id="CombatExpert">
     <DisplayGroup>Stats Bonuses</DisplayGroup>
-    <DisplayCategory>Combat Profiency</DisplayCategory>
+    <DisplayCategory>Combat Proficiency</DisplayCategory>
     <DisplayName>Combat Expert</DisplayName>
     <AbsoluteBonus>1000</AbsoluteBonus>
     <Description>Hit an enemy 800000 times</Description>
@@ -803,7 +836,7 @@
   </FameBonus>
   <FameBonus id="CombatVeteran">
     <DisplayGroup>Stats Bonuses</DisplayGroup>
-    <DisplayCategory>Combat Profiency</DisplayCategory>
+    <DisplayCategory>Combat Proficiency</DisplayCategory>
     <DisplayName>Combat Veteran {0}</DisplayName>
     <Repeatable>true</Repeatable>
     <AbsoluteBonus>2500</AbsoluteBonus>

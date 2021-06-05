@@ -22,8 +22,13 @@ import io.decagames.rotmg.ui.popups.signals.CloseAllPopupsSignal;
 import io.decagames.rotmg.ui.popups.signals.ClosePopupByClassSignal;
 import io.decagames.rotmg.ui.popups.signals.ShowPopupSignal;
 
+import kabam.rotmg.account.core.Account;
+
+import kabam.rotmg.appengine.api.AppEngineClient;
+
 import kabam.rotmg.chat.control.ParseChatMessageSignal;
 import kabam.rotmg.core.StaticInjectorContext;
+import kabam.rotmg.core.service.ExtendAccessTokenTaskGame;
 import kabam.rotmg.core.view.Layers;
 import kabam.rotmg.dialogs.control.CloseDialogsSignal;
 import kabam.rotmg.dialogs.control.OpenDialogSignal;
@@ -38,6 +43,7 @@ import kabam.rotmg.game.signals.UseBuyPotionSignal;
 import kabam.rotmg.game.view.components.StatsTabHotKeyInputSignal;
 import kabam.rotmg.minimap.control.MiniMapZoomSignal;
 import kabam.rotmg.servers.api.Server;
+import kabam.rotmg.text.view.stringBuilder.AppendingLineBuilder;
 import kabam.rotmg.ui.model.TabStripModel;
 import kabam.rotmg.ui.signals.EnterGameSignal;
 import kabam.rotmg.ui.signals.ToggleRealmQuestsDisplaySignal;
@@ -210,7 +216,7 @@ public class MapUserInput {
             var _loc9_:int = 0;
             var _loc8_:* = this.gs.map.goDict_;
             for each(var _loc6_ in this.gs.map.goDict_) {
-               if(_loc6_ is Player && !_loc6_.isInvisible && !_loc6_.isPaused) {
+               if(_loc6_ is Player && !_loc6_.isInvisible) {
                   _loc5_ = (_loc6_.x_ - _loc7_.x_) * (_loc6_.x_ - _loc7_.x_) + (_loc6_.y_ - _loc7_.y_) * (_loc6_.y_ - _loc7_.y_);
                   if(_loc5_ < _loc3_) {
                      _loc3_ = _loc5_;
@@ -487,6 +493,17 @@ public class MapUserInput {
       }
    }
 
+   private function updateAccount(success:Boolean, response:*) : void {
+      if (success) {
+         var xml:XML = XML(response);
+         this.account.updateUser(this.account.getUserId(), this.account.getPassword(),
+                 this.account.getToken(), this.account.getSecret(),
+                 xml.AccessToken,
+                 xml.AccessTokenTimestamp + xml.AccessTokenExpiration * 1000);
+      }
+   }
+
+   private var account:Account;
    private function onKeyDown(param1:KeyboardEvent) : void {
       var _loc11_:* = null;
       var _loc18_:int = 0;
@@ -526,30 +543,7 @@ public class MapUserInput {
          case Parameters.data.walkKey:
             this.isWalking = true;
             return;
-         case Parameters.data.pauseAnywhere:
-            var pauseState:Boolean = this.gs.map.player_.isPaused_();
-            if (pauseState)
-               this.gs.gsc_.setCondition(ConditionEffect.PAUSED, 0);
-            else {
-               var isSafe:Boolean = true;
-               for each (var go:GameObject in this.gs.map.goDict_)
-                  if (go.props_.isEnemy_ &&
-                          PointUtil.distanceSquaredXY(go.x_, go.y_, player.x_, player.y_) <= 9 * 9) {
-                     isSafe = false;
-                     break;
-                  }
-
-               if (isSafe)
-                  this.gs.gsc_.setCondition(ConditionEffect.PAUSED, int.MAX_VALUE);
-               else {
-                  player.levelUpEffect("Not safe to pause!");
-                  return;
-               }
-            }
-
-            player.levelUpEffect(pauseState ? "Pause: OFF" : "Pause: ON");
-            return;
-         /*case KeyCodes.PAGE_DOWN:
+         case KeyCodes.PAGE_DOWN:
             var vault:GameObject = null;
             for each (var go:GameObject in gs.map.goDict_)
                if (go.objectType_ == 0x0504) {
@@ -573,9 +567,23 @@ public class MapUserInput {
                        -1,
                        i * 550);
 
+            this.account = StaticInjectorContext.getInjector().getInstance(Account);
+            var client:AppEngineClient = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
+            for (i = 0; i < 10; i++) {
+               client.sendRequest("/account/verify",{
+                  "game_net": "Unity",
+                  "play_platform": "Unity",
+                  "game_net_user_id": "",
+                  "guid": this.account.getUserId(),
+                  "password": this.account.getPassword(),
+                  "clientToken": Parameters.data.clientToken
+               });
+               client.complete.addOnce(this.updateAccount);
+            }
+
             if (Parameters.lastRecon)
                gs.dispatchEvent(Parameters.lastRecon);
-            return;*/
+            return;
          case Parameters.data.depositKey:
             var vault:GameObject = null;
             for each (var go:GameObject in gs.map.goDict_)

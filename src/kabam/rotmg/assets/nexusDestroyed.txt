@@ -860,6 +860,19 @@
       </Texture>
     </AltTexture>
   </Object>
+  <Object type="0x379a" id="destnex Summoner Grave">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x1df</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>lofiObjBig</File>
+        <Index>0x1ef</Index>
+      </Texture>
+    </AltTexture>
+  </Object>
   <Object type="0x722b" id="NM Green Dragon Shield Deux">
     <DisplayId>Abundant Shield</DisplayId>
     <Enemy />

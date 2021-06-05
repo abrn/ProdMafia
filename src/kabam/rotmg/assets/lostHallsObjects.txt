@@ -655,6 +655,7 @@
     <DisplayId>???</DisplayId>
     <Class>Portal</Class>
     <DrawOnGround />
+    <BlockPlayerPortals />
     <LockedPortal />
     <Texture>
       <File>lostHallsObjects8x8</File>
@@ -1890,6 +1891,7 @@
   </Object>
   <Object type="0xb011" id="LH Marble Colossus">
     <Class>Character</Class>
+    <BlockPlayerPortals />
     <Enemy />
     <AnimatedTexture>
       <File>lostHallsChars16x16</File>
@@ -4832,6 +4834,7 @@
   </Object>
   <Object type="0xb01c" id="LH Void Rift Spawner">
     <Class>GameObject</Class>
+    <BlockPlayerPortals />
     <Texture>
       <File>lostHallsObjects8x8</File>
       <Index>30</Index>
@@ -4846,6 +4849,7 @@
     </Texture>
     <Size>0</Size>
     <DisplayId>The Void</DisplayId>
+    <BlockPlayerPortals />
   </Object>
   <Object type="0xb019" id="LH Void Fragment">
     <Class>Character</Class>

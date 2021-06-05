@@ -742,6 +742,62 @@
       <PassesCover />
     </Projectile>
   </Object>
+  <Object type="0xb609" id="Glitch Highlands Spawner">
+    <Enemy />
+    <Class>Character</Class>
+    <Invincible />
+    <NoMiniMap />
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0xa4</Index>
+    </Texture>
+    <Size>0</Size>
+    <Terrain>HighPlains</Terrain>
+    <SpawnProb>1</SpawnProb>
+    <PerRealmMax>7</PerRealmMax>
+  </Object>
+  <Object type="0xb608" id="Glitch Midlands Spawner">
+    <Enemy />
+    <Class>Character</Class>
+    <Invincible />
+    <NoMiniMap />
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0xa4</Index>
+    </Texture>
+    <Size>0</Size>
+    <Terrain>MidSand</Terrain>
+    <SpawnProb>1</SpawnProb>
+    <PerRealmMax>10</PerRealmMax>
+  </Object>
+  <Object type="0xb607" id="Glitch Mountains Spawner">
+    <Enemy />
+    <Class>Character</Class>
+    <Invincible />
+    <NoMiniMap />
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0xa4</Index>
+    </Texture>
+    <Size>0</Size>
+    <Terrain>Mountains</Terrain>
+    <SpawnProb>1</SpawnProb>
+    <PerRealmMax>5</PerRealmMax>
+  </Object>
+  <Object type="0xb606" id="Glitch Initiator">
+    <DisplayId>The Glitch</DisplayId>
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+    <ShadowSize>0</ShadowSize>
+    <NoMiniMap />
+    <PerRealmMax>1</PerRealmMax>
+  </Object>
   <Object type="0xabd5" id="Null">
     <DisplayId>Null</DisplayId>
     <Enemy />
@@ -760,6 +816,7 @@
     <DeathSound>monster/sprite_god_death</DeathSound>
     <Size>130</Size>
     <MaxHitPoints>90000</MaxHitPoints>
+    <NoCollisionWhenMovement />
     <Defense>30</Defense>
     <Exp>10101</Exp>
     <Quest />

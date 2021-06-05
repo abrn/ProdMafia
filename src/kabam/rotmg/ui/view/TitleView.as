@@ -20,7 +20,7 @@ import kabam.rotmg.text.view.TextFieldDisplayConcrete;
    
    public class TitleView extends Sprite {
 
-      private static var Gif:Class = Deez;
+      private static var GifBase:Class = TitleScreenGif;
 
       public static var queueEmailConfirmation:Boolean = false;
       
@@ -61,7 +61,7 @@ import kabam.rotmg.text.view.TextFieldDisplayConcrete;
          addChildAt(new DarkLayer(), 0);
 
          var player:GIFPlayer = new GIFPlayer();
-         player.loadBytes(new Gif() as ByteArray);
+         player.loadBytes(new GifBase() as ByteArray);
          player.addEventListener(GIFPlayerEvent.COMPLETE, function (_:GIFPlayerEvent) : void {
             player.scaleX = 800 / player.width;
             player.scaleY = 600 / player.height;

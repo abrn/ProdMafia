@@ -26,8 +26,7 @@ package kabam.rotmg.account.core.services {
       
       public function makeRequestData() : Object {
          var _loc1_:* = {};
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         _loc1_.accessToken = this.account.getAccessToken();
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();
          _loc1_.play_platform = this.account.playPlatform();

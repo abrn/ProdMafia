@@ -42,6 +42,14 @@
     </Texture>
     <Rotation>180</Rotation>
   </Object>
+  <Object type="0xb605" id="Iron Acorn">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x2af</Index>
+    </Texture>
+    <Rotation>180</Rotation>
+  </Object>
   <Object type="0x238c" id="Bright Autumn Glaive">
     <Class>Projectile</Class>
     <Texture>
@@ -185,7 +193,7 @@
     </AnimatedTexture>
     <Enemy />
     <NoMiniMap />
-    <Size>75</Size>
+    <Size>100</Size>
     <Invincible />
     <Projectile id="0">
       <ObjectId>Yellow Bark Bolt</ObjectId>
@@ -204,7 +212,7 @@
     </AnimatedTexture>
     <Enemy />
     <NoMiniMap />
-    <Size>75</Size>
+    <Size>100</Size>
     <Invincible />
     <Projectile id="0">
       <ObjectId>Blue Bark Bolt</ObjectId>
@@ -223,7 +231,7 @@
     </AnimatedTexture>
     <Enemy />
     <NoMiniMap />
-    <Size>75</Size>
+    <Size>100</Size>
     <Invincible />
     <Projectile id="0">
       <ObjectId>Green Bark Bolt</ObjectId>
@@ -482,9 +490,9 @@
     <Z>0.3</Z>
     <Projectile id="0">
       <ObjectId>Bright Autumn Glaive</ObjectId>
-      <Damage>80</Damage>
-      <Speed>70</Speed>
-      <LifetimeMS>1000</LifetimeMS>
+      <Damage>100</Damage>
+      <Speed>50</Speed>
+      <LifetimeMS>1400</LifetimeMS>
       <Size>70</Size>
       <MultiHit />
       <ConditionEffect duration="1.4">Confused</ConditionEffect>
@@ -557,7 +565,7 @@
     <ParalyzeImmune />
     <StunImmune />
     <Quest />
-    <HealthBarBoss />
+    <HealthBarBoss yOffset="15" />
     <AlwaysPositiveHealth />
     <Projectile id="0">
       <ObjectId>Invisible</ObjectId>
@@ -750,7 +758,7 @@
       <ObjectId>Bright Leaf Magic</ObjectId>
       <Damage>125</Damage>
       <Speed>80</Speed>
-      <Size>75</Size>
+      <Size>100</Size>
       <LifetimeMS>3000</LifetimeMS>
       <ConditionEffect duration="3">Quiet</ConditionEffect>
       <Boomerang />

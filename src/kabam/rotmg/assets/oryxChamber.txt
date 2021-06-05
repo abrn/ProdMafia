@@ -681,6 +681,7 @@
   <Object type="0x802f" id="O1 Portal Dropper">
     <DisplayId>Oryx the Mad God</DisplayId>
     <Class>GameObject</Class>
+    <BlockPlayerPortals />
     <Texture>
       <File>lofiEnvironment</File>
       <Index>0xa4</Index>

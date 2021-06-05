@@ -24,7 +24,7 @@ package kabam.rotmg.account.web.services {
       
       override protected function startTask() : void {
          this.client.complete.addOnce(this.onComplete);
-         this.client.sendRequest("/account/sendVerifyEmail",this.account.getCredentials());
+         this.client.sendRequest("/account/sendVerifyEmail",this.account.getAccessToken());
       }
       
       private function onComplete(param1:Boolean, param2:*) : void {

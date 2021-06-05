@@ -27,9 +27,8 @@ package io.decagames.rotmg.supportCampaign.tasks {
       
       override protected function startTask() : void {
          this.logger.info("GetCampaignStatus start");
-         var _loc1_:Object = this.account.getCredentials();
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         var _loc1_:Object = [];
+         _loc1_.accessToken = this.account.getAccessToken();
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();
          _loc1_.play_platform = this.account.playPlatform();

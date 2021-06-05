@@ -48,7 +48,7 @@ package kabam.rotmg.arena.service {
       
       private function makeRequestObject() : Object {
          var _loc1_:Object = {"type":this.filter.getKey()};
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         MoreObjectUtil.addToObject(_loc1_,this.account.getAccessToken());
          return _loc1_;
       }
    }

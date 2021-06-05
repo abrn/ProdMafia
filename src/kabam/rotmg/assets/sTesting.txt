@@ -33,13 +33,112 @@
     <MaxHitPoints>5000</MaxHitPoints>
     <Defense>0</Defense>
     <Exp>0</Exp>
-    <Projectile id="0">
-      <ObjectId>Blue Star</ObjectId>
-      <Speed>25</Speed>
-      <Damage>1</Damage>
-      <LifetimeMS>5000</LifetimeMS>
-    </Projectile>
     <KillStat stat="StructureKills" />
+  </Object>
+  <Object type="0x986" id="Enemy Barrier">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment3</File>
+      <Index>0x22</Index>
+    </Texture>
+    <Size>-1</Size>
+    <Static />
+    <NoCover />
+    <EnemyOccupySquare />
+    <NoMiniMap />
+  </Object>
+  <Object type="0x987" id="Player Barrier">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment3</File>
+      <Index>0x22</Index>
+    </Texture>
+    <Size>-1</Size>
+    <Static />
+    <NoCover />
+    <OccupySquare />
+    <NoMiniMap />
+  </Object>
+  <Object type="0x988" id="Everyone Barrier">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment3</File>
+      <Index>0x22</Index>
+    </Texture>
+    <Size>-1</Size>
+    <Static />
+    <NoCover />
+    <OccupySquare />
+    <EnemyOccupySquare />
+    <NoMiniMap />
+  </Object>
+  <Object type="0x989" id="Enemy Barrier Full">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment3</File>
+      <Index>0x22</Index>
+    </Texture>
+    <Size>-1</Size>
+    <Static />
+    <NoCover />
+    <EnemyOccupySquare />
+    <NoMiniMap />
+    <FullOccupy />
+  </Object>
+  <Object type="0x98a" id="Player Barrier Full">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment3</File>
+      <Index>0x22</Index>
+    </Texture>
+    <Size>-1</Size>
+    <Static />
+    <NoCover />
+    <OccupySquare />
+    <NoMiniMap />
+    <FullOccupy />
+  </Object>
+  <Object type="0x98b" id="Everyone Barrier Full">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment3</File>
+      <Index>0x22</Index>
+    </Texture>
+    <Size>-1</Size>
+    <Static />
+    <NoCover />
+    <OccupySquare />
+    <EnemyOccupySquare />
+    <NoMiniMap />
+    <FullOccupy />
+  </Object>
+  <Object type="0x698" id="Global Tag Observer">
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero1</File>
+      <Index>0x01</Index>
+    </AnimatedTexture>
+    <HitSound>monster/skeletons_hit</HitSound>
+    <DeathSound>monster/skeletons_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>5000</MaxHitPoints>
+    <Defense>0</Defense>
+    <Exp>0</Exp>
+  </Object>
+  <Object type="0x985" id="Grenade Test">
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero1</File>
+      <Index>0x01</Index>
+    </AnimatedTexture>
+    <HitSound>monster/skeletons_hit</HitSound>
+    <DeathSound>monster/skeletons_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>5000</MaxHitPoints>
+    <Defense>0</Defense>
+    <Exp>0</Exp>
   </Object>
   <Object type="0x7fef" id="Pumpkin Master">
     <DisplayId>The Pumpkin Master</DisplayId>

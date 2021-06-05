@@ -11,34 +11,25 @@ package kabam.rotmg.account.web.view {
    import org.osflash.signals.natives.NativeMappedSignal;
    
    public class WebLoginDialog extends Frame {
-       
-      
       public var cancel:Signal;
-      
       public var signIn:Signal;
-      
       public var forgot:Signal;
-      
       public var register:Signal;
-      
       private var email:TextInputField;
-      
       private var password:TextInputField;
-      
       private var secret:TextInputField;
-      
       private var forgotText:DeprecatedClickableText;
-      
       private var registerText:DeprecatedClickableText;
-      
       private var rememberMeCheckbox:CheckBoxField;
-      
-      public function WebLoginDialog() {
-         super("WebLoginDialog.title","WebLoginDialog.leftButton","WebLoginDialog.rightButton","/signIn");
+
+      public function WebLoginDialog(isStartup:Boolean = false) {
+         super("WebLoginDialog.title", isStartup ? "" : "WebLoginDialog.leftButton",
+                 "WebLoginDialog.rightButton", "/signIn");
          this.makeUI();
          this.forgot = new NativeMappedSignal(this.forgotText,"click");
          this.register = new NativeMappedSignal(this.registerText,"click");
-         this.cancel = new NativeMappedSignal(leftButton_,"click");
+         if (!isStartup)
+            this.cancel = new NativeMappedSignal(this.leftButton_,"click");
          this.signIn = new Signal(AccountData);
       }
       

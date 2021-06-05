@@ -2224,6 +2224,7 @@
     <Enemy />
     <Class>Character</Class>
     <DontFaceAttacks />
+    <NoCollisionWhenMovement />
     <AnimatedTexture>
       <File>thirdDimensionChars16x16</File>
       <Index>18</Index>
@@ -2288,6 +2289,7 @@
     <Enemy />
     <Class>Character</Class>
     <DontFaceAttacks />
+    <NoCollisionWhenMovement />
     <AnimatedTexture>
       <File>thirdDimensionChars16x16</File>
       <Index>19</Index>
@@ -2357,6 +2359,7 @@
     <Group>The Third Dimension</Group>
     <Enemy />
     <DontFaceAttacks />
+    <NoCollisionWhenMovement />
     <Class>Character</Class>
     <AnimatedTexture>
       <File>thirdDimensionChars16x16</File>
@@ -4304,63 +4307,6 @@
       <MultiHit />
     </Projectile>
     <Size>129</Size>
-  </Object>
-  <Object id="tD Friendly Frame" type="0x4259">
-    <Class>GameObject</Class>
-    <NoCollisionWhenMovement />
-    <Texture>
-      <File>thirdDimensionObjects16x16</File>
-      <Index>0x06</Index>
-    </Texture>
-    <AltTexture id="0">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x06</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="1">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x16</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="2">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x07</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="3">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x17</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="4">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x08</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="5">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x18</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="6">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x09</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="7">
-      <Texture>
-        <File>thirdDimensionObjects16x16</File>
-        <Index>0x19</Index>
-      </Texture>
-    </AltTexture>
-    <Size>40</Size>
   </Object>
   <Object id="tD Greater Enemy" type="0x4226">
     <Class>GameObject</Class>

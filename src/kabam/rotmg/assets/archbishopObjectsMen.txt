@@ -236,6 +236,8 @@
       <Index>0</Index>
     </Texture>
     <Size>0</Size>
+    <Exp>0</Exp>
+    <Invincible />
     <Projectile id="0">
       <ObjectId>O3 Red Big Spike</ObjectId>
       <Damage>150</Damage>
@@ -278,6 +280,8 @@
       <Index>0</Index>
     </Texture>
     <Size>0</Size>
+    <Exp>0</Exp>
+    <Invincible />
     <Projectile id="0">
       <ObjectId>O3 Purple Big Spike</ObjectId>
       <Damage>150</Damage>

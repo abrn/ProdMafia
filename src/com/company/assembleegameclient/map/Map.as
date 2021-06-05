@@ -184,7 +184,7 @@ package com.company.assembleegameclient.map {
                }
             } else if(_loc1_.props_.isPlayer_) {
                this.playerLength++;
-               if(!_loc1_.isPaused && !_loc1_.isInvincible && !_loc1_.isStasis && !_loc1_.dead_) {
+               if(!_loc1_.isInvincible && !_loc1_.isStasis && !_loc1_.dead_) {
                   this.vulnPlayerDict_.push(_loc1_);
                }
             }
@@ -271,7 +271,7 @@ package com.company.assembleegameclient.map {
          if(this.idsToRemove_) {
             this.idsToRemove_.length = 0;
          }
-         party_.update(param1, param2);
+         party_ && party_.update(param1, param2);
       }
       
       override public function pSTopW(param1:Number, param2:Number) : Point {
@@ -498,9 +498,7 @@ package com.company.assembleegameclient.map {
       private function getFilterIndex() : uint {
          var _loc1_:int = 0;
          if(player_ != null && (player_.condition_[0] & 1049216) != 0) {
-            if(player_.isPaused) {
-               _loc1_ = 1;
-            } else if(player_.isBlind) {
+            if(player_.isBlind) {
                _loc1_ = 2;
             } else if(player_.isDrunk) {
                _loc1_ = 3;

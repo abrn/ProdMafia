@@ -132,7 +132,7 @@ package kabam.rotmg.account.core.view {
             _loc2_ = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
             _loc2_.complete.addOnce(this.onComplete);
             _loc3_ = {"newGuid":this.emailInput.text()};
-            MoreObjectUtil.addToObject(_loc3_,this.account.getCredentials());
+            MoreObjectUtil.addToObject(_loc3_,this.account.getAccessToken());
             _loc2_.sendRequest("account/changeEmail",_loc3_);
             rightButton_.removeEventListener("click",this.onVerify);
          }

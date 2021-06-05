@@ -8736,7 +8736,7 @@
       <Index>513</Index>
     </AnimatedTexture>
     <SlotType>10</SlotType>
-    <Description>Hold on, I was told this unlocks a random Warriror skin!\n\nSprite Credits: Sturky</Description>
+    <Description>Hold on, I was told this unlocks a random Warrior skin!\n\nSprite Credits: Sturky</Description>
     <Activate skinType="10195">UnlockSkin</Activate>
     <Consumable />
     <Soulbound />
@@ -11145,7 +11145,7 @@
     <BagType>7</BagType>
     <feedPower>1000</feedPower>
   </Object>
-  <Object type="0x74ac" id="Rogue - Content Master Skin">
+  <Object type="0x77ae" id="Rogue - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11154,14 +11154,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29867">UnlockSkin</Activate>
+    <Activate skinType="30637">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74ae" id="Archer - Content Master Skin">
+  <Object type="0x77b0" id="Archer - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11170,14 +11170,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29869">UnlockSkin</Activate>
+    <Activate skinType="30639">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74b0" id="Wizard - Content Master Skin">
+  <Object type="0x77b2" id="Wizard - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11186,14 +11186,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29871">UnlockSkin</Activate>
+    <Activate skinType="30641">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74b2" id="Priest - Content Master Skin">
+  <Object type="0x77b4" id="Priest - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11202,14 +11202,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29873">UnlockSkin</Activate>
+    <Activate skinType="30643">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74b4" id="Warrior - Content Master Skin">
+  <Object type="0x77b6" id="Warrior - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11218,14 +11218,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29875">UnlockSkin</Activate>
+    <Activate skinType="30645">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74b6" id="Knight - Content Master Skin">
+  <Object type="0x77b8" id="Knight - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11234,14 +11234,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29877">UnlockSkin</Activate>
+    <Activate skinType="30647">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74b8" id="Paladin - Content Master Skin">
+  <Object type="0x77ba" id="Paladin - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11250,14 +11250,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29879">UnlockSkin</Activate>
+    <Activate skinType="30649">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74ba" id="Assassin - Content Master Skin">
+  <Object type="0x77bc" id="Assassin - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11266,14 +11266,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29881">UnlockSkin</Activate>
+    <Activate skinType="30651">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74bc" id="Necromancer - Content Master Skin">
+  <Object type="0x77be" id="Necromancer - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11282,14 +11282,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29883">UnlockSkin</Activate>
+    <Activate skinType="30653">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74be" id="Sorcerer - Content Master Skin">
+  <Object type="0x77c0" id="Sorcerer - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11298,14 +11298,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29885">UnlockSkin</Activate>
+    <Activate skinType="30655">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74c0" id="Huntress - Content Master Skin">
+  <Object type="0x77c2" id="Huntress - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11314,14 +11314,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29887">UnlockSkin</Activate>
+    <Activate skinType="30657">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74c2" id="Mystic - Content Master Skin">
+  <Object type="0x77c4" id="Mystic - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11330,14 +11330,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29889">UnlockSkin</Activate>
+    <Activate skinType="30659">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74c4" id="Trickster - Content Master Skin">
+  <Object type="0x77c6" id="Trickster - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11346,14 +11346,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29891">UnlockSkin</Activate>
+    <Activate skinType="30661">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74c6" id="Ninja - Content Master Skin">
+  <Object type="0x77c8" id="Ninja - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11362,14 +11362,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29893">UnlockSkin</Activate>
+    <Activate skinType="30663">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74c8" id="Samurai - Content Master Skin">
+  <Object type="0x77ca" id="Samurai - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11378,14 +11378,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29895">UnlockSkin</Activate>
+    <Activate skinType="30665">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74ca" id="Bard - Content Master Skin">
+  <Object type="0x77cc" id="Bard - Content Master Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11394,14 +11394,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
-    <Activate skinType="29897">UnlockSkin</Activate>
+    <Activate skinType="30667">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>500</feedPower>
     <Track />
   </Object>
-  <Object type="0x74cc" id="Synthwave Warrior Skin">
+  <Object type="0x77ce" id="Synthwave Warrior Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11410,14 +11410,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>The year is 30XX... wait what?\n\nSkin Class: Warrior\nSprite Credits: CrystalPX</Description>
-    <Activate skinType="29899">UnlockSkin</Activate>
+    <Activate skinType="30669">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>1000</feedPower>
     <Track />
   </Object>
-  <Object type="0x74ce" id="Sleepover Mystic Skin">
+  <Object type="0x77d0" id="Sleepover Mystic Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11426,14 +11426,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>The snack bearer of sleepovers.\n\nSkin Class: Mystic\nSprite Credits: Zquidx</Description>
-    <Activate skinType="29901">UnlockSkin</Activate>
+    <Activate skinType="30671">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>1000</feedPower>
     <Track />
   </Object>
-  <Object type="0x74d0" id="Unicorn Warrior Skin">
+  <Object type="0x77d2" id="Unicorn Warrior Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11442,14 +11442,14 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>She is adamant that it is a unicorn and not a narwhal costume, but her friends are not so sure.\n\nSkin Class: Warrior\nSprite Credits: Mizumi</Description>
-    <Activate skinType="29903">UnlockSkin</Activate>
+    <Activate skinType="30673">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />
     <feedPower>1000</feedPower>
     <Track />
   </Object>
-  <Object type="0x74d2" id="Nightstalker Elf Assassin Skin">
+  <Object type="0x77d4" id="Nightstalker Elf Assassin Skin">
     <Class>Equipment</Class>
     <Item />
     <AnimatedTexture>
@@ -11458,7 +11458,1019 @@
     </AnimatedTexture>
     <SlotType>10</SlotType>
     <Description>You can never be sure what lurks in the darkness.\n\nSkin Class: Assassin\nSprite Credits: CrystalPX</Description>
-    <Activate skinType="29905">UnlockSkin</Activate>
+    <Activate skinType="30675">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x6fd4" id="Mini Nordic Knight Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>653</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>His fuzzy armor keeps him both warm and fierce...looking. Never heads into battle without his intimidating SKOL chant!\n\nSkin Class: Knight</Description>
+    <Activate skinType="28627">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x6fd6" id="Mini Cuboid Necromancer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>654</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Due to this mini matriarch being compressed, she has chosen to forgo her hands and telekinetically wield her staff.\n\nSkin Class: Necromancer\nSprite Credits: Aurum</Description>
+    <Activate skinType="28629">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77d6" id="Expectant Engager Priest Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>655</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Don't tell her, but I'm not getting married today!\n\nSkin Class: Priest\nSprite Credits: NblankFour</Description>
+    <Activate skinType="30677">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77d8" id="Swan Suit Huntress Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>656</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rumor has it wearing this suit will increase your chances at finding the perfect soulmate.\n\nSkin Class: Huntress\nSprite Credits: Coomi</Description>
+    <Activate skinType="30679">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77da" id="Vampire Slayer Ninja Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>657</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Kirisake!\n\nSkin Class: Ninja\nSprite Credits: Nazoado</Description>
+    <Activate skinType="30681">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77dc" id="Sweet Chocolatier Assassin Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>658</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>She's full of sweet chocolate-y surprises!\n\nSkin Class: Assassin\nSprite Credits: Lily and NBlankFour</Description>
+    <Activate skinType="30683">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77de" id="Lady of Locks Ninja Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>659</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>She fears no monster. But barbers...\n\nSkin Class: Ninja\nSprite Credits: Zquidx</Description>
+    <Activate skinType="30685">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77e0" id="Serenading Bard Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>660</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Blast the eardrums of your enemies with the loud beats of your boombox!\n\nSkin Class: Bard\nSprite Credits: Tyii</Description>
+    <Activate skinType="30687">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77e2" id="Big Monster Knight Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins16</File>
+      <Index>51</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Funny big thing go rawr.\n\nSkin Class: Knight\nSprite Credits: TLMaelstrom</Description>
+    <Activate skinType="30689">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77e4" id="Grey Gal Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>661</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>She's had it up to here with the remarks about looking like a ghost!\n\nSkin Class: Summoner\nSprite Credits: NblankFour</Description>
+    <Activate skinType="30691">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77e6" id="Prankster Primate Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>662</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Reject Lawful Good, return to Chaotic Good.\n\nSkin Class: Summoner\nSprite Credits: NBlankFour</Description>
+    <Activate skinType="30693">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77e8" id="Zoologist Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>663</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Who said you couldn't have more than one pet?\n\nSkin Class: Summoner\nSprite Credits: Zquidx</Description>
+    <Activate skinType="30695">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77ea" id="Playful Spirit Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>664</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Popular in the spirit and living realm, her buddies willingly follow her every command.\n\nSkin Class: Summoner\nSprite Credits: Coomi</Description>
+    <Activate skinType="30697">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77ec" id="Mini Scientific Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>665</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>She was one of the pioneering scientists to work with Dr.Terrible to bring Mini M.E.R.V. to life.\n\nSkin Class: Summoner</Description>
+    <Activate skinType="30699">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77ee" id="Construction Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>666</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Off to work we go!\n\nSkin Class: Summoner</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Construction Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30701">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77f0" id="Court Jester Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins16</File>
+      <Index>53</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>This Jester lives for excitement and a smidgen of chaos mixed in, but all in good fun right? A real life of the party so be ready for this clown because the fun don't stop when they're around.\n\nSkin Class: Summoner\nSprite Credits: Coomi</Description>
+    <Activate skinType="30703">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77f2" id="Summoner - Artist Extraordinaire Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>128</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
+    <Activate skinType="30705">UnlockSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+  </Object>
+  <Object type="0x77f4" id="Summoner - Dungeon Mastermind Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>129</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
+    <Activate skinType="30707">UnlockSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+  </Object>
+  <Object type="0x77f6" id="Summoner - Future Seeker Tester Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>141</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
+    <Activate skinType="30709">UnlockSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+  </Object>
+  <Object type="0x77f8" id="Summoner - Cyber Cop Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>463</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
+    <Activate skinType="30711">UnlockSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+  </Object>
+  <Object type="0x77fa" id="Summoner - Magnificent Maestro Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>625</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Our biggest thanks to our Community Artists! Your music helps us in the toughest times!\n\nSkin Class: Summoner\nSprite Credits: Lily</Description>
+    <Activate skinType="30713">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77fc" id="Summoner - Content Master Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>646</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Our biggest thanks to our Content Creators! Your work inspires us to be better every day.</Description>
+    <Activate skinType="30715">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x77fe" id="Stone Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>667</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>First I was afraid, I was petrified... And then I realized I could still move. Huh, Craig's really bad at rituals.\n\nSkin Class: Summoner\nSprite Credits: Sues</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Stone Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30717">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7800" id="Slime Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>668</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Customize your Summoner with the Slime Skin.\n\nSkin Class: Summoner\nSprite Credits: Sues</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Slime Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30719">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <feedPower>500</feedPower>
+  </Object>
+  <Object type="0x7802" id="Exalted Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>669</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A Summoner that has reached their full potential.\n\nSkin Class: Summoner</Description>
+    <Activate skinType="30721">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7804" id="Mauve Magus Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>670</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Who said you can't summon rats with style?\n\nSkin Class: Summoner\nSprite Credits: Deplington</Description>
+    <Activate skinType="30723">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x7806" id="Night Elf Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>671</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Warriors of the night, assemble!\n\nSkin Class: Summoner</Description>
+    <Activate skinType="30725">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7808" id="Bunny Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>672</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>To tame the beasts of the wild, sometimes one must compromise with her dignity.\n\nSkin Class: Summoner</Description>
+    <Activate skinType="30727">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x780a" id="Baaard Bard Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>673</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Not to be confused with his brothers Baaaard and Baard.\n\nSkin Class: Bard\nSprite Credits: NblankFour</Description>
+    <Activate skinType="30729">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x780c" id="Season Spring Huntress Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>674</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Stories tell of a lone huntress that saved a magical forest deep within the realm from Oryx's horde. As a token of thanks the inhabitants of the forest gifted this Huntress the essence of spring.\n\nSkin Class: Huntress\nSprite Credits: Coomi</Description>
+    <Activate skinType="30731">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x780e" id="Mystery Bard Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>675</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Hold on, I was told this unlocks a random Bard skin!\n\nSprite Credits: Sturky</Description>
+    <Activate skinType="30733">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7810" id="Little Bunny Necromancer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>676</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Neither tall or strong, this insecure bunny studied the dark arts deep in their rabbit hole. Now they're ready to bonk anybody who makes fun of their small stature.\n\nSkin Class: Necromancer\nSprite Credits: Coomi</Description>
+    <Activate skinType="30735">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7812" id="Lil' Carrot Ninja Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>677</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A powerful yet benevolent summoner gave this little Carrot greater purpose from its simple dirt life before wandering off. Free to roam the realms this Carrot is searching for that same Summoner to thank them for their new life.\n\nSkin Class: Ninja\nSprite Credits: Coomi</Description>
+    <Activate skinType="30737">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7814" id="Menagerie Master Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>678</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>"Beasts unlike any I had ever seen rose from the ground, and overwhelmed the allies I had called upon."\n\nSkin Class: Summoner</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Kingdom Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30739">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7816" id="Toast Slice Archer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>679</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>You know what they say...\n\nSkin Class: Archer\nSprite Credits: Aurum</Description>
+    <Activate skinType="30741">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7818" id="Lonesome Swordswoman Samurai Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>680</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A hermit trained in the art of the blade. She wanders the world, aspiring to learn every technique there is.\n\nSkin Class: Samurai\nSprite Credits: Lily</Description>
+    <Activate skinType="30743">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x781a" id="Posessed Earring Sorcerer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>681</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>"I'm so done with hanging around!"\n\nSkin Class: Sorcerer\nSprite Credits: NblankFour</Description>
+    <Activate skinType="30745">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x781c" id="Paladuck Paladin Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>682</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Some ducklings are ugly and some... Wield Holy Seals.\n\nSkin Class: Paladin\nSprite Credits: NblankFour</Description>
+    <Activate skinType="30747">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x781e" id="Rainmaker Sorcerer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>683</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Its always good to dress for the weather. You don't want to catch a cold in that storm, or get electrocuted.\n\nSkin Class: Sorcerer\nSprite Credits: Coomi</Description>
+    <Activate skinType="30749">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7820" id="Glyph Researcher Trickster Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>684</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Can you hit me?\n\nSkin Class: Trickster\nSprite Credits: Nazoado</Description>
+    <Activate skinType="30751">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7822" id="Veteran Rogue Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>685</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Rogue\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30753">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7824" id="Veteran Archer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>686</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Archer\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30755">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7826" id="Veteran Wizard Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>687</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Wizard\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30757">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7828" id="Veteran Priest Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>688</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Priest\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30759">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x782a" id="Veteran Warrior Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>689</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Warrior\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30761">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x782c" id="Veteran Knight Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>690</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Knight\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30763">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x782e" id="Veteran Paladin Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>691</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Paladin\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30765">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7830" id="Veteran Assassin Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>692</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Assassin\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30767">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7832" id="Veteran Necromancer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>693</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Necromancer\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30769">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7834" id="Veteran Huntress Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>694</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Huntress\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30771">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7836" id="Veteran Mystic Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>695</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Mystic\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30773">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7838" id="Veteran Trickster Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>696</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Trickster\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30775">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x783a" id="Veteran Sorcerer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>697</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Sorcerer\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30777">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x783c" id="Veteran Ninja Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>698</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Ninja\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30779">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x783e" id="Veteran Samurai Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>699</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Samurai\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30781">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7840" id="Veteran Summoner Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>701</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Summoner\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30783">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7842" id="Veteran Bard Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>700</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded to those that have served in the battle against Oryx for years. We thank you for your service.\n\nSkin Class: Bard\nSprite Credits: NblankFour</Description>
+    <ExtraTooltipData>
+      <EffectInfo name="Collection" description="Veteran Skins" />
+    </ExtraTooltipData>
+    <Activate skinType="30785">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>500</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7844" id="Beefcake Paladin Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins16</File>
+      <Index>54</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Justice has been working out.\n\nSkin Class: Paladin\nSprite Credits: NblankFour</Description>
+    <Activate skinType="30787">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7846" id="Beachcake Paladin Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins16</File>
+      <Index>55</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>The gleam of his polished helmet sometimes confuses incoming ships.\n\nSkin Class: Paladin</Description>
+    <Activate skinType="30789">UnlockSkin</Activate>
+    <Consumable />
+    <BagType>7</BagType>
+    <Soulbound />
+    <feedPower>1000</feedPower>
+    <Track />
+  </Object>
+  <Object type="0x7848" id="Dousing Archer Skin">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>playerskins</File>
+      <Index>702</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Shaitan's worst enemy!\n\nSkin Class: Archer</Description>
+    <Activate skinType="30791">UnlockSkin</Activate>
     <Consumable />
     <BagType>7</BagType>
     <Soulbound />

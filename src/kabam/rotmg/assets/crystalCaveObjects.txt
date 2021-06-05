@@ -29,6 +29,7 @@
     <Texture>
       <File>crystalCaveObjects8x8</File>
       <Index>0x03</Index>
+      <AngleCorrection>1</AngleCorrection>
     </Texture>
     <AngleCorrection>1</AngleCorrection>
   </Object>
@@ -48,7 +49,7 @@
     </Texture>
     <AngleCorrection>1</AngleCorrection>
   </Object>
-  <Object type="0x2756" id="Crystal Green Shard">
+  <Object type="0x2756" id="Crystal Orange Shard">
     <Class>Projectile</Class>
     <Texture>
       <File>crystalCaveObjects8x8</File>
@@ -294,7 +295,7 @@
       <File>crystalCaveObjects8x8</File>
       <Index>0x4a</Index>
     </Texture>
-    <AngleCorrection>0</AngleCorrection>
+    <AngleCorrection>1</AngleCorrection>
   </Object>
   <Object type="0x655f" id="Yellow Small Prism">
     <Class>Projectile</Class>
@@ -468,7 +469,7 @@
     <Class>Projectile</Class>
     <Texture>
       <File>crystalCaveObjects8x8</File>
-      <Index>0x6c</Index>
+      <Index>0x79</Index>
     </Texture>
   </Object>
   <Object type="0x6575" id="White Big Spinner">
@@ -521,6 +522,7 @@
     <Defense>30</Defense>
     <StasisImmune />
     <StunImmune />
+    <SlowImmune />
     <Exp>20000</Exp>
     <ParalyzeImmune />
     <TrackLoot />
@@ -534,6 +536,17 @@
       <MultiHit />
       <Frequency>5</Frequency>
       <Amplitude>1.5</Amplitude>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Green Shard Bolt</ObjectId>
+      <Size>65</Size>
+      <Damage>160</Damage>
+      <Speed>50</Speed>
+      <LifetimeMS>3000</LifetimeMS>
+      <FaceDir />
+      <MultiHit />
+      <Frequency>1</Frequency>
+      <Amplitude>0</Amplitude>
     </Projectile>
     <HealthBarBoss radius="40" />
     <KillStat stat="ConstructKills" />
@@ -558,8 +571,8 @@
     <DisplayId>Crystal Wall</DisplayId>
     <Class>Character</Class>
     <Texture>
-      <File>xmasNexusObjects16x16</File>
-      <Index>0xf1</Index>
+      <File>crystalCaveObjects16x16</File>
+      <Index>0x4b</Index>
     </Texture>
     <NoArticle />
     <HitSound>monster/rocks_hit</HitSound>
@@ -574,13 +587,11 @@
       <Size>100</Size>
       <MultiHit />
       <PassesCover />
-      <ConditionEffect duration="1.5">Confused</ConditionEffect>
-      <ConditionEffect duration="3">Slowed</ConditionEffect>
       <LifetimeMS>200</LifetimeMS>
     </Projectile>
     <Projectile id="4">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Green Shard Bolt</ObjectId>
+      <Size>55</Size>
       <Damage>115</Damage>
       <Speed>75</Speed>
       <LifetimeMS>5000</LifetimeMS>
@@ -588,8 +599,8 @@
       <MultiHit />
     </Projectile>
     <Projectile id="5">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Green Shard Bolt</ObjectId>
+      <Size>55</Size>
       <Damage>115</Damage>
       <Speed>55</Speed>
       <LifetimeMS>5000</LifetimeMS>
@@ -599,8 +610,8 @@
       <Amplitude>0.2</Amplitude>
     </Projectile>
     <Projectile id="6">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Green Shard Bolt</ObjectId>
+      <Size>55</Size>
       <Damage>115</Damage>
       <Speed>55</Speed>
       <LifetimeMS>5000</LifetimeMS>
@@ -610,8 +621,8 @@
       <Amplitude>0.3</Amplitude>
     </Projectile>
     <Projectile id="7">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Green Shard Bolt</ObjectId>
+      <Size>55</Size>
       <Damage>115</Damage>
       <Speed>55</Speed>
       <LifetimeMS>5000</LifetimeMS>
@@ -621,8 +632,8 @@
       <Amplitude>0.5</Amplitude>
     </Projectile>
     <Projectile id="8">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Green Shard Bolt</ObjectId>
+      <Size>55</Size>
       <Damage>115</Damage>
       <Speed>55</Speed>
       <LifetimeMS>5000</LifetimeMS>
@@ -653,13 +664,12 @@
     <ParalyzeImmune />
     <TrackLoot />
     <Projectile id="0">
-      <ObjectId>Purple Lightning Bolt</ObjectId>
+      <ObjectId>Yellow Lightning Bolt</ObjectId>
       <Damage>145</Damage>
       <Speed>80</Speed>
       <Size>100</Size>
       <LifetimeMS>2500</LifetimeMS>
       <MultiHit />
-      <FaceDir />
       <ConditionEffect duration="4">Confused</ConditionEffect>
     </Projectile>
     <HealthBarBoss radius="40" />
@@ -673,7 +683,7 @@
     <Class>Character</Class>
     <Texture>
       <File>crystalCaveObjects8x8</File>
-      <Index>0x10</Index>
+      <Index>0x37</Index>
     </Texture>
     <NoArticle />
     <HitSound>monster/rocks_hit</HitSound>
@@ -705,7 +715,7 @@
     <Invincible />
     <NoMiniMap />
     <Projectile id="0">
-      <ObjectId>White Shard Bolt</ObjectId>
+      <ObjectId>Yellow Shard Bolt</ObjectId>
       <Speed>1</Speed>
       <Damage>160</Damage>
       <Size>100</Size>
@@ -714,7 +724,7 @@
       <FaceDir />
     </Projectile>
     <Projectile id="1">
-      <ObjectId>White Shard Bolt</ObjectId>
+      <ObjectId>Yellow Shard Bolt</ObjectId>
       <Speed>80</Speed>
       <Damage>160</Damage>
       <Size>100</Size>
@@ -767,19 +777,20 @@
     <MaxHitPoints>37500</MaxHitPoints>
     <Defense>30</Defense>
     <StasisImmune />
+    <StunImmune />
     <Flying />
     <TrackLoot />
     <Exp>20000</Exp>
     <Z>0.3</Z>
     <Projectile id="0">
-      <ObjectId>Crystal Shard</ObjectId>
+      <ObjectId>Red Shard Bolt</ObjectId>
       <Damage>100</Damage>
       <Speed>70</Speed>
-      <Size>100</Size>
+      <Size>90</Size>
       <LifetimeMS>800</LifetimeMS>
     </Projectile>
     <Projectile id="1">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Size>89</Size>
       <Damage>160</Damage>
       <Speed>144</Speed>
@@ -788,7 +799,7 @@
       <MultiHit />
     </Projectile>
     <Projectile id="2">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Size>144</Size>
       <Damage>160</Damage>
       <Speed>89</Speed>
@@ -797,7 +808,7 @@
       <MultiHit />
     </Projectile>
     <Projectile id="3">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Size>233</Size>
       <Damage>160</Damage>
       <Speed>55</Speed>
@@ -806,7 +817,7 @@
       <MultiHit />
     </Projectile>
     <Projectile id="4">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Size>144</Size>
       <Damage>160</Damage>
       <Speed>60</Speed>
@@ -818,7 +829,7 @@
     <KillStat stat="GodKills" />
     <DamageBasedXP />
   </Object>
-  <Object type="0x2715" id="cc">
+  <Object type="0x2715" id="Crystallised Cyclops">
     <Enemy />
     <DisplayId>Crystallised Cyclops</DisplayId>
     <Class>Character</Class>
@@ -835,12 +846,13 @@
     <Defense>30</Defense>
     <StasisImmune />
     <StunImmune />
+    <SlowImmune />
     <Exp>20000</Exp>
     <ParalyzeImmune />
     <TrackLoot />
     <Projectile id="1">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Dark Purple Shard Bolt</ObjectId>
+      <Size>80</Size>
       <Damage>160</Damage>
       <Speed>100</Speed>
       <LifetimeMS>2220</LifetimeMS>
@@ -849,7 +861,7 @@
       <MultiHit />
     </Projectile>
     <Projectile id="2">
-      <ObjectId>Stinger</ObjectId>
+      <ObjectId>Crystal Purple Shard</ObjectId>
       <Size>100</Size>
       <Damage>160</Damage>
       <Speed>100</Speed>
@@ -859,47 +871,47 @@
       <MultiHit />
     </Projectile>
     <Projectile id="3">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Purple Shard Bolt</ObjectId>
+      <Size>80</Size>
       <Damage>20</Damage>
       <Speed>20</Speed>
       <LifetimeMS>1200</LifetimeMS>
       <MultiHit />
     </Projectile>
     <Projectile id="4">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Purple Shard Bolt</ObjectId>
+      <Size>80</Size>
       <Damage>20</Damage>
       <Speed>60</Speed>
       <LifetimeMS>1200</LifetimeMS>
       <MultiHit />
     </Projectile>
     <Projectile id="5">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Purple Shard Bolt</ObjectId>
+      <Size>60</Size>
       <Damage>20</Damage>
       <Speed>120</Speed>
       <LifetimeMS>1200</LifetimeMS>
       <MultiHit />
     </Projectile>
     <Projectile id="6">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Purple Shard Bolt</ObjectId>
+      <Size>80</Size>
       <Damage>20</Damage>
       <Speed>160</Speed>
       <LifetimeMS>1200</LifetimeMS>
       <MultiHit />
     </Projectile>
     <Projectile id="7">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Size>100</Size>
+      <ObjectId>Purple Shard Bolt</ObjectId>
+      <Size>80</Size>
       <Damage>20</Damage>
       <Speed>200</Speed>
       <LifetimeMS>1200</LifetimeMS>
       <MultiHit />
     </Projectile>
     <Projectile id="8">
-      <ObjectId>pD Maw Shot 3</ObjectId>
+      <ObjectId>White small Shard</ObjectId>
       <Size>100</Size>
       <Damage>85</Damage>
       <Speed>60</Speed>
@@ -911,7 +923,7 @@
     <KillStat stat="GodKills" />
     <DamageBasedXP />
   </Object>
-  <Object type="0x2716" id="cs">
+  <Object type="0x2716" id="Crystallised Scorpion">
     <Enemy />
     <DisplayId>Crystallised Scorpion</DisplayId>
     <Class>Character</Class>
@@ -945,15 +957,15 @@
     <ParalyzeImmune />
     <TrackLoot />
     <Projectile id="0">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Damage>225</Damage>
-      <Speed>120</Speed>
-      <Size>100</Size>
+      <ObjectId>Blue Shard Bolt</ObjectId>
+      <Damage>180</Damage>
+      <Speed>90</Speed>
+      <Size>70</Size>
       <LifetimeMS>3000</LifetimeMS>
     </Projectile>
     <Projectile id="1">
-      <ObjectId>Yellow Big Spinner</ObjectId>
-      <Damage>115</Damage>
+      <ObjectId>Blue Big Spinner</ObjectId>
+      <Damage>120</Damage>
       <Speed>100</Speed>
       <Size>80</Size>
       <LifetimeMS>3000</LifetimeMS>
@@ -1053,7 +1065,7 @@
     <DeathSound>monster/stone_walls_death</DeathSound>
     <Size>100</Size>
     <ShadowSize>100</ShadowSize>
-    <MaxHitPoints>90000</MaxHitPoints>
+    <MaxHitPoints>120000</MaxHitPoints>
     <Defense>50</Defense>
     <StasisImmune />
     <StunImmune />
@@ -1157,6 +1169,25 @@
       <LifetimeMS>600</LifetimeMS>
       <FaceDir />
       <MultiHit />
+    </Projectile>
+    <Projectile id="10">
+      <ObjectId>Green Prism</ObjectId>
+      <Speed>50</Speed>
+      <Damage>90</Damage>
+      <Size>100</Size>
+      <LifetimeMS>3500</LifetimeMS>
+      <MultiHit />
+      <FaceDir />
+    </Projectile>
+    <Projectile id="11">
+      <ObjectId>Crystal Bolt</ObjectId>
+      <Speed>50</Speed>
+      <Damage>45</Damage>
+      <Size>100</Size>
+      <LifetimeMS>3500</LifetimeMS>
+      <MultiHit />
+      <FaceDir />
+      <ArmorPiercing />
     </Projectile>
     <HealthBarBoss radius="40" />
     <KillStat stat="ConstructKills" />
@@ -1392,7 +1423,7 @@
     <DisplayId>Crystal Cavern Key</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>crystalCaveObjects8x8</File>
       <Index>0x34</Index>
     </Texture>
@@ -1512,7 +1543,7 @@
     <Invincible />
     <NoMiniMap />
     <Projectile id="0">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Speed>1</Speed>
       <Damage>120</Damage>
       <Size>100</Size>
@@ -1521,7 +1552,7 @@
       <FaceDir />
     </Projectile>
     <Projectile id="1">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Speed>89</Speed>
       <Damage>120</Damage>
       <Size>100</Size>
@@ -1841,7 +1872,7 @@
     <DisplayId>GC Encounter Key</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>crystalCaveObjects8x8</File>
       <Index>0x34</Index>
     </Texture>
@@ -3126,382 +3157,6 @@
     </Texture>
     <ShadowSize>0</ShadowSize>
   </Object>
-  <Object type="0x65da" id="mcv2">
-    <Enemy />
-    <DisplayId>Crystal Entity</DisplayId>
-    <Class>Character</Class>
-    <Texture>
-      <File>crystalCaveObjects16x16</File>
-      <Index>0x10</Index>
-    </Texture>
-    <NoArticle />
-    <HitSound>monster/djinn_hit</HitSound>
-    <DeathSound>monster/stone_walls_death</DeathSound>
-    <Size>100</Size>
-    <ShadowSize>100</ShadowSize>
-    <MaxHitPoints>90000</MaxHitPoints>
-    <Defense>50</Defense>
-    <StasisImmune />
-    <StunImmune />
-    <Exp>50</Exp>
-    <ParalyzeImmune />
-    <Projectile id="0">
-      <ObjectId>Invisible</ObjectId>
-      <Size>100</Size>
-      <Damage>0</Damage>
-      <Speed>50</Speed>
-      <LifetimeMS>100</LifetimeMS>
-      <MultiHit />
-    </Projectile>
-    <Projectile id="1">
-      <ObjectId>Stinger</ObjectId>
-      <Size>80</Size>
-      <Damage>90</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>6666</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="2">
-      <ObjectId>Stinger</ObjectId>
-      <Size>100</Size>
-      <Damage>160</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="3">
-      <ObjectId>Stinger</ObjectId>
-      <Size>80</Size>
-      <Damage>90</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>3333</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>0.45</Frequency>
-      <Amplitude>0.5</Amplitude>
-    </Projectile>
-    <Projectile id="4">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>60</Size>
-      <Damage>150</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="5">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
-      <Damage>150</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>2</Frequency>
-      <Amplitude>0.2</Amplitude>
-    </Projectile>
-    <Projectile id="6">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
-      <Damage>150</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>2</Frequency>
-      <Amplitude>0.3</Amplitude>
-    </Projectile>
-    <Projectile id="7">
-      <ObjectId>Frozen Wand Icicle</ObjectId>
-      <Size>100</Size>
-      <Damage>150</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>2</Frequency>
-      <Amplitude>0.5</Amplitude>
-    </Projectile>
-    <Projectile id="10">
-      <ObjectId>XMAS Lightning Bolt</ObjectId>
-      <Size>100</Size>
-      <Damage>90</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>2</Frequency>
-      <Amplitude>2</Amplitude>
-      <ArmorPiercing />
-    </Projectile>
-    <Projectile id="11">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>80</Size>
-      <Damage>90</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>6666</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="12">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>100</Size>
-      <Damage>120</Damage>
-      <Speed>50</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="13">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>100</Size>
-      <Damage>120</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>2500</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>0.3</Frequency>
-      <Amplitude>1.3</Amplitude>
-    </Projectile>
-    <Projectile id="14">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>100</Size>
-      <Damage>120</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>2500</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>0.5</Frequency>
-      <Amplitude>0.8</Amplitude>
-    </Projectile>
-    <Projectile id="15">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>100</Size>
-      <Damage>120</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>2500</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>0.8</Frequency>
-      <Amplitude>0.5</Amplitude>
-    </Projectile>
-    <Projectile id="16">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>100</Size>
-      <Damage>120</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>2500</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>1.3</Frequency>
-      <Amplitude>0.3</Amplitude>
-    </Projectile>
-    <Projectile id="17">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>80</Size>
-      <Damage>90</Damage>
-      <Speed>30</Speed>
-      <LifetimeMS>6666</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="18">
-      <ObjectId>Dark Shard</ObjectId>
-      <Size>130</Size>
-      <Damage>160</Damage>
-      <Speed>50</Speed>
-      <LifetimeMS>4000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="19">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>120</Size>
-      <Damage>150</Damage>
-      <Speed>50</Speed>
-      <LifetimeMS>1000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="20">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>100</Size>
-      <Damage>150</Damage>
-      <Speed>50</Speed>
-      <LifetimeMS>600</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="21">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>80</Size>
-      <Damage>150</Damage>
-      <Speed>40</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>5</Frequency>
-      <Amplitude>0.15</Amplitude>
-    </Projectile>
-    <Projectile id="22">
-      <ObjectId>WR Bullet</ObjectId>
-      <Size>60</Size>
-      <Damage>150</Damage>
-      <Speed>60</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Frequency>3</Frequency>
-      <Amplitude>0.15</Amplitude>
-    </Projectile>
-    <Projectile id="23">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>40</Size>
-      <Damage>1</Damage>
-      <Speed>0</Speed>
-      <LifetimeMS>220</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="24">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>60</Size>
-      <Damage>1</Damage>
-      <Speed>0</Speed>
-      <LifetimeMS>220</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="25">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>80</Size>
-      <Damage>1</Damage>
-      <Speed>0</Speed>
-      <LifetimeMS>220</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="26">
-      <ObjectId>White Big Spinner</ObjectId>
-      <Size>100</Size>
-      <Damage>150</Damage>
-      <Speed>0</Speed>
-      <LifetimeMS>5000</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-      <Boomerang />
-    </Projectile>
-    <Projectile id="8">
-      <ObjectId>Fractal Telegrapher</ObjectId>
-      <Size>100</Size>
-      <Damage>1</Damage>
-      <Speed>0</Speed>
-      <LifetimeMS>200</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="9">
-      <ObjectId>Fractal Telegrapher</ObjectId>
-      <Size>100</Size>
-      <Damage>1</Damage>
-      <Speed>0</Speed>
-      <LifetimeMS>600</LifetimeMS>
-      <FaceDir />
-      <MultiHit />
-    </Projectile>
-    <KillStat stat="ConstructKills" />
-  </Object>
-  <Object type="0x65db" id="Crystal test">
-    <Enemy />
-    <Class>Character</Class>
-    <Texture>
-      <File>crystalCaveObjects16x16</File>
-      <Index>0x38</Index>
-    </Texture>
-    <AltTexture id="1">
-      <Texture>
-        <File>crystalCaveObjects16x16</File>
-        <Index>0x39</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="2">
-      <Texture>
-        <File>crystalCaveObjects16x16</File>
-        <Index>0x3a</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="3">
-      <Texture>
-        <File>crystalCaveObjects16x16</File>
-        <Index>0x3b</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="4">
-      <Texture>
-        <File>invisible</File>
-        <Index>0</Index>
-      </Texture>
-    </AltTexture>
-    <AltTexture id="5">
-      <Texture>
-        <File>crystalCaveObjects16x16</File>
-        <Index>0x3c</Index>
-      </Texture>
-    </AltTexture>
-    <HitSound>monster/medusa_hit</HitSound>
-    <DeathSound>monster/medusa_death</DeathSound>
-    <Size>120</Size>
-    <ShadowSize>50</ShadowSize>
-    <MaxHitPoints>50000</MaxHitPoints>
-    <Defense>30</Defense>
-    <Flying />
-    <Z>0.3</Z>
-    <Projectile id="0">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Damage>100</Damage>
-      <Speed>70</Speed>
-      <Size>100</Size>
-      <LifetimeMS>800</LifetimeMS>
-    </Projectile>
-    <Projectile id="1">
-      <ObjectId>Crystal Green Shard</ObjectId>
-      <Size>55</Size>
-      <Damage>160</Damage>
-      <Speed>89</Speed>
-      <LifetimeMS>1700</LifetimeMS>
-      <Boomerang />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="2">
-      <ObjectId>Crystal Green Shard</ObjectId>
-      <Size>89</Size>
-      <Damage>160</Damage>
-      <Speed>55</Speed>
-      <LifetimeMS>1700</LifetimeMS>
-      <Boomerang />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="3">
-      <ObjectId>Crystal Green Shard</ObjectId>
-      <Size>144</Size>
-      <Damage>160</Damage>
-      <Speed>34</Speed>
-      <LifetimeMS>1700</LifetimeMS>
-      <Boomerang />
-      <MultiHit />
-    </Projectile>
-    <Projectile id="4">
-      <ObjectId>Crystal Green Shard</ObjectId>
-      <Size>144</Size>
-      <Damage>160</Damage>
-      <Speed>60</Speed>
-      <LifetimeMS>600</LifetimeMS>
-      <MultiHit />
-    </Projectile>
-    <KillStat stat="ConstructKills" />
-  </Object>
   <Object type="0x65dc" id="Crystal snipe">
     <Enemy />
     <Class>Character</Class>
@@ -3517,7 +3172,7 @@
     <Flying />
     <Z>0.3</Z>
     <Projectile id="0">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Size>144</Size>
       <Damage>160</Damage>
       <Speed>2</Speed>
@@ -3525,55 +3180,13 @@
       <MultiHit />
     </Projectile>
     <Projectile id="1">
-      <ObjectId>Crystal Green Shard</ObjectId>
+      <ObjectId>Crystal Orange Shard</ObjectId>
       <Size>144</Size>
       <Damage>160</Damage>
       <Speed>200</Speed>
       <LifetimeMS>5000</LifetimeMS>
       <MultiHit />
     </Projectile>
-  </Object>
-  <Object type="0x65de" id="newCs">
-    <Enemy />
-    <DisplayId>Crystallised Scorpion</DisplayId>
-    <Class>Character</Class>
-    <AnimatedTexture>
-      <File>crystalCaveChars16x16</File>
-      <Index>5</Index>
-    </AnimatedTexture>
-    <AltTexture id="1">
-      <AnimatedTexture>
-        <File>crystalCaveChars16x16</File>
-        <Index>9</Index>
-      </AnimatedTexture>
-    </AltTexture>
-    <AltTexture id="2">
-      <Texture>
-        <File>invisible</File>
-        <Index>0</Index>
-      </Texture>
-    </AltTexture>
-    <NoArticle />
-    <HitSound>monster/rocks_hit</HitSound>
-    <DeathSound>monster/rocks_death</DeathSound>
-    <Size>100</Size>
-    <ShadowSize>0</ShadowSize>
-    <MaxHitPoints>37500</MaxHitPoints>
-    <Defense>30</Defense>
-    <StasisImmune />
-    <StunImmune />
-    <Exp>5000</Exp>
-    <ParalyzeImmune />
-    <Projectile id="0">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Damage>225</Damage>
-      <Speed>120</Speed>
-      <Size>100</Size>
-      <LifetimeMS>3000</LifetimeMS>
-    </Projectile>
-    <HealthBarBoss radius="30" />
-    <KillStat stat="ConstructKills" />
-    <DamageBasedXP />
   </Object>
   <Object type="0x65df" id="Split Scorpion">
     <Enemy />
@@ -3678,14 +3291,14 @@
       <File>crystalCaveChars8x8</File>
       <Index>7</Index>
     </AnimatedTexture>
-    <Size>0</Size>
+    <Size>100</Size>
     <ShadowSize>0</ShadowSize>
     <Invincible />
     <Projectile id="0">
-      <ObjectId>Crystal Shard</ObjectId>
-      <Damage>175</Damage>
+      <ObjectId>Blue Shard Bolt</ObjectId>
+      <Damage>100</Damage>
       <Speed>120</Speed>
-      <Size>100</Size>
+      <Size>60</Size>
       <LifetimeMS>3000</LifetimeMS>
     </Projectile>
   </Object>

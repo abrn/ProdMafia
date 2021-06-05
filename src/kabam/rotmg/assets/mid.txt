@@ -379,8 +379,8 @@
     <Enemy />
     <Class>Character</Class>
     <AnimatedTexture>
-      <File>chars8x8rMid</File>
-      <Index>0x00</Index>
+      <File>spriteWorldChars8x8</File>
+      <Index>0</Index>
     </AnimatedTexture>
     <HitSound>monster/sprites_hit</HitSound>
     <DeathSound>monster/sprites_death</DeathSound>
@@ -391,7 +391,7 @@
     <Flying />
     <SpawnProb>1.0</SpawnProb>
     <Projectile id="0">
-      <ObjectId>Red Fire</ObjectId>
+      <ObjectId>Orange Sprite Magic</ObjectId>
       <Damage>17</Damage>
       <Speed>50</Speed>
       <LifetimeMS>4000</LifetimeMS>
@@ -403,8 +403,8 @@
     <Enemy />
     <Class>Character</Class>
     <AnimatedTexture>
-      <File>chars8x8rMid</File>
-      <Index>0x01</Index>
+      <File>spriteWorldChars8x8</File>
+      <Index>5</Index>
     </AnimatedTexture>
     <HitSound>monster/sprites_hit</HitSound>
     <DeathSound>monster/sprites_death</DeathSound>
@@ -415,7 +415,7 @@
     <Flying />
     <SpawnProb>1.0</SpawnProb>
     <Projectile id="0">
-      <ObjectId>Ice Spinner</ObjectId>
+      <ObjectId>Blue Sprite Twirl</ObjectId>
       <Damage>14</Damage>
       <Speed>80</Speed>
       <LifetimeMS>1800</LifetimeMS>
@@ -429,8 +429,8 @@
     <Enemy />
     <Class>Character</Class>
     <AnimatedTexture>
-      <File>chars8x8rMid</File>
-      <Index>0x02</Index>
+      <File>spriteWorldChars8x8</File>
+      <Index>3</Index>
     </AnimatedTexture>
     <HitSound>monster/sprites_hit</HitSound>
     <DeathSound>monster/sprites_death</DeathSound>
@@ -441,7 +441,7 @@
     <Flying />
     <SpawnProb>1.0</SpawnProb>
     <Projectile id="0">
-      <ObjectId>Green Magic</ObjectId>
+      <ObjectId>Cyan Sprite Magic</ObjectId>
       <Damage>18</Damage>
       <Speed>50</Speed>
       <LifetimeMS>4000</LifetimeMS>

@@ -297,7 +297,7 @@
   <Object type="0x8da" id="Admin Prism">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>lofiObj6</File>
       <Index>0xb0</Index>
     </Texture>
@@ -456,8 +456,11 @@
     <KillStat stat="StructureKills" />
   </Object>
   <Object type="0x0752" id="Stat Baloon">
+    <DisplayId>Stat Balloon</DisplayId>
     <Class>Character</Class>
     <Enemy />
+    <HitSound>weapon/sprite_wand</HitSound>
+    <DeathSound>weapon/hells_fire_wand</DeathSound>
     <AnimatedTexture>
       <File>chars16x16dEncounters2</File>
       <Index>54</Index>

@@ -64,7 +64,7 @@ package com.company.assembleegameclient.ui.guild {
             "num":param1,
             "offset":param2
          };
-         MoreObjectUtil.addToObject(_loc5_,_loc6_.getCredentials());
+         MoreObjectUtil.addToObject(_loc5_,_loc6_.getAccessToken());
          this.listClient_ = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
          this.listClient_.setMaxRetries(2);
          this.listClient_.complete.addOnce(this.onComplete);

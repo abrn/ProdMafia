@@ -24,8 +24,10 @@ package kabam.rotmg.core.service {
          this.client.setMaxRetries(2);
          this.client.complete.addOnce(this.onComplete);
          this.client.sendRequest("/unityNews/getNews",{
-            "guid":"",
-            "password":""
+            "accessToken": this.account.getAccessToken(),
+            "game_net":"Unity",
+            "play_platform":"Unity",
+            "game_net_user_id":""
          },true);
       }
       

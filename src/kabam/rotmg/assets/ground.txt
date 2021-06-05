@@ -1104,6 +1104,13 @@
     <Sink />
     <NoWalk />
   </Ground>
+  <Ground type="0x1f5" id="Dark Water Walkable">
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0xbc</Index>
+    </Texture>
+    <Sink />
+  </Ground>
   <Ground type="0xbd" id="Light Sand">
     <Texture>
       <File>lofiEnvironment</File>
@@ -1278,6 +1285,7 @@
       <Index>0xff</Index>
     </Texture>
     <NoWalk />
+    <Alpha />
     <CompositePriority>-1</CompositePriority>
   </Ground>
   <Ground type="0xff" id="Empty">

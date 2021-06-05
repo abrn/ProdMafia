@@ -51,6 +51,7 @@ import com.company.assembleegameclient.objects.particles.ThrowEffect;
 import com.company.assembleegameclient.objects.particles.ThunderEffect;
 import com.company.assembleegameclient.objects.thrown.ThrowProjectileEffect;
 import com.company.assembleegameclient.parameters.Parameters;
+import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.sound.SoundEffectLibrary;
 import com.company.assembleegameclient.ui.PicView;
 import com.company.assembleegameclient.ui.dialogs.Dialog;
@@ -176,7 +177,7 @@ import kabam.rotmg.messaging.impl.incoming.TradeRequested;
 import kabam.rotmg.messaging.impl.incoming.TradeStart;
 import kabam.rotmg.messaging.impl.incoming.ForgeUnlockedBlueprints;
 import kabam.rotmg.messaging.impl.incoming.UnlockInformation;
-import kabam.rotmg.messaging.impl.incoming.UnlockNewSlot;
+import kabam.rotmg.messaging.impl.outgoing.ShootAckCounter;
 import kabam.rotmg.messaging.impl.incoming.Update;
 import kabam.rotmg.messaging.impl.incoming.VaultContent;
 import kabam.rotmg.messaging.impl.incoming.VerifyEmail;
@@ -256,11 +257,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 
    private static const MAX_RECONNECT_ATTEMPTS:int = 5;
 
-   public static var connectionGuid:String = "";
-
    public static var lastConnectionFailureMessage:String = "";
-
-   public static var lastConnectionFailureID:String = "";
 
 
    private var serverFull_:Boolean = false;
@@ -436,8 +433,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       _loc2_.name = "*Client*";
       _loc2_.text = "chat.connectingTo";
       var _loc1_:String = server_.name;
-      if(_loc1_ == "{\"text\":\"server.vault\"}") {
-         _loc1_ = "server.vault";
+      if(_loc1_ == "{\"t\":\"s.vault\"}") {
+         _loc1_ = "Vault";
       }
       _loc1_ = LineBuilder.getLocalizedStringFromKey(_loc1_);
       _loc2_.tokens = {"serverName":_loc1_};
@@ -487,13 +484,15 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       serverConnection.sendMessage(_loc3_);
    }
 
-   override public function enemyHit(param1:int, param2:int, param3:int, param4:Boolean) : void {
-      var _loc5_:EnemyHit = this.messages.require(25) as EnemyHit;
-      _loc5_.time_ = param1;
-      _loc5_.bulletId_ = param2;
-      _loc5_.targetId_ = param3;
-      _loc5_.kill_ = param4;
-      serverConnection.sendMessage(_loc5_);
+   override public function enemyHit(param1:int, param2:int, param3:int,
+                                     param4:Boolean, ownerId:int, containerType:int) : void {
+      var pkt:EnemyHit = this.messages.require(25) as EnemyHit;
+      pkt.time_ = param1;
+      pkt.bulletId_ = param2;
+      pkt.targetId_ = param3;
+      pkt.kill_ = param4;
+      pkt.ownerId = ownerId;
+      serverConnection.sendMessage(pkt);
    }
 
    override public function otherHit(param1:int, param2:int, param3:int, param4:int) : void {
@@ -617,7 +616,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       }
       var _loc5_:int = param1.equipment_[param2];
       var _loc4_:XML = ObjectLibrary.xmlLibrary_[_loc5_];
-      if(_loc4_ && !param1.isPaused && ("Consumable" in _loc4_ || "InvUse" in _loc4_)) {
+      if(_loc4_ && ("Consumable" in _loc4_ || "InvUse" in _loc4_)) {
          if(!this.validStatInc(_loc5_,param1)) {
             this.addTextLine.dispatch(ChatMessage.make("",_loc4_.attribute("id") + " not consumed. Already at Max."));
             return false;
@@ -926,7 +925,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       map.map(EXALTATION_REDEEM_INFO).toMessage(ExaltationRedeemInfo);
       map.map(FORGE_RESULT).toMessage(ForgeResult);
       map.map(CHANGE_ALLY_SHOOT).toMessage(ChangeAllyShoot);
-      map.map(UNLOCK_NEW_SLOT).toMessage(UnlockNewSlot);
+      map.map(SHOOTACK_COUNTER).toMessage(ShootAckCounter);
       map.map(EXALTATION_BONUS_CHANGED).toMessage(ExaltationBonusChanged).toMethod(this.onExaltationBonusChanged);
       map.map(FORGE_UNLOCKED_BLUEPRINTS).toMessage(ForgeUnlockedBlueprints).toMethod(this.onForgeUnlockedBlueprints);
       map.map(VAULT_CONTENT).toMessage(VaultContent).toMethod(this.onVaultContent);
@@ -1014,7 +1013,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       var _loc6_:* = undefined;
       var _loc7_:int = 0;
       var _loc9_:int = 0;
-      if(param3 && !param1.isPaused && "SlotType" in param3) {
+      if(param3 && "SlotType" in param3) {
          _loc8_ = param3.SlotType;
          _loc6_ = param1.slotTypes_.slice(0,4);
          _loc7_ = 0;
@@ -1043,7 +1042,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       var _loc5_:int = 0;
       var _loc9_:* = -1;
       var _loc6_:* = -1;
-      if(param3 && !param3.isPaused) {
+      if(param3) {
          _loc9_ = Number(param3.x_);
          _loc6_ = Number(param3.y_);
       }
@@ -1233,17 +1232,17 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       map.unmap(FORGE_UNLOCKED_BLUEPRINTS);
       map.unmap(QUEUE_CANCEL);
       map.unmap(CHANGE_ALLY_SHOOT);
-      map.unmap(UNLOCK_NEW_SLOT);
+      map.unmap(SHOOTACK_COUNTER);
    }
 
    private function encryptConnection() : void {
-      serverConnection.setOutgoingCipher(Crypto.getCipher("rc4",Parameters.RANDOM1_BA));
-      serverConnection.setIncomingCipher(Crypto.getCipher("rc4",Parameters.RANDOM2_BA));
+      serverConnection.setOutgoingCipher(Crypto.getCipher("rc4",Parameters.OUTGOING_BA));
+      serverConnection.setIncomingCipher(Crypto.getCipher("rc4",Parameters.INCOMING_BA));
    }
 
    private function setChatEncryption() : void {
-      this.chatServerConnection.setOutgoingCipher(Crypto.getCipher("rc4",Parameters.RANDOM1_BA));
-      this.chatServerConnection.setIncomingCipher(Crypto.getCipher("rc4",Parameters.RANDOM2_BA));
+      this.chatServerConnection.setOutgoingCipher(Crypto.getCipher("rc4",Parameters.OUTGOING_BA));
+      this.chatServerConnection.setIncomingCipher(Crypto.getCipher("rc4",Parameters.INCOMING_BA));
    }
 
    public function create() : void {
@@ -1320,29 +1319,26 @@ public class GameServerConnectionConcrete extends GameServerConnection {
    public function onConnected() : void {
       this.isNexusing = false;
       this.encryptConnection();
-      var _loc1_:Account = StaticInjectorContext.getInjector().getInstance(Account);
+      var account:Account = StaticInjectorContext.getInjector().getInstance(Account);
       this.addTextLine.dispatch(ChatMessage.make("*Client*","chat.connected"));
-      var _loc2_:Hello = this.messages.require(HELLO) as Hello;
-      _loc2_.buildVersion_ = Parameters.CLIENT_VERSION;
-      _loc2_.gameId_ = gameId_ == Parameters.NEXUS_GAMEID &&
+      var hello:Hello = this.messages.require(HELLO) as Hello;
+      hello.buildVersion_ = Parameters.CLIENT_VERSION;
+      hello.gameId_ = gameId_ == Parameters.NEXUS_GAMEID &&
               Parameters.data.tutorialMode && !Parameters.isGoto ?
                       Parameters.TUTORIAL_GAMEID : gameId_;
       Parameters.isGoto = false;
-      _loc2_.guid_ = this.rsaEncrypt(_loc1_.getUserId());
-      _loc2_.password_ = this.rsaEncrypt(_loc1_.getPassword());
-      _loc2_.secret_ = this.rsaEncrypt(_loc1_.getSecret());
-      _loc2_.keyTime_ = keyTime_;
-      _loc2_.key_.length = 0;
-      this.key_ && _loc2_.key_.writeBytes(this.key_);
-      _loc2_.mapJSON_ = mapJSON_ == null?"":this.mapJSON_;
-      _loc2_.entrytag_ = _loc1_.getEntryTag();
-      _loc2_.gameNet = "rotmg";
-      _loc2_.gameNetUserId = _loc1_.gameNetworkUserId();
-      _loc2_.playPlatform = "rotmg";
-      _loc2_.platformToken = _loc1_.getPlatformToken();
-      _loc2_.userToken = _loc1_.getToken();
-      _loc2_.previousConnectionGuid = connectionGuid;
-      serverConnection.sendMessage(_loc2_);
+      hello.accessToken = account.getAccessToken();
+      hello.keyTime_ = keyTime_;
+      hello.key_.length = 0;
+      this.key_ && hello.key_.writeBytes(this.key_);
+      hello.mapJSON_ = mapJSON_ == null?"":this.mapJSON_;
+      hello.entrytag_ = account.getEntryTag();
+      hello.gameNet = "rotmg";
+      hello.gameNetUserId = account.gameNetworkUserId();
+      hello.playPlatform = "rotmg";
+      hello.platformToken = account.getPlatformToken();
+      hello.userToken = Parameters.data.clientToken;
+      serverConnection.sendMessage(hello);
    }
 
    private function onCreateSuccess(param1:CreateSuccess) : void {
@@ -1613,39 +1609,49 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 
    private function onNotification(param1:Notification) : void {
       var _loc2_:LineBuilder = null;
-      var _loc3_:GameObject = this.gs_.map.goDict_[param1.objectId_];
-      if(_loc3_) {
-         _loc2_ = LineBuilder.fromJSON(param1.message);
-         if(Parameters.data.ignoreStatusText && _loc2_.key == "server.no_effect") {
-            return;
-         }
-         var _loc4_:* = _loc2_.key;
-         switch(_loc4_) {
-            case "server.plus_symbol":
-               param1.message = "+" + _loc2_.tokens.amount;
-               break;
-            case "server.no_effect":
-               param1.message = "No Effect";
-               break;
-            case "server.class_quest_complete":
-               param1.message = "Class Quest Completed!";
-               break;
-            case "server.quest_complete":
-               param1.message = "Quest Complete!";
-               break;
-            case "blank":
-               param1.message = _loc2_.tokens.data;
-         }
-         if(_loc3_.objectId_ == this.player.objectId_) {
-            if(param1.message == "Quest Complete!") {
-               this.gs_.map.quest_.completed();
-            } else if(_loc2_.key == "server.plus_symbol" && param1.color_ == 65280) {
-               this.player.addHealth(_loc2_.tokens.amount);
+      if (param1.effect == Notification.OBJECT_STATUS_TEXT) {
+         var _loc3_:GameObject = this.gs_.map.goDict_[param1.objectId_];
+         if(_loc3_) {
+            _loc2_ = LineBuilder.fromJSON(param1.message);
+            if(Parameters.data.ignoreStatusText && _loc2_.key == "s.no_effect") {
+               return;
             }
-            this.makeNotification(param1.message,_loc3_,param1.color_,1000);
-         } else if(_loc3_.props_.isEnemy_ || !Parameters.data.noAllyNotifications) {
-            this.makeNotification(param1.message,_loc3_,param1.color_,1000);
+            var _loc4_:* = _loc2_.key;
+            switch(_loc4_) {
+               case "s.plus_symbol":
+                  param1.message = "+" + _loc2_.tokens.amount;
+                  break;
+               case "s.no_effect":
+                  param1.message = "No Effect";
+                  break;
+               case "s.class_quest_complete":
+                  param1.message = "Class Quest Completed!";
+                  break;
+               case "s.quest_complete":
+                  param1.message = "Quest Complete!";
+                  break;
+               case "blank":
+                  param1.message = _loc2_.tokens.data;
+            }
+            if(_loc3_.objectId_ == this.player.objectId_) {
+               if(param1.message == "Quest Complete!") {
+                  this.gs_.map.quest_.completed();
+               } else if(_loc2_.key == "s.plus_symbol" && param1.color == 65280) {
+                  this.player.addHealth(_loc2_.tokens.amount);
+               }
+               this.makeNotification(param1.message, _loc3_, param1.color,1000);
+            } else if(_loc3_.props_.isEnemy_ || !Parameters.data.noAllyNotifications) {
+               this.makeNotification(param1.message,_loc3_, param1.color,1000);
+            }
          }
+      } else {
+         if (param1.message != "giftChestOccupied")
+            this.addTextLine.dispatch(ChatMessage.make("",
+                 param1.message.indexOf("}") != -1 ?
+                         LineBuilder.fromJSON(param1.message) ?
+                                 LineBuilder.fromJSON(param1.message).getString() :
+                                 "" :
+                         param1.message))
       }
    }
 
@@ -2570,18 +2576,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       if(Parameters.reconNexus) {
          Parameters.reconNexus.charId_ = this.charId_;
       }
-      var _loc6_:* = param1.clientXML_;
-      var _loc10_:int = 0;
-      var _loc9_:* = param1.clientXML_;
-      for each(_loc7_ in param1.clientXML_) {
-         this.parseXML(_loc7_);
-      }
-      var _loc4_:* = param1.extraXML_;
-      var _loc12_:int = 0;
-      var _loc11_:* = param1.extraXML_;
-      for each(_loc5_ in param1.extraXML_) {
-         this.parseXML(_loc5_);
-      }
       this.closeDialogs.dispatch();
       this.gs_.applyMapInfo(param1);
       this.rand_ = new Random(param1.fp_);
@@ -2615,7 +2609,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       } else {
          this.load();
       }
-      connectionGuid = param1.connectionGuid_;
       this.gs_.deathOverlay = new Bitmap();
       this.gs_.addChild(this.gs_.deathOverlay);
       Parameters.ignoredShotCount = 0;
@@ -2704,7 +2697,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
       }
       var _loc3_:AOEEffect = new AOEEffect(param1.pos_.toPoint(),param1.radius_,param1.color_);
       gs_.map.addObj(_loc3_,param1.pos_.x_,param1.pos_.y_);
-      if(this.player.isInvincible || this.player.isPaused) {
+      if(this.player.isInvincible) {
          this.aoeAck(gs_.lastUpdate_,this.player.x_,this.player.y_);
          return;
       }
@@ -2935,7 +2928,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 
    private function onFailure(param1:Failure) : void {
       lastConnectionFailureMessage = param1.errorDescription_;
-      lastConnectionFailureID = param1.errorConnectionId_;
       this.serverFull_ = false;
       var _loc2_:* = int(param1.errorId_) - 4;
       switch(_loc2_) {

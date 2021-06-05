@@ -144,7 +144,7 @@ package com.company.assembleegameclient.screens {
       
       private function logGameMode() : void {
          var _loc2_:AppEngineClient = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          _loc1_.gameMode = this.seasonalEventModel.isChallenger != 1?"Legacy":"Challenger";
          _loc1_.seasonID = this.seasonalEventModel.seasonTitle;
          _loc2_.sendRequest("/log/logGameModePlayed",_loc1_);

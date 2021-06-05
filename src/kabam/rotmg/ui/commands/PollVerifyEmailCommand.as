@@ -29,7 +29,7 @@ package kabam.rotmg.ui.commands {
       public function execute() : void {
          this._aeClient = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
          this._params = {};
-         MoreObjectUtil.addToObject(this._params,this.account.getCredentials());
+         MoreObjectUtil.addToObject(this._params,this.account.getAccessToken());
          this.setupTimer();
       }
       

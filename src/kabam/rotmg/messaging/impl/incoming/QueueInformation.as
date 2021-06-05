@@ -2,10 +2,7 @@ package kabam.rotmg.messaging.impl.incoming {
    import flash.utils.IDataInput;
    
    public class QueueInformation extends IncomingMessage {
-       
-      
       public var currentPosition_:uint;
-      
       public var maxPosition_:uint;
       
       public function QueueInformation(param1:uint, param2:Function) {

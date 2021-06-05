@@ -29,7 +29,7 @@ package kabam.rotmg.account.securityQuestions.tasks {
       private function makeDataPacket() : Object {
          var _loc1_:* = {};
          _loc1_.answers = this.data.answers.join("|");
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         MoreObjectUtil.addToObject(_loc1_,this.account.getAccessToken());
          return _loc1_;
       }
       

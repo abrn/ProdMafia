@@ -3487,7 +3487,7 @@
   <Object type="0x7ffd" id="Giant Vampire Bat Pet Stone">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="0">
       <File>lofiObj3</File>
       <Index>0x59b</Index>
     </Texture>
@@ -3573,7 +3573,7 @@
   <Object type="0x7f9a" id="Christmas Tree Pet Stone">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="0">
       <File>d2LofiObjEmbed</File>
       <Index>0x06</Index>
     </Texture>
@@ -4841,7 +4841,7 @@
   <Object type="0x19cf" id="Mini Paper Lantern Pet Stone">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="0">
       <File>d2LofiObjEmbed</File>
       <Index>0x26</Index>
     </Texture>
@@ -16386,6 +16386,1267 @@
     <SlotType>10</SlotType>
     <Description>Big, big pingus coming for your...demise.\n\nSprite Credits: CrystalPX\n\nUnlocks Big Pingus Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
     <Activate skinType="30373">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76a7" id="Zodiac Ox">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Farm</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Zodiac Ox Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76a8" id="Zodiac Ox Pet Skin">
+    <PetSkin />
+    <DisplayId>Zodiac Ox</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Farm</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>166</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76a9" id="Zodiac Ox Pet Stone">
+    <DisplayId>Zodiac Ox Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>166</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>You can't trick me! I will flatten you to the ground!\n\nSprite Credits: TLMaelstrom\n\nUnlocks Zodiac Ox Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30376">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Mini 'Odonna" type="0x76aa">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Mini 'Odonna Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76ab" id="Mini 'Odonna Pet Skin">
+    <PetSkin />
+    <DisplayId>Mini 'Odonna</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>272</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76ac" id="Mini 'Odonna Pet Stone">
+    <DisplayId>Mini 'Odonna Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>272</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>"Well, anyone willing to explain?" - Dr Terrible, dumbfounded at the existence of this miniature menace.\n\nSprite Credits: TLMaelstrom\n\nUnlocks Mini 'Odonna Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30379">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Lil' Forest Harpy" type="0x76ad">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Humanoid</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Lil' Forest Harpy Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76ae" id="Lil' Forest Harpy Pet Skin">
+    <PetSkin />
+    <DisplayId>Lil' Forest Harpy</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Humanoid</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>273</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76af" id="Lil' Forest Harpy Pet Stone">
+    <DisplayId>Lil' Forest Harpy Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>273</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A curious young harpy. Though her wings are small yet, she has a big aspiration for the outside world.\n\nSprite Credits: Beige\n\nUnlocks Lil' Forest Harpy Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30382">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76b0" id="Valentine Cupcake">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Valentine Cupcake Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76b1" id="Valentine Cupcake Pet Skin">
+    <PetSkin />
+    <DisplayId>Valentine Cupcake</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>167</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76b2" id="Valentine Cupcake Pet Stone">
+    <DisplayId>Valentine Cupcake Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>167</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>The sweetest treat for your sweetest lover!\n\nSprite Credits: Tyii\n\nUnlocks Valentine Cupcake Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30385">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76b3" id="Lovey Teddy">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Lovey Teddy Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76b4" id="Lovey Teddy Pet Skin">
+    <PetSkin />
+    <DisplayId>Lovey Teddy</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>168</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76b5" id="Lovey Teddy Pet Stone">
+    <DisplayId>Lovey Teddy Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>168</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>Packaged with love, kisses and hugs!\n\nSprite Credits: Tyii\n\nUnlocks Lovey Teddy Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30388">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76b6" id="Android Companion">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Automaton</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Android Companion Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76b7" id="Android Companion Pet Skin">
+    <PetSkin />
+    <DisplayId>Android Companion</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Automaton</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>169</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76b8" id="Android Companion Pet Stone">
+    <DisplayId>Android Companion Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>169</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>Programmed to be clingy and overprotective but most importantly zap everyone except you. The best companion!\n\nSprite Credits: Coomi\n\nUnlocks Android Companion Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30391">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76b9" id="Nightray Pegasus">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Farm</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Nightray Pegasus Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76ba" id="Nightray Pegasus Pet Skin">
+    <PetSkin />
+    <DisplayId>Nightray Pegasus</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Farm</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>170</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76bb" id="Nightray Pegasus Pet Stone">
+    <DisplayId>Nightray Pegasus Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>170</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>When this alluring dark pegasus runs through the night sky, people often mistake it for a blue shooting star.\n\nSprite Credits: Beige\n\nUnlocks Nightray Pegasus Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30394">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76bc" id="Glorious Pegasus">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Farm</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Glorious Pegasus Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76bd" id="Glorious Pegasus Pet Skin">
+    <PetSkin />
+    <DisplayId>Glorious Pegasus</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Farm</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>171</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76be" id="Glorious Pegasus Pet Stone">
+    <DisplayId>Glorious Pegasus Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>171</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>The pullers of the chariot ridden by war gods. It is said that this pegasus will fly down along with the beam of light shining from the residence where the celestial beings live when Armageddon begins.\n\nSprite Credits: Beige\n\nUnlocks Glorious Pegasus Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30397">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76bf" id="Forest Harpy">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Humanoid</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Forest Harpy Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76c0" id="Forest Harpy Pet Skin">
+    <PetSkin />
+    <DisplayId>Forest Harpy</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Humanoid</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>172</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76c1" id="Forest Harpy Pet Stone">
+    <DisplayId>Forest Harpy Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>172</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>A full-fledged harpy, one of the secret species in the realm, decided to go out of the hidden habitat of her tribe to see the outside world. If you try to listen closely in the woods, you might hear her hummings.\n\nSprite Credits: Beige\n\nUnlocks Forest Harpy Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30400">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76c2" id="Helicopter Penguin">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Penguin</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Helicopter Penguin Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76c3" id="Helicopter Penguin Pet Skin">
+    <PetSkin />
+    <DisplayId>Helicopter Penguin</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Penguin</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>173</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76c4" id="Helicopter Penguin Pet Stone">
+    <DisplayId>Helicopter Penguin Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>173</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>Some penguins ride on tanks, Santa's sleds, as well as construction vehicles... can there also be a penguin who mastered maneuvering helicopters? The answer is ...Yes!\n\nSprite Credits: Beige\n\nUnlocks Helicopter Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30403">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76c5" id="Infernal Archdragon">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Reptile</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Infernal Archdragon Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76c6" id="Infernal Archdragon Pet Skin">
+    <PetSkin />
+    <DisplayId>Infernal Archdragon</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Reptile</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>174</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76c7" id="Infernal Archdragon Pet Stone">
+    <DisplayId>Infernal Archdragon Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>174</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>A demonic dragon born from the bottom of the abyss that burns the prey to the bones with the hellish purple flame and devours its soul. In the infernal realm, the one who becomes the supreme ruler proves his power by facing this brutal beast and tame it.\n\nSprite Credits: Beige\n\nUnlocks Infernal Archdragon Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30406">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76c8" id="Sakura Deer">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Woodland</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Sakura Deer Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76c9" id="Sakura Deer Pet Skin">
+    <PetSkin />
+    <DisplayId>Sakura Deer</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Woodland</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>175</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76ca" id="Sakura Deer Pet Stone">
+    <DisplayId>Sakura Deer Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>175</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>Cherry blossoms, or "sakura", are not only a symbol of spring, but also represent renewal and hope.\n\nSprite Credits: Zquidx\n\nUnlocks Sakura Deer Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30409">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76cb" id="Lucky Fourleaf">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Woodland</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Lucky Fourleaf Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76cc" id="Lucky Fourleaf Pet Skin">
+    <PetSkin />
+    <DisplayId>Lucky Fourleaf</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Woodland</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>176</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76cd" id="Lucky Fourleaf Pet Stone">
+    <DisplayId>Lucky Fourleaf Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>176</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>It is a look booster, not a loot booster!\n\nUnlocks Lucky Fourleaf Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30412">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76ce" id="Golden Lucky Fourleaf">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Woodland</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Golden Lucky Fourleaf Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76cf" id="Golden Lucky Fourleaf Pet Skin">
+    <PetSkin />
+    <DisplayId>Lucky Fourleaf</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Woodland</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>177</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76d0" id="Golden Lucky Fourleaf Pet Stone">
+    <DisplayId>Golden Lucky Fourleaf Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>177</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>It is a look booster, not a loot booster! Very shiny.\n\nUnlocks Golden Lucky Fourleaf Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30415">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Chocolate Bunny" type="0x76d1">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Farm</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Chocolate Bunny Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76d2" id="Chocolate Bunny Pet Skin">
+    <PetSkin />
+    <DisplayId>Chocolate Bunny</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Farm</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>274</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76d3" id="Chocolate Bunny Pet Stone">
+    <DisplayId>Chocolate Bunny Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>274</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Is it even a good idea to eat chocolate that's alive and moving?\n\nSprite Credits: Tyii\n\nUnlocks Chocolate Bunny Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30418">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76d4" id="Battlebot MK1">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Automaton</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Battlebot MK1 Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76d5" id="Battlebot MK1 Pet Skin">
+    <PetSkin />
+    <DisplayId>Battlebot MK1</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Automaton</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>178</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76d6" id="Battlebot MK1 Pet Stone">
+    <DisplayId>Battlebot MK1 Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>178</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>A dagger crudely taped onto the top of what seems to be a cleaning robot.\n\nSprite Credits: Trensient\n\nUnlocks Battlebot MK1 Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30421">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Mystery Rare Pet" type="0x76d7">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Mystery Rare Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76d8" id="Mystery Rare Pet Skin">
+    <PetSkin />
+    <DisplayId>Mystery Rare Pet</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>275</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76d9" id="Mystery Rare Pet Stone">
+    <DisplayId>Mystery Rare Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>275</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Hold on, I was told this unlocks a random Pet skin!\n\nUnlocks Mystery Rare Pet Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30424">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Mystery Epic Pet" type="0x76da">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Mystery Epic Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76db" id="Mystery Epic Pet Skin">
+    <PetSkin />
+    <DisplayId>Mystery Epic Pet</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>276</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76dc" id="Mystery Epic Pet Stone">
+    <DisplayId>Mystery Epic Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>276</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Hold on, I was told this unlocks a random Pet skin!\n\nUnlocks Mystery Epic Pet Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30427">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Mystery Legendary Pet" type="0x76dd">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Mystery Legendary Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76de" id="Mystery Legendary Pet Skin">
+    <PetSkin />
+    <DisplayId>Mystery Legendary Pet</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>277</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76df" id="Mystery Legendary Pet Stone">
+    <DisplayId>Mystery Legendary Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>277</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Hold on, I was told this unlocks a random Pet skin!\n\nUnlocks Mystery Legendary Pet Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30430">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76e0" id="Easter Island Head">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Easter Island Head Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76e1" id="Easter Island Head Pet Skin">
+    <PetSkin />
+    <DisplayId>Easter Island Head</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>179</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76e2" id="Easter Island Head Pet Stone">
+    <DisplayId>Easter Island Head Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>179</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>Little known fact: when no one's watching, it loves to sing.\n\nSprite Credits: Maggiemagi\n\nUnlocks Easter Island Head Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30433">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76e3" id="Gazelle">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Exotic</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Gazelle Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76e4" id="Gazelle Pet Skin">
+    <PetSkin />
+    <DisplayId>Gazelle</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Exotic</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>180</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76e5" id="Gazelle Pet Stone">
+    <DisplayId>Gazelle Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>180</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>This Gazelle moves with grace, roaming the realms with their horns held high.\n\nSprite Credits: Coomi\n\nUnlocks Gazelle Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30436">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Crystal Pony" type="0x76e6">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Crystal Pony Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76e7" id="Crystal Pony Pet Skin">
+    <PetSkin />
+    <DisplayId>Crystal Pony</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>278</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76e8" id="Crystal Pony Pet Stone">
+    <DisplayId>Crystal Pony Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>278</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded for siding with the Crystal Prisoner in the Summoning Community Campaign.\n\nUnlocks Crystal Pony Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30439">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Son of the Son of Arachna" type="0x76e9">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Insect</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Son of the Son of Arachna Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76ea" id="Son of the Son of Arachna Pet Skin">
+    <PetSkin />
+    <DisplayId>Son of the Son of Arachna</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Insect</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>279</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76eb" id="Son of the Son of Arachna Pet Stone">
+    <DisplayId>Son of the Son of Arachna Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>279</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Rewarded for siding with the Son of Arachna in the Summoning Community Campaign.\n\nUnlocks Son of the Son of Arachna Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30442">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Calamity Crab" type="0x76ec">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Insect</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Calamity Crab Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76ed" id="Calamity Crab Pet Skin">
+    <PetSkin />
+    <DisplayId>Calamity Crab</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Aquatic</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>deadwaterDocksChars16x16</File>
+      <Index>8</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76ef" id="Calamity Crab Pet Stone">
+    <DisplayId>Calamity Crab Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>280</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Who knew a deadly Exalted Crustacean made for a reliable companion!\n\nUnlocks Calamity Crab of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet! </Description>
+    <Activate skinType="30445">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76f0" id="Bananalien">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Bananalien Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76f1" id="Bananalien Pet Skin">
+    <PetSkin />
+    <DisplayId>Bananalien</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>181</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76f2" id="Bananalien Pet Stone">
+    <DisplayId>Bananalien Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>181</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>An impostor from the planet of Bananadrama!\n\nSprite Credits: NblankFour\n\nUnlocks Bananalien Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30449">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76f3" id="Egg-bot">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Automaton</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Egg-bot Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76f4" id="Egg-bot Pet Skin">
+    <PetSkin />
+    <DisplayId>Egg-bot</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Automaton</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>182</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76f5" id="Egg-bot Pet Stone">
+    <DisplayId>Egg-bot Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>182</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>In Soviet Russia, egg hunts YOU!\n\nSprite Credits: Zquidx\n\nUnlocks Egg-bot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30452">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76f6" id="Malus?">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Humanoid</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Malus? Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76f7" id="Malus? Pet Skin">
+    <PetSkin />
+    <DisplayId>Malus?</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Humanoid</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>183</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76f8" id="Malus? Pet Stone">
+    <DisplayId>Malus? Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>183</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>"Malus led the uh... White Titan project of the Lost Halls... yeah. He was an uh... Wait, Malus looks different."\n\nSprite Credits: NblankFour\n\nUnlocks Malus? Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30455">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76f9" id="Biard">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Avian</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Biard Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76fa" id="Biard Pet Skin">
+    <PetSkin />
+    <DisplayId>Biard</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Avian</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>184</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76fb" id="Biard Pet Stone">
+    <DisplayId>Biard Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>184</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>Tired of being spoken over, this young bird donned new Bard clothes and ventured into the Realm looking for musical relief.\n\nSprite Credits: NblankFour\n\nUnlocks Biard Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30458">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object id="Oryx the Baby God" type="0x76fc">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Humanoid</Family>
+    <Rarity>Rare</Rarity>
+    <DefaultSkin>Oryx the Baby God Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x76fd" id="Oryx the Baby God Pet Skin">
+    <PetSkin />
+    <DisplayId>Oryx the Baby God</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Humanoid</Family>
+    <Rarity>Rare</Rarity>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>281</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x76fe" id="Oryx the Baby God Pet Stone">
+    <DisplayId>Oryx the Baby God Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>281</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>Once upon a time, Oryx was only the ruler of his little crib.\n\nSprite Credits: NblankFour\n\nUnlocks Oryx the Baby God Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30461">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x76ff" id="Sol the Energy Drink">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Sol the Energy Drink Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x7700" id="Sol the Energy Drink Pet Skin">
+    <PetSkin />
+    <DisplayId>Sol the Energy Drink</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>? ? ? ?</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>185</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x7701" id="Sol the Energy Drink Pet Stone">
+    <DisplayId>Sol the Energy Drink Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>185</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>You are what you eat, they say...\n\nUnlocks Sol the Energy Drink Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30464">UnlockPetSkin</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>7</BagType>
+    <feedPower>1000</feedPower>
+  </Object>
+  <Object type="0x7702" id="Skulking Skull King">
+    <Pet />
+    <Class>Pet</Class>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <Family>Spooky</Family>
+    <Rarity>Divine</Rarity>
+    <DefaultSkin>Skulking Skull King Pet Skin</DefaultSkin>
+    <Size>80</Size>
+    <NoHatchOrFuse />
+  </Object>
+  <Object type="0x7703" id="Skulking Skull King Pet Skin">
+    <PetSkin />
+    <DisplayId>Skulking Skull King</DisplayId>
+    <Class>PetSkin</Class>
+    <Family>Spooky</Family>
+    <Rarity>Divine</Rarity>
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>186</Index>
+    </AnimatedTexture>
+  </Object>
+  <Object type="0x7704" id="Skulking Skull King Pet Stone">
+    <DisplayId>Skulking Skull King Pet Skin</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>petsDivine</File>
+      <Index>186</Index>
+    </AnimatedTexture>
+    <ScaleValue>10</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>Try to say that three times fast!\n\nUnlocks Skulking Skull King Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
+    <Activate skinType="30467">UnlockPetSkin</Activate>
     <Consumable />
     <Soulbound />
     <BagType>7</BagType>

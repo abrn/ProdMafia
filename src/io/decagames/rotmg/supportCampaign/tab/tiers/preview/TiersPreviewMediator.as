@@ -97,7 +97,7 @@ package io.decagames.rotmg.supportCampaign.tab.tiers.preview {
       }
       
       private function sendClaimRequest() : void {
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          this.client.sendRequest("/supportCampaign/claim",_loc1_);
          this.client.complete.addOnce(this.onClaimRequestComplete);
       }

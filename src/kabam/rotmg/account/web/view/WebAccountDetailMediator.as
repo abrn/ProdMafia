@@ -78,7 +78,7 @@ package kabam.rotmg.account.web.view {
       private function onVerify() : void {
          var _loc1_:AppEngineClient = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
          _loc1_.complete.addOnce(this.onComplete);
-         _loc1_.sendRequest("/account/sendVerifyEmail",this.account.getCredentials());
+         _loc1_.sendRequest("/account/sendVerifyEmail",this.account.getAccessToken());
       }
       
       private function onComplete(param1:Boolean, param2:*) : void {

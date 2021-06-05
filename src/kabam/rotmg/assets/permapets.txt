@@ -1246,7 +1246,7 @@
     <DisplayId>Beer Slurp</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="0">
       <File>lofiObj3</File>
       <Index>0x244</Index>
     </Texture>
@@ -1577,7 +1577,7 @@
     <DisplayId>Valentine Launcher</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="2">
       <File>d3LofiObjEmbed</File>
       <Index>0x76</Index>
     </Texture>
@@ -1611,7 +1611,7 @@
     <DisplayId>Pet Rock</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="2">
       <File>d3LofiObjEmbed</File>
       <Index>0x7a</Index>
     </Texture>
@@ -1655,7 +1655,7 @@
     <DisplayId>Hearticles</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="-2">
       <File>d3LofiObjEmbed</File>
       <Index>0x74</Index>
     </Texture>
@@ -1680,7 +1680,7 @@
     <DisplayId>Delightful Snowflake</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="2">
       <File>d3LofiObjEmbed</File>
       <Index>0xfc</Index>
     </Texture>
@@ -1697,7 +1697,7 @@
     <DisplayId>Delightful Snowflake</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="2">
       <File>d3LofiObjEmbed</File>
       <Index>0xfc</Index>
     </Texture>

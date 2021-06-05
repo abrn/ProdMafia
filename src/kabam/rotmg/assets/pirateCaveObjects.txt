@@ -39,7 +39,7 @@
   <Object type="0x2289" id="Corsair Ring">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>pirateCaveObjects8x8</File>
       <Index>0x2</Index>
     </Texture>
@@ -54,6 +54,7 @@
   <Object type="0x2bb" id="PC Invis Occupy">
     <Class>GameObject</Class>
     <Static />
+    <NoMiniMap />
     <OccupySquare />
     <EnemyOccupySquare />
     <Texture>
@@ -1966,5 +1967,20 @@
         </Texture>
       </Frame>
     </Animation>
+  </Object>
+  <Object type="0x6229" id="Test Parrot">
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>pirateCaveChars8x8</File>
+      <Index>9</Index>
+    </AnimatedTexture>
+    <HitSound>monster/cave_pirates_hit</HitSound>
+    <DeathSound>monster/cave_pirates_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>5</MaxHitPoints>
+    <Defense>0</Defense>
+    <Exp>1</Exp>
+    <KillStat stat="CritterKills" />
   </Object>
 </Objects>

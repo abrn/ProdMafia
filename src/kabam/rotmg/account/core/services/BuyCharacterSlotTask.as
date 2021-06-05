@@ -32,11 +32,11 @@ package kabam.rotmg.account.core.services {
       }
       
       override protected function startTask() : void {
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          _loc1_.isChallenger = this.seasonalEventModel.isChallenger;
          this.client.setMaxRetries(2);
          this.client.complete.addOnce(this.onComplete);
-         this.client.sendRequest("/account/purchaseCharSlot",this.account.getCredentials());
+         this.client.sendRequest("/account/purchaseCharSlot",this.account.getAccessToken());
          this.client.sendRequest("/account/purchaseCharSlot",_loc1_);
       }
       

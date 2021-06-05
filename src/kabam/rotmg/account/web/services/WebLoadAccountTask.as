@@ -31,27 +31,31 @@ public class WebLoadAccountTask extends BaseTask implements LoadAccountTask {
     }
 
     private function getAccountData():void {
-        var rotmg:* = null;
+        var loginSO:Object = null;
         this.data = new AccountData();
         try {
-            rotmg = SharedObject.getLocal("login", "/");
-            rotmg.data["GUID"] && (this.data.username = rotmg.data["GUID"]);
-            rotmg.data["Password"] && (this.data.password = rotmg.data["Password"]);
-            rotmg.data["Token"] && (this.data.token = rotmg.data["Token"]);
-            rotmg.data["Secret"] && (this.data.secret = rotmg.data["Secret"]);
-            if (rotmg.data.hasOwnProperty("Name"))
-                this.data.name = rotmg.data["Name"];
+            loginSO = SharedObject.getLocal("login", "/");
+            loginSO.data["GUID"] && (this.data.username = loginSO.data["GUID"]);
+            loginSO.data["Password"] && (this.data.password = loginSO.data["Password"]);
+            loginSO.data["Token"] && (this.data.token = loginSO.data["Token"]);
+            loginSO.data["Secret"] && (this.data.secret = loginSO.data["Secret"]);
+            loginSO.data["AccessToken"] && (this.data.accessToken = loginSO.data["AccessToken"]);
+            loginSO.data["AccessTokenExpiry"] && (this.data.accessTokenExpiry = loginSO.data["AccessTokenExpiry"]);
+            if (loginSO.data.hasOwnProperty("Name"))
+                this.data.name = loginSO.data["Name"];
         } catch (error:Error) {
             trace(error.message);
             data.username = null;
             data.password = null;
+            data.token = null;
             data.secret = null;
-
+            data.accessToken = null;
+            data.accessTokenExpiry = 0;
         }
     }
 
     private function setAccountDataThenComplete():void {
-        this.account.updateUser(this.data.username, this.data.password, this.data.token, this.data.secret);
+        this.account.updateUser(this.data.username, this.data.password, this.data.token, this.data.secret, this.data.accessToken, this.data.accessTokenExpiry);
         this.account.verify(false);
         completeTask(true);
     }

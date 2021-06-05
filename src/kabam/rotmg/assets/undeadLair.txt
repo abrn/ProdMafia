@@ -39,8 +39,8 @@
     <DisplayId>Craig the Intern</DisplayId>
     <Class>Character</Class>
     <AnimatedTexture>
-      <File>chars8x8rMid</File>
-      <Index>0x02</Index>
+      <File>spriteWorldChars8x8</File>
+      <Index>3</Index>
     </AnimatedTexture>
     <HitSound>monster/ghosts_hit</HitSound>
     <DeathSound>monster/ghosts_death</DeathSound>

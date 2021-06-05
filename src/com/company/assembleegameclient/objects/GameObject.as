@@ -42,9 +42,7 @@ package com.company.assembleegameclient.objects {
    import kabam.rotmg.text.view.BitmapTextFactory;
    
    public class GameObject extends BasicObject {
-      
       protected static const PAUSED_FILTER:ColorMatrixFilter = new ColorMatrixFilter(MoreColorUtil.greyscaleFilterMatrix);
-      
       protected static const CURSED_FILTER:ColorMatrixFilter = new ColorMatrixFilter(MoreColorUtil.redFilterMatrix);
       
       protected static const IDENTITY_MATRIX:Matrix = new Matrix();
@@ -168,7 +166,7 @@ package com.company.assembleegameclient.objects {
       
       public var isBerserk:Boolean;
       
-      public var isPaused:Boolean;
+      public var isInCombat:Boolean;
       
       public var isStasis:Boolean;
       
@@ -599,7 +597,7 @@ package com.company.assembleegameclient.objects {
          if(Parameters.data.alphaOnOthers && this.props_.isPlayer_ && this != this.map_.player_) {
             return;
          }
-         if(!this.isPaused && (this.condition_[0] || uint(this.condition_[1])) && !(this is Pet)) {
+         if((this.condition_[0] || uint(this.condition_[1])) && !(this is Pet)) {
             this.drawConditionIcons(param1,param2,param3);
          }
          if(this.props_.showName_ && this.name_ && this.name_.length != 0) {
@@ -630,7 +628,7 @@ package com.company.assembleegameclient.objects {
       }
       
       public function updateStatuses() : void {
-         isPaused = isPaused_();
+         isInCombat = isInCombat_();
          isStasis = isStasis_();
          isInvincible = isInvincible_();
          isInvulnerable = isInvulnerable_();
@@ -825,7 +823,7 @@ package com.company.assembleegameclient.objects {
          return (this.condition_[0] & 524288) != 0;
       }
       
-      public function isPaused_() : Boolean {
+      public function isInCombat_() : Boolean {
          return (this.condition_[0] & 1048576) != 0;
       }
       
@@ -1472,7 +1470,7 @@ package com.company.assembleegameclient.objects {
          var _loc4_:* = null;
          if(this is Pet) {
             _loc6_ = this as Pet;
-            if(this.condition_[0] != 0 && !this.isPaused) {
+            if(this.condition_[0] != 0) {
                if(_loc6_.skinId != 32912) {
                   _loc6_.setSkin(32912);
                }
@@ -1571,7 +1569,7 @@ package com.company.assembleegameclient.objects {
          if(this.hp_ > this.maxHP_) {
             this.maxHP_ = this.hp_;
          }
-         this.hpBarOutlineFill.bitmapData = TextureRedrawer.redrawSolidSquare(this is Player && (this as Player).icMS != -1?15911214:1118481,42,7,-1);
+         this.hpBarOutlineFill.bitmapData = TextureRedrawer.redrawSolidSquare(this is Player && this.isInCombat_()?15911214:1118481,42,7,-1);
          this.hpBarBackFill.bitmapData = TextureRedrawer.redrawSolidSquare(1118481,40,5,-1);
          var _loc7_:int = posS_[0];
          var _loc4_:int = posS_[1];

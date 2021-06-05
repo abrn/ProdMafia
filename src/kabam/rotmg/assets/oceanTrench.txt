@@ -18,6 +18,7 @@
     <StasisImmune />
     <ParalyzeImmune />
     <Quest />
+    <KeepDamageRecord />
     <PerRealmMax>1</PerRealmMax>
     <Level>20</Level>
     <Size>140</Size>

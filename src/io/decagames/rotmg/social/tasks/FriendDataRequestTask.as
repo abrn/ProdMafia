@@ -40,13 +40,14 @@ package io.decagames.rotmg.social.tasks {
       override protected function startTask() : void {
          this.client.setMaxRetries(8);
          this.client.complete.addOnce(this.onComplete);
-         var _loc1_:Object = this.account.getCredentials();
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         var _loc1_:Object = [];
          _loc1_.targetName = "";
+         _loc1_.accessToken = this.account.getAccessToken();
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();
          _loc1_.play_platform = this.account.playPlatform();
-         this.client.sendRequest(this._requestURL,_loc1_);
+         this.client.sendRequest(this._requestURL == null || this._requestURL == "" ?
+                 "/friends/getRequests" : this._requestURL, _loc1_);
       }
       
       private function onComplete(param1:Boolean, param2:*) : void {

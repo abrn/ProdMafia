@@ -39,7 +39,7 @@ package kabam.rotmg.arena.service {
       }
       
       private function makeRequestObject() : Object {
-         return this.account.getCredentials();
+         return this.account.getAccessToken();
       }
    }
 }

@@ -26,7 +26,7 @@ package io.decagames.rotmg.seasonalEvent.tasks {
       
       override protected function startTask() : void {
          this.logger.info("GetSeasonalEvent start");
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          this.client.complete.addOnce(this.onComplete);
          this.client.sendRequest("/season/getSeasons",_loc1_);
       }

@@ -7618,7 +7618,7 @@
     </Texture>
     <ShadowSize>50</ShadowSize>
     <Price>150</Price>
-    <Fame>500</Fame>
+    <Fame>525</Fame>
     <Static />
     <OccupySquare />
     <Z>-.01</Z>
@@ -7632,7 +7632,7 @@
     </Texture>
     <ShadowSize>50</ShadowSize>
     <Price>400</Price>
-    <Fame>2000</Fame>
+    <Fame>3500</Fame>
     <Static />
     <OccupySquare />
     <Z>-.01</Z>
@@ -7646,7 +7646,7 @@
     </Texture>
     <ShadowSize>50</ShadowSize>
     <Price>1200</Price>
-    <Fame>25000</Fame>
+    <Fame>43750</Fame>
     <Static />
     <OccupySquare />
     <Z>-.01</Z>
@@ -7660,7 +7660,7 @@
     </Texture>
     <ShadowSize>50</ShadowSize>
     <Price>2000</Price>
-    <Fame>50000</Fame>
+    <Fame>87500</Fame>
     <Static />
     <OccupySquare />
     <Z>-.01</Z>

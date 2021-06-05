@@ -38,7 +38,7 @@ package kabam.rotmg.packages.services {
       }
       
       override protected function startTask() : void {
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          this.client.complete.addOnce(this.onComplete);
          this.client.sendRequest("/account/purchasePackage",_loc1_);
       }

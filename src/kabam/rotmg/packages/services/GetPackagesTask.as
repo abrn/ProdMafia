@@ -34,10 +34,9 @@ package kabam.rotmg.packages.services {
       
       override protected function startTask() : void {
          var _loc1_:Object = {};
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
          _loc1_.language = "en";
          _loc1_.version = 0;
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         _loc1_.accessToken = this.account.getAccessToken();
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();
          _loc1_.play_platform = this.account.playPlatform();

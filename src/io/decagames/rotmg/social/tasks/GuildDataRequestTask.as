@@ -40,8 +40,8 @@ package io.decagames.rotmg.social.tasks {
       override protected function startTask() : void {
          this.client.setMaxRetries(8);
          this.client.complete.addOnce(this.onComplete);
-         var _loc1_:Object = this.account.getCredentials();
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         var _loc1_:Object = this.account.getAccessToken();
+         MoreObjectUtil.addToObject(_loc1_,this.account.getAccessToken());
          _loc1_.targetName = "";
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();

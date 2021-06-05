@@ -284,6 +284,10 @@ package kabam.rotmg.assets {
       private static const thirdDimensionObjectsCXML:Class = thirdDimensionObjects;
       private static const toxicSewersGroundCXML:Class = toxicSewersGround;
       private static const toxicSewersObjectsCXML:Class = toxicSewersObjects;
+      private static const spriteWorldGroundCXML:Class = spriteWorldGround;
+      private static const spriteWorldObjectsCXML:Class = spriteWorldObjects;
+      private static const deadwaterDocksGroundCXML:Class = deadwaterDocksGround;
+      private static const deadwaterDocksObjectsCXML:Class = deadwaterDocksObjects;
       
       public static const skinsArray:Array = [new SkinsCXML()];
       
@@ -304,7 +308,8 @@ package kabam.rotmg.assets {
          new innerWorkingsGroundCXML(),new oryxSanctuaryGroundCXML(),new archbishopGroundCXML(),
          new ancientRuinsGroundCXML(),new AbyssOfDemonsGroundCXML(),new PirateCaveGroundCXML(),
          new SpiderDenGroundCXML(),new UndeadLairGroundCXML(),new HighTechTerrorGroundCXML(),
-         new thirdDimensionGroundCXML(), new toxicSewersGroundCXML()];
+         new thirdDimensionGroundCXML(), new toxicSewersGroundCXML(), new spriteWorldGroundCXML(),
+         new deadwaterDocksGroundCXML()];
       
       public static const objectFiles:Array = [new ProjectilesCXML(),new EquipEggsCXML(),new EquipKeysCXML(),
          new EquipSkinsCXML(),new EquipTestCXML(),new EquipCXML(),new DyesCXML(),new TextilesCXML(),
@@ -338,7 +343,7 @@ package kabam.rotmg.assets {
          new ancientRuinsObjectsCXML(),new SkinsCXML(),new AbyssOfDemonsObjectsCXML(),
          new PirateCaveObjectsCXML(),new SpiderDenObjectsCXML(),new UndeadLairObjectsCXML(),
          new HighTechTerrorObjectsCXML(), new thirdDimensionObjectsCXML(),
-         new toxicSewersObjectsCXML()];
+         new toxicSewersObjectsCXML(), new spriteWorldObjectsCXML(), new deadwaterDocksObjectsCXML()];
       
       public static const regionFiles:Array = [];
       

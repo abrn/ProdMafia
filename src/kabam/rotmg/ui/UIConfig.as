@@ -75,7 +75,8 @@ package kabam.rotmg.ui {
    import io.decagames.rotmg.shop.packages.contentPopup.PackageBoxContentPopupMediator;
    import io.decagames.rotmg.shop.packages.startupPackage.StartupPackage;
    import io.decagames.rotmg.shop.packages.startupPackage.StartupPackageMediator;
-   import io.decagames.rotmg.supportCampaign.tasks.GetCampaignStatusTask;
+import io.decagames.rotmg.social.tasks.FriendDataRequestTask;
+import io.decagames.rotmg.supportCampaign.tasks.GetCampaignStatusTask;
    import io.decagames.rotmg.ui.popups.PopupMediator;
    import io.decagames.rotmg.ui.popups.PopupView;
    import io.decagames.rotmg.ui.popups.modal.ConfirmationModal;
@@ -103,7 +104,8 @@ package kabam.rotmg.ui {
    import kabam.rotmg.account.core.services.GetIgnoreListTask;
    import kabam.rotmg.account.core.services.GetLockListTask;
    import kabam.rotmg.account.core.services.GetPublicStaticDataTask;
-   import kabam.rotmg.account.core.services.ListPowerUpStatsTask;
+import kabam.rotmg.account.core.services.GetServersTask;
+import kabam.rotmg.account.core.services.ListPowerUpStatsTask;
    import kabam.rotmg.account.core.services.LoadAccountTask;
    import kabam.rotmg.account.core.view.AccountInfoMediator;
    import kabam.rotmg.account.core.view.AccountInfoView;
@@ -111,13 +113,17 @@ package kabam.rotmg.ui {
    import kabam.rotmg.account.core.view.RegisterPromptDialogMediator;
    import kabam.rotmg.account.web.services.WebLoadAccountTask;
    import kabam.rotmg.application.api.ApplicationSetup;
-   import kabam.rotmg.core.service.RequestAppInitTask;
+import kabam.rotmg.core.service.CheckForLoginTask;
+import kabam.rotmg.core.service.ExtendAccessTokenTaskGame;
+import kabam.rotmg.core.service.ExtendAccessTokenTaskLauncher;
+import kabam.rotmg.core.service.RequestAppInitTask;
    import kabam.rotmg.core.service.RequestAppInitTaskCredentials;
    import kabam.rotmg.core.service.RequestAppInitTaskUnity;
    import kabam.rotmg.core.service.RequestUnityNewsTask;
    import kabam.rotmg.core.service.UnityGameLoginTask;
    import kabam.rotmg.core.service.UnityLauncherLoginTask;
-   import kabam.rotmg.dailyLogin.tasks.FetchPlayerCalendarTask;
+import kabam.rotmg.core.service.VerifyAccessTokenTask;
+import kabam.rotmg.dailyLogin.tasks.FetchPlayerCalendarTask;
    import kabam.rotmg.death.view.ResurrectionView;
    import kabam.rotmg.death.view.ResurrectionViewMediator;
    import kabam.rotmg.game.model.PotionInventoryModel;
@@ -255,6 +261,7 @@ package kabam.rotmg.ui {
          this.injector.map(FameTracker).asSingleton();
          this.injector.map(VaultUpdateSignal).asSingleton();
          this.injector.map(LoadAccountTask).toType(WebLoadAccountTask);
+         this.injector.map(ExtendAccessTokenTaskGame);
          this.commandMap.map(ShowLoadingUISignal).toCommand(ShowLoadingUICommand);
          this.commandMap.map(ShowTitleUISignal).toCommand(ShowTitleUICommand);
          this.commandMap.map(EnterGameSignal).toCommand(EnterGameCommand);
@@ -325,25 +332,35 @@ package kabam.rotmg.ui {
          this.mapNoServersDialogFactory();
          this.setupCharacterWindow();
          this.startup.addSignal(ShowLoadingUISignal,-1);
+         this.startup.addTask(LoadAccountTask, 0);
+
+         // launcher
          this.startup.addTask(RequestAppInitTask,1);
          this.startup.addTask(RequestAppInitTask,2);
-         this.startup.addTask(LoadAccountTask,3);
-         this.startup.addTask(UnityLauncherLoginTask,4);
+         this.startup.addTask(CheckForLoginTask, 3);
+         this.startup.addTask(ExtendAccessTokenTaskLauncher, 4);
          this.startup.addTask(RequestAppInitTaskCredentials,5);
          this.startup.addTask(RequestUnityNewsTask,6);
-         this.startup.addTask(RequestAppInitTaskUnity,7);
+         this.startup.addTask(GetServersTask, 7);
+
+         // game
          this.startup.addTask(UnityGameLoginTask,8);
-         this.startup.addTask(GetCharListTask,9);
-         this.startup.addTask(GetOwnedPetSkinsTask,10);
-         this.startup.addTask(GetCampaignStatusTask,11);
-         this.startup.addTask(GetMysteryBoxesTask,12);
-         this.startup.addTask(GetPackagesTask,13);
-         this.startup.addTask(FetchPlayerCalendarTask,14);
-         this.startup.addTask(GetLockListTask,17);
-         this.startup.addTask(GetIgnoreListTask,18);
-         this.startup.addTask(GetPublicStaticDataTask,19);
-         this.startup.addTask(ListPowerUpStatsTask,20);
-         this.startup.addSignal(ShowTitleUISignal,2147483647);
+         this.startup.addTask(VerifyAccessTokenTask, 9);
+         this.startup.addTask(RequestAppInitTaskUnity, 10);
+         this.startup.addTask(VerifyAccessTokenTask, 11);
+         this.startup.addTask(GetCharListTask,12);
+         this.startup.addTask(GetOwnedPetSkinsTask,13);
+         this.startup.addTask(GetCampaignStatusTask,14);
+         this.startup.addTask(GetMysteryBoxesTask,15);
+         this.startup.addTask(GetPackagesTask,16);
+         this.startup.addTask(FetchPlayerCalendarTask,17);
+         this.startup.addTask(FriendDataRequestTask, 18);
+         this.startup.addTask(GetLockListTask,19);
+         this.startup.addTask(GetIgnoreListTask,20);
+         this.startup.addTask(GetPublicStaticDataTask,21);
+         this.startup.addTask(ListPowerUpStatsTask,22);
+
+         this.startup.addSignal(ShowTitleUISignal, int.MAX_VALUE);
       }
       
       private function setupKeyUI() : void {

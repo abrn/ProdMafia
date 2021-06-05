@@ -21,7 +21,7 @@
     <AngleCorrection>6</AngleCorrection>
   </Object>
   <Object type="0x08b2" id="EH Ability Bee 1">
-    <Class>GameObject</Class>
+    <Class>Summon</Class>
     <AnimatedTexture>
       <File>epicHiveChars8x8</File>
       <Index>12</Index>
@@ -29,9 +29,10 @@
     <Flying />
     <Size>80</Size>
     <Z>0.2</Z>
+    <RepulsionRadius>0.1f</RepulsionRadius>
   </Object>
   <Object type="0x08e8" id="EH Ability Bee 2">
-    <Class>GameObject</Class>
+    <Class>Summon</Class>
     <AnimatedTexture>
       <File>epicHiveChars8x8</File>
       <Index>13</Index>
@@ -39,9 +40,10 @@
     <Flying />
     <Size>80</Size>
     <Z>0.2</Z>
+    <RepulsionRadius>0.1f</RepulsionRadius>
   </Object>
   <Object type="0x08e9" id="EH Ability Bee 3">
-    <Class>GameObject</Class>
+    <Class>Summon</Class>
     <AnimatedTexture>
       <File>epicHiveChars8x8</File>
       <Index>14</Index>
@@ -49,6 +51,7 @@
     <Flying />
     <Size>80</Size>
     <Z>0.2</Z>
+    <RepulsionRadius>0.1f</RepulsionRadius>
   </Object>
   <Object type="0x108d" id="EH honey Heal">
     <Class>GameObject</Class>

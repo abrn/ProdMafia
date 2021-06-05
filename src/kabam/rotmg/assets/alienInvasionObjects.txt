@@ -1079,7 +1079,7 @@
       <Damage>120</Damage>
       <LifetimeMS>5000</LifetimeMS>
     </Projectile>
-    <HealthBarBoss radius="30" />
+    <HealthBarBoss radius="30" xOffset="1" yOffset="12" />
     <KillStat stat="BeastKills" />
     <KillStat stat="GodKills" />
     <DamageBasedXP />

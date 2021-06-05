@@ -10,9 +10,11 @@ import com.company.assembleegameclient.util.ConditionEffect;
 import com.company.assembleegameclient.util.TimeUtil;
 import com.company.util.StringUtils;
 import flash.events.Event;
+import flash.events.TimerEvent;
 import flash.geom.Point;
 import flash.system.System;
 import flash.utils.Dictionary;
+import flash.utils.Timer;
 import flash.utils.clearInterval;
 import flash.utils.setInterval;
 import flash.utils.setTimeout;
@@ -21,7 +23,7 @@ import io.decagames.rotmg.social.model.FriendRequestVO;
 import io.decagames.rotmg.social.signals.FriendActionSignal;
 import kabam.rotmg.account.core.Account;
 import kabam.rotmg.account.core.services.GetConCharListTask;
-import kabam.rotmg.account.core.services.GetConServersTask;
+import kabam.rotmg.account.core.services.GetServersTask;
 import kabam.rotmg.chat.model.ChatMessage;
 import kabam.rotmg.chat.model.ChatMessage;
 import kabam.rotmg.chat.model.ChatMessage;
@@ -471,9 +473,21 @@ public class ParseChatMessageCommand {
             this.addTextLine.dispatch(Parameters.HELP_CHAT_NAME,
                     "Your guild rank has been set to: " + rank);
             return;
-         case "/exaltationclaim":
-         case "/ec":
-            this.hudModel.gameSprite.gsc_.exaltationClaim(parseInt(split[1]));
+         case "/lm":
+         case "/lifemul":
+         case "/lifemult":
+            Parameters.data.lifeMul = parseFloat(split[1]);
+            Parameters.save();
+            this.addTextLine.dispatch(ChatMessage.make("", "Life Multiplier: " +
+                    Parameters.data.lifeMul + "x"));
+            return;
+         case "/sm":
+         case "/speedmul":
+         case "/speedmult":
+            Parameters.data.speedMul = parseFloat(split[1]);
+            Parameters.save();
+            this.addTextLine.dispatch(ChatMessage.make("", "Speed Multiplier: " +
+                    Parameters.data.speedMul + "x"));
             return;
          case "/listblueprints":
          case "/lb":
@@ -585,7 +599,7 @@ public class ParseChatMessageCommand {
          }
       }
       if(_loc4_ != "") {
-         _loc2_ = StaticInjectorContext.getInjector().getInstance(GetConServersTask);
+         _loc2_ = StaticInjectorContext.getInjector().getInstance(GetServersTask);
          _loc2_.start();
       }
       if(_loc6_ != -1) {

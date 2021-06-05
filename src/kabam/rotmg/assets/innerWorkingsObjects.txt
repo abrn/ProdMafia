@@ -2153,12 +2153,12 @@
   <Object type="0xc5d8" id="TM Explanation Object">
     <Class>Character</Class>
     <AnimatedTexture>
-      <File>d3Chars8x8rEmbed</File>
-      <Index>19</Index>
+      <File>spriteWorldChars8x8</File>
+      <Index>3</Index>
     </AnimatedTexture>
     <ShadowSize>50</ShadowSize>
     <Size>100</Size>
-    <DisplayId>Craig</DisplayId>
+    <DisplayId>Craig the Intern</DisplayId>
   </Object>
   <Object type="0xc5d9" id="TM Location Waypoint Silent">
     <Class>Character</Class>
@@ -2187,6 +2187,25 @@
     <NoMiniMap />
     <DisplayId>Output Reader</DisplayId>
     <Sound id="0">monster/oryx_death</Sound>
+  </Object>
+  <Object type="0x2a4b" id="TM Craig ReExplanation">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>spriteWorldChars8x8</File>
+      <Index>3</Index>
+    </AnimatedTexture>
+    <ShadowSize>50</ShadowSize>
+    <Size>20</Size>
+    <DisplayId>Craig the Intern</DisplayId>
+    <Color>0x0000FF</Color>
+  </Object>
+  <Object type="0x2f66" id="TM Craig Anchor">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
   </Object>
   <Object type="0xc4d8" id="TM InnerWorkings Access Point">
     <DisplayId>Automated Security System</DisplayId>
@@ -2300,5 +2319,2409 @@
     </AltTexture>
     <Size>120</Size>
     <DisplayId>ALU Add Carry Bit</DisplayId>
+  </Object>
+  <Object type="0xa238" id="CHS Pawn W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x0</Index>
+    </Texture>
+    <DisplayId>White Pawn</DisplayId>
+    <MinimapIcon color="0xFFE7A6" piece="Pawn" />
+  </Object>
+  <Object type="0xa239" id="CHS Rook W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x1</Index>
+    </Texture>
+    <DisplayId>White Rook</DisplayId>
+    <MinimapIcon color="0xFFE7A6" piece="Rook" />
+  </Object>
+  <Object type="0xa23a" id="CHS Knight W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x2</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>invisible</File>
+        <Index>0</Index>
+      </Texture>
+    </AltTexture>
+    <DisplayId>White Knight</DisplayId>
+    <MinimapIcon color="0xFFE7A6" piece="Knight" />
+  </Object>
+  <Object type="0xa23b" id="CHS Bishop W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x3</Index>
+    </Texture>
+    <DisplayId>White Bishop</DisplayId>
+    <MinimapIcon color="0xFFE7A6" piece="Bishop" />
+  </Object>
+  <Object type="0xa23c" id="CHS Queen W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x4</Index>
+    </Texture>
+    <DisplayId>White Queen</DisplayId>
+    <MinimapIcon color="0xFFE7A6" piece="Queen" />
+  </Object>
+  <Object type="0xa23d" id="CHS King W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x5</Index>
+    </Texture>
+    <DisplayId>White King</DisplayId>
+    <MinimapIcon color="0xFFE7A6" piece="King" />
+  </Object>
+  <Object type="0xa23e" id="CHS Pawn B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x6</Index>
+    </Texture>
+    <DisplayId>Black Pawn</DisplayId>
+    <MinimapIcon color="0x4C4858" piece="Pawn" />
+  </Object>
+  <Object type="0xa23f" id="CHS Rook B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x7</Index>
+    </Texture>
+    <DisplayId>Black Rook</DisplayId>
+    <MinimapIcon color="0x4C4858" piece="Rook" />
+  </Object>
+  <Object type="0xa240" id="CHS Knight B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x8</Index>
+    </Texture>
+    <DisplayId>Black Knight</DisplayId>
+    <MinimapIcon color="0x4C4858" piece="Knight" />
+    <AltTexture id="1">
+      <Texture>
+        <File>invisible</File>
+        <Index>0</Index>
+      </Texture>
+    </AltTexture>
+  </Object>
+  <Object type="0xa241" id="CHS Bishop B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x9</Index>
+    </Texture>
+    <DisplayId>Black Bishop</DisplayId>
+    <MinimapIcon color="0x4C4858" piece="Bishop" />
+  </Object>
+  <Object type="0xa242" id="CHS Queen B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xa</Index>
+    </Texture>
+    <DisplayId>Black Queen</DisplayId>
+    <MinimapIcon color="0x4C4858" piece="Queen" />
+  </Object>
+  <Object type="0xa243" id="CHS King B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xb</Index>
+    </Texture>
+    <DisplayId>Black King</DisplayId>
+    <MinimapIcon color="0x4C4858" piece="King" />
+  </Object>
+  <Object type="0xa244" id="CHS Selected Indicator">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xa245" id="CHS Pawn W First Move Indicator">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xa24b" id="CHS Pawn B First Move Indicator">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xa247" id="CHS PieceHere W">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>0</Index>
+    </Texture>
+  </Object>
+  <Object type="0xa248" id="CHS PieceHere B">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>0</Index>
+    </Texture>
+  </Object>
+  <Object type="0xa249" id="CHS Movement Option">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0x0</Index>
+    </Texture>
+    <ShadowSize>0</ShadowSize>
+    <DisplayId>Outstanding Move</DisplayId>
+  </Object>
+  <Object type="0x2a4a" id="CHS Board Boundary">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>2</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a4c" id="CHS Turn Controller">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>2</Index>
+    </Texture>
+    <DisplayId>Chess</DisplayId>
+  </Object>
+  <Object type="0x2a4d" id="CHS Board Builder W">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>3</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a4e" id="CHS Board Builder B">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>3</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a46" id="CHS Pawn W Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>White Pawn</DisplayId>
+  </Object>
+  <Object type="0x2a54" id="CHS Pawn B Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>Black Pawn</DisplayId>
+  </Object>
+  <Object type="0x2a4f" id="CHS Rook W Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>White Rook</DisplayId>
+  </Object>
+  <Object type="0x2a50" id="CHS Rook W Movement Creator East">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a51" id="CHS Rook W Movement Creator West">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a52" id="CHS Rook W Movement Creator South">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a53" id="CHS Rook W Movement Creator North">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a59" id="CHS Rook B Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>Black Rook</DisplayId>
+  </Object>
+  <Object type="0x2a5a" id="CHS Rook B Movement Creator East">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a5b" id="CHS Rook B Movement Creator West">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a5c" id="CHS Rook B Movement Creator South">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a5d" id="CHS Rook B Movement Creator North">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a55" id="CHS Knight W Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>White Knight</DisplayId>
+  </Object>
+  <Object type="0x2a56" id="CHS Knight W Movement Creator True">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a57" id="CHS Knight B Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>Black Knight</DisplayId>
+  </Object>
+  <Object type="0x2a58" id="CHS Knight B Movement Creator True">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a5e" id="CHS Bishop W Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>White Bishop</DisplayId>
+  </Object>
+  <Object type="0x2a5f" id="CHS Bishop W Movement Creator NE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a60" id="CHS Bishop W Movement Creator SE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a61" id="CHS Bishop W Movement Creator SW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a62" id="CHS Bishop W Movement Creator NW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a63" id="CHS Bishop B Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>Black Bishop</DisplayId>
+  </Object>
+  <Object type="0x2a64" id="CHS Bishop B Movement Creator NE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a65" id="CHS Bishop B Movement Creator SE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a66" id="CHS Bishop B Movement Creator SW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a67" id="CHS Bishop B Movement Creator NW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a68" id="CHS Queen W Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>White Queen</DisplayId>
+  </Object>
+  <Object type="0x2a69" id="CHS Queen B Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>Black Queen</DisplayId>
+  </Object>
+  <Object type="0x2a6a" id="CHS King W Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>White King</DisplayId>
+  </Object>
+  <Object type="0x2a6b" id="CHS King W Movement Creator True">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a6c" id="CHS King B Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+    <DisplayId>Black King</DisplayId>
+  </Object>
+  <Object type="0x2a6d" id="CHS King B Movement Creator True">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>1</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a6e" id="CHS Back Rank Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>3</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a6f" id="CHS En Passant Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>5</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a70" id="CHS White Attacked Checker">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>6</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a71" id="CHS King W Check Diag NE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a72" id="CHS King W Check Diag SE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a73" id="CHS King W Check Diag SW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a74" id="CHS King W Check Diag NW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a75" id="CHS King W Check Horiz N">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a76" id="CHS King W Check Horiz E">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a77" id="CHS King W Check Horiz S">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a78" id="CHS King W Check Horiz W">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a79" id="CHS King W Check Pawn">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>9</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a7a" id="CHS King W Check Knight">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>9</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a87" id="CHS King W Check King">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>11</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a85" id="CHS Black Attacked Checker">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>6</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a7b" id="CHS King B Check Diag NE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a7c" id="CHS King B Check Diag SE">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a7d" id="CHS King B Check Diag SW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a7e" id="CHS King B Check Diag NW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>7</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a7f" id="CHS King B Check Horiz N">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a80" id="CHS King B Check Horiz E">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a81" id="CHS King B Check Horiz S">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a82" id="CHS King B Check Horiz W">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>8</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a83" id="CHS King B Check Pawn">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>9</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a84" id="CHS King B Check Knight">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>9</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a88" id="CHS King B Check King">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>11</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a86" id="CHS PieceWillBeHere">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>10</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a89" id="CHS Castling Manager">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>12</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a8a" id="CHS Castling Indicator KW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a8b" id="CHS Castling Indicator QW">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a8c" id="CHS Castling Indicator KB">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a8d" id="CHS Castling Indicator QB">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a8e" id="CHS King W First Move Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a8f" id="CHS King B First Move Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a90" id="CHS King W Queenside Castling Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a91" id="CHS King W Kingside Castling Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a92" id="CHS King B Queenside Castling Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a93" id="CHS King B Kingside Castling Movement Creator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a94" id="CHS Castle White Queenside Movement Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a95" id="CHS Castle White Kingside Movement Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a96" id="CHS Castle Black Queenside Movement Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a97" id="CHS Castle Black Kingside Movement Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>13</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a98" id="CHS Rook Castle Indicator">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>16</Index>
+    </Texture>
+  </Object>
+  <Object type="0xac52" id="CHS En Passant Capture King Attack Checker Modifier">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>epicHiveObjects8x8</File>
+      <Index>16</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a99" id="CHS Board Edge H">
+    <Class>GameObject</Class>
+    <DrawOnGround />
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x79</Index>
+    </Texture>
+    <Static />
+  </Object>
+  <Object type="0x2a9a" id="CHS Board Edge V">
+    <Class>GameObject</Class>
+    <DrawOnGround />
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x7a</Index>
+    </Texture>
+    <Static />
+  </Object>
+  <Object type="0x2a9b" id="CHS Board Edge D">
+    <Class>GameObject</Class>
+    <DrawOnGround />
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x7b</Index>
+    </Texture>
+    <Static />
+  </Object>
+  <Object type="0x2a9c" id="Nothing">
+    <Class>GameObject</Class>
+    <Size>0</Size>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x0</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a9d" id="CHS Game State Manager">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x02</Index>
+    </Texture>
+    <Size>0</Size>
+    <DisplayId>Chess</DisplayId>
+  </Object>
+  <Object type="0x2a9e" id="CHS Confirm Proposal 1">
+    <Class>GameObject</Class>
+    <Size>100</Size>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x07D</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2a9f" id="CHS Confirm Proposal 2">
+    <Class>GameObject</Class>
+    <Size>100</Size>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x07E</Index>
+    </Texture>
+  </Object>
+  <Object type="0x2f69" id="CHS Move Indicator TL">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xc</Index>
+    </Texture>
+    <DrawOnGround />
+    <Size>50</Size>
+  </Object>
+  <Object type="0x2f67" id="CHS Move Indicator TR">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xd</Index>
+    </Texture>
+    <DrawOnGround />
+    <Size>50</Size>
+  </Object>
+  <Object type="0x20af" id="CHS Move Indicator BL">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x1c</Index>
+    </Texture>
+    <DrawOnGround />
+    <Size>50</Size>
+  </Object>
+  <Object type="0x1aa8" id="CHS Move Indicator BR">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0x1d</Index>
+    </Texture>
+    <DrawOnGround />
+    <Size>50</Size>
+  </Object>
+  <Object type="0x1fe3" id="CHS Move Indicator Cleaner">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x3764" id="CHS Captured Pawn W Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x3765" id="CHS Captured Pawn B Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x3766" id="CHS Captured Rook W Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x3767" id="CHS Captured Rook B Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x3768" id="CHS Captured Knight W Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x3769" id="CHS Captured Knight B Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x376a" id="CHS Captured Bishop W Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x376b" id="CHS Captured Bishop B Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x376c" id="CHS Captured Queen W Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x376d" id="CHS Captured Queen B Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x376e" id="CHS Captured King W Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x376f" id="CHS Captured King B Create">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0x51c" id="CHS Captured Pawn W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x51d" id="CHS Captured Pawn B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>6</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x51e" id="CHS Captured Rook W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>1</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x51f" id="CHS Captured Rook B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>7</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x520" id="CHS Captured Knight W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>2</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x521" id="CHS Captured Knight B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>8</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x522" id="CHS Captured Bishop W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>3</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x523" id="CHS Captured Bishop B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>9</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x524" id="CHS Captured Queen W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>4</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x525" id="CHS Captured Queen B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xa</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x526" id="CHS Captured King W">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>5</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0x527" id="CHS Captured King B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xb</Index>
+    </Texture>
+    <Size>20</Size>
+  </Object>
+  <Object type="0xbe2" id="CHS Captured Notify">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xbe0" id="CHS Captured W Target">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xbe1" id="CHS Captured B Target">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xaac0" id="CHS Feet">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x7F</Index>
+    </Texture>
+    <Size>100</Size>
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac1" id="CHS Edge A">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x80</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac2" id="CHS Edge B">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x81</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac3" id="CHS Edge C">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x82</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac4" id="CHS Edge D">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x83</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac5" id="CHS Edge E">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x84</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac6" id="CHS Edge F">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x85</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac7" id="CHS Edge G">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x86</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac8" id="CHS Edge H">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x87</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaac9" id="CHS Edge 1">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x88</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaaca" id="CHS Edge 2">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x89</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaacb" id="CHS Edge 3">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x8a</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaacc" id="CHS Edge 4">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x8b</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaacd" id="CHS Edge 5">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x8c</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaace" id="CHS Edge 6">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x8d</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaacf" id="CHS Edge 7">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x8e</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaad0" id="CHS Edge 8">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x8f</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+    <DrawOnGround />
+  </Object>
+  <Object type="0xaad1" id="CHS Alt Setup">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>2</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xaad2" id="CHS Alt Win Condition">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>2</Index>
+    </Texture>
+    <Size>-1</Size>
+    <DisplayId>? ? ? ?</DisplayId>
+    <Sound id="0">enter_realm</Sound>
+  </Object>
+  <Object type="0xaad3" id="CHS King W Alt">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>5</Index>
+    </Texture>
+  </Object>
+  <Object type="0xaad7" id="CHS King B Alt">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xb</Index>
+    </Texture>
+  </Object>
+  <Object type="0xaad4" id="CHS Queen W Alt">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>4</Index>
+    </Texture>
+  </Object>
+  <Object type="0xaad5" id="CHS Queen B Alt">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xa</Index>
+    </Texture>
+  </Object>
+  <Object type="0xaad6" id="CHS Alt Anchor">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>5</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xaad8" id="CHS W Crumble">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>5</Index>
+    </Texture>
+    <Animation prob="1">
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x10</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x11</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x12</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x13</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x14</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x15</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x16</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x17</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x18</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x19</Index>
+        </Texture>
+      </Frame>
+      <Frame time="99999.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x1a</Index>
+        </Texture>
+      </Frame>
+    </Animation>
+  </Object>
+  <Object type="0xaad9" id="CHS B Crumble">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>innerWorkingsObjects16x16</File>
+      <Index>0xb</Index>
+    </Texture>
+    <Animation prob="1">
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x20</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x21</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x22</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x23</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x24</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x25</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x26</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x27</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x28</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x29</Index>
+        </Texture>
+      </Frame>
+      <Frame time="99999.15">
+        <Texture>
+          <File>innerWorkingsObjects16x16</File>
+          <Index>0x2a</Index>
+        </Texture>
+      </Frame>
+    </Animation>
+  </Object>
+  <Object type="0xaada" id="CHS Portal">
+    <Class>Portal</Class>
+    <IntergamePortal />
+    <DisplayId>Chess</DisplayId>
+    <DungeonName>Chess</DungeonName>
+    <ShadowSize>0</ShadowSize>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0x66</Index>
+    </Texture>
+  </Object>
+  <Object type="0xac50" id="CHS Knight Alt">
+    <Class>Character</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x4d</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x5b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x5f</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x6d</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x7b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x22</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x71</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x75</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="9">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x78</Index>
+      </Texture>
+      <Effect particle="SwirlingMist" cooldown="0.5">XMLEffect</Effect>
+    </AltTexture>
+    <DisplayId>Geb</DisplayId>
+  </Object>
+  <Object type="0xac4f" id="CHS Rook Alt">
+    <Class>Character</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x4e</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x5c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x6a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x6e</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x7c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x23</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x72</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x76</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="9">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x79</Index>
+      </Texture>
+      <Effect particle="SwirlingMist" cooldown="0.5">XMLEffect</Effect>
+    </AltTexture>
+    <DisplayId>Bes</DisplayId>
+  </Object>
+  <Object type="0xaac4e" id="CHS Pawn Alt">
+    <Class>Character</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x4f</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x5d</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x6b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x6f</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x7d</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x24</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x28</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x73</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x77</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="9">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x37</Index>
+      </Texture>
+      <Effect particle="SwirlingMist" cooldown="0.5">XMLEffect</Effect>
+    </AltTexture>
+    <DisplayId>Ghost of Skuld</DisplayId>
+  </Object>
+  <Object type="0xaadd" id="CHS Queen Alt">
+    <Class>Character</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x4c</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x5a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x5e</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x3b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x6c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x7a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x21</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x25</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x70</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="9">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x74</Index>
+      </Texture>
+      <Effect particle="SwirlingMist" cooldown="0.5">XMLEffect</Effect>
+    </AltTexture>
+    <DisplayId>Nut</DisplayId>
+  </Object>
+  <Object type="0xaadc" id="CHS Bishop Alt">
+    <Class>Character</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x2e</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x2f</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x3a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x3b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x3c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x3d</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x3e</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x3f</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x4a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="9">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x4b</Index>
+      </Texture>
+      <Effect particle="SwirlingMist" cooldown="0.5">XMLEffect</Effect>
+    </AltTexture>
+    <DisplayId>Lord Ruthven</DisplayId>
+  </Object>
+  <Object type="0xaadb" id="CHS King Alt">
+    <Class>Character</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x1a</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x1b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x1c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x1d</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x1e</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x1f</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x2a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x2b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x2c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="9">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x2d</Index>
+      </Texture>
+      <Effect particle="SwirlingMist" cooldown="0.5">XMLEffect</Effect>
+    </AltTexture>
+    <DisplayId>The Forgotten King</DisplayId>
+  </Object>
+  <Object type="0xac59" id="Emperor Bullet">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf0</Index>
+    </Texture>
+  </Object>
+  <Object type="0xac5a" id="Emperor Blast">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf1</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+  <Object type="0xac5b" id="Emperor Small Shuriken">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf2</Index>
+    </Texture>
+    <Rotation>80</Rotation>
+  </Object>
+  <Object type="0xac5c" id="Emperor Shuriken">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf3</Index>
+    </Texture>
+    <Rotation>80</Rotation>
+  </Object>
+  <Object type="0xac5d" id="Emperor Wheel">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf4</Index>
+    </Texture>
+    <Rotation>80</Rotation>
+  </Object>
+  <Object type="0xac5e" id="Emperor Spin">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf5</Index>
+    </Texture>
+    <Rotation>80</Rotation>
+  </Object>
+  <Object type="0xac5f" id="Emperor Shockwave">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf6</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+  <Object type="0xac60" id="Emperor Wave">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf7</Index>
+    </Texture>
+  </Object>
+  <Object type="0xac61" id="Emperor Spear">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf8</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+  <Object type="0xac62" id="Emperor Large Bullet">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x67</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+  <Object type="0xac63" id="Emperor Ring">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xf9</Index>
+    </Texture>
+    <Rotation>120</Rotation>
+  </Object>
+  <Object type="0xac64" id="Emperor Vortex">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x68</Index>
+    </Texture>
+    <Rotation>-60</Rotation>
+  </Object>
+  <Object type="0xac65" id="Emperor Laser">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>d1lofiObjBig</File>
+      <Index>0x69</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+  <Object type="0xac66" id="Emperor Shot">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>innerWorkingsObjects8x8</File>
+      <Index>0xfa</Index>
+    </Texture>
+    <Rotation>-180</Rotation>
+  </Object>
+  <Object type="0xac58" id="CHS Void Emperor">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>innerWorkingsChars16x16</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <AltTexture id="1">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x29</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x37</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x38</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x39</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x4b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x79</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x78</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x47</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="9">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x48</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="10">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x49</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="11">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x57</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="12">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x58</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="13">
+      <Texture>
+        <File>d1lofiObjBig</File>
+        <Index>0x59</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="14">
+      <Texture>
+        <File>invisible</File>
+        <Index>0</Index>
+      </Texture>
+    </AltTexture>
+    <DisplayId>Void Emperor</DisplayId>
+    <Defense>90</Defense>
+    <MaxHitPoints>5000000</MaxHitPoints>
+    <AlwaysPositiveHealth />
+    <Size>300</Size>
+    <ParalyzeImmune />
+    <StunImmune />
+    <StasisImmune />
+    <DazedImmune />
+    <SlowImmune />
+    <Resurrection />
+    <Flying />
+    <Exp>800000</Exp>
+    <HitSound>weapon/wand_of_dark_magic</HitSound>
+    <DeathSound>enter_realm</DeathSound>
+    <Quest />
+    <EventChestBoss />
+    <TrackLoot />
+    <PowerUpDef />
+    <PowerUpAtt />
+    <PowerUpDex />
+    <PowerUpWis />
+    <PowerUpSpd />
+    <PowerUpVit />
+    <PowerUpMana />
+    <PowerUpLife />
+    <Enemy />
+    <HealthBarBoss radius="50" />
+    <KillStat stat="GrotesqueKills" />
+    <KillStat stat="GodKills" />
+    <Projectile id="0">
+      <ObjectId>Emperor Bullet</ObjectId>
+      <Damage>300</Damage>
+      <Speed>120</Speed>
+      <LifetimeMS>2500</LifetimeMS>
+      <Size>120</Size>
+      <ArmorPiercing />
+      <MultiHit />
+      <ConditionEffect duration="4">Darkness</ConditionEffect>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Emperor Blast</ObjectId>
+      <Damage>200</Damage>
+      <Speed>100</Speed>
+      <LifetimeMS>3500</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="5">Paralyzed</ConditionEffect>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Emperor Small Shuriken</ObjectId>
+      <Damage>200</Damage>
+      <Speed>70</Speed>
+      <LifetimeMS>4200</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="6">Exposed</ConditionEffect>
+    </Projectile>
+    <Projectile id="3">
+      <ObjectId>Emperor Shuriken</ObjectId>
+      <Damage>225</Damage>
+      <Speed>100</Speed>
+      <LifetimeMS>1800</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="10">Quiet</ConditionEffect>
+    </Projectile>
+    <Projectile id="4">
+      <ObjectId>Emperor Wheel</ObjectId>
+      <Damage>200</Damage>
+      <Speed>50</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="6">Unstable</ConditionEffect>
+    </Projectile>
+    <Projectile id="5">
+      <ObjectId>Emperor Spin</ObjectId>
+      <Damage>175</Damage>
+      <Speed>150</Speed>
+      <LifetimeMS>2500</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="6" target="1">Stasis</ConditionEffect>
+    </Projectile>
+    <Projectile id="6">
+      <ObjectId>Emperor Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>20</Speed>
+      <LifetimeMS>3000</LifetimeMS>
+      <Size>120</Size>
+      <ArmorPiercing />
+      <MultiHit />
+      <ConditionEffect duration="15">Darkness</ConditionEffect>
+      <Amplitude>1.5</Amplitude>
+      <Frequency>1.5</Frequency>
+    </Projectile>
+    <Projectile id="7">
+      <ObjectId>Emperor Shockwave</ObjectId>
+      <Damage>200</Damage>
+      <Speed>150</Speed>
+      <LifetimeMS>3500</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="3">Stunned</ConditionEffect>
+    </Projectile>
+    <Projectile id="8">
+      <ObjectId>Emperor Wave</ObjectId>
+      <Damage>300</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <Size>120</Size>
+      <FaceDir />
+      <MultiHit />
+      <ConditionEffect duration="10">Slowed</ConditionEffect>
+      <Amplitude>2</Amplitude>
+      <Frequency>1.2</Frequency>
+    </Projectile>
+    <Projectile id="9">
+      <ObjectId>Emperor Spear</ObjectId>
+      <Damage>200</Damage>
+      <Speed>20</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <Size>120</Size>
+      <ConditionEffect duration="30">Silenced</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="10">
+      <ObjectId>Emperor Large Bullet</ObjectId>
+      <Damage>300</Damage>
+      <Speed>110</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <Size>250</Size>
+      <ArmorPiercing />
+      <MultiHit />
+      <ConditionEffect duration="5">Darkness</ConditionEffect>
+    </Projectile>
+    <Projectile id="11">
+      <ObjectId>Emperor Ring</ObjectId>
+      <Damage>200</Damage>
+      <Speed>100</Speed>
+      <LifetimeMS>2500</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="2">Petrify</ConditionEffect>
+    </Projectile>
+    <Projectile id="12">
+      <ObjectId>Emperor Wave</ObjectId>
+      <Damage>250</Damage>
+      <Speed>100</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <Size>120</Size>
+      <FaceDir />
+      <MultiHit />
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Amplitude>2</Amplitude>
+      <Frequency>1.2</Frequency>
+    </Projectile>
+    <Projectile id="13">
+      <ObjectId>Emperor Shuriken</ObjectId>
+      <Damage>225</Damage>
+      <Speed>80</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="5">Quiet</ConditionEffect>
+    </Projectile>
+    <Projectile id="14">
+      <ObjectId>Emperor Blast</ObjectId>
+      <Damage>205</Damage>
+      <Speed>60</Speed>
+      <LifetimeMS>3500</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <FaceDir />
+      <Amplitude>2</Amplitude>
+      <Frequency>2.5</Frequency>
+      <ConditionEffect duration="5">Paralyzed</ConditionEffect>
+    </Projectile>
+    <Projectile id="15">
+      <ObjectId>Emperor Small Shuriken</ObjectId>
+      <Damage>180</Damage>
+      <Speed>80</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <Size>120</Size>
+      <ConditionEffect duration="6">Exposed</ConditionEffect>
+    </Projectile>
+    <Projectile id="16">
+      <ObjectId>Emperor Spin</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>10000</LifetimeMS>
+      <Size>120</Size>
+      <Amplitude>2</Amplitude>
+      <Frequency>3</Frequency>
+      <MultiHit />
+      <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+    </Projectile>
+    <Projectile id="17">
+      <ObjectId>Emperor Spear</ObjectId>
+      <Damage>300</Damage>
+      <Speed>70</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <Size>120</Size>
+      <FaceDir />
+      <MultiHit />
+      <Amplitude>1.5</Amplitude>
+      <Frequency>2</Frequency>
+      <ConditionEffect duration="8">Silenced</ConditionEffect>
+    </Projectile>
+    <Projectile id="18">
+      <ObjectId>Emperor Vortex</ObjectId>
+      <Damage>1</Damage>
+      <Speed>50</Speed>
+      <LifetimeMS>6000</LifetimeMS>
+      <Size>240</Size>
+      <MultiHit />
+      <ConditionEffect duration="20">Dead</ConditionEffect>
+    </Projectile>
+    <Projectile id="19">
+      <ObjectId>Emperor Laser</ObjectId>
+      <Damage>450</Damage>
+      <Speed>110</Speed>
+      <LifetimeMS>2500</LifetimeMS>
+      <Size>160</Size>
+      <MultiHit />
+      <ConditionEffect duration="20">Weak</ConditionEffect>
+    </Projectile>
+    <Projectile id="20">
+      <ObjectId>Emperor Shot</ObjectId>
+      <Damage>350</Damage>
+      <Speed>80</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+      <ConditionEffect duration="20">Dazed</ConditionEffect>
+    </Projectile>
+    <Projectile id="21">
+      <ObjectId>Emperor Large Bullet</ObjectId>
+      <Damage>300</Damage>
+      <Speed>80</Speed>
+      <LifetimeMS>3000</LifetimeMS>
+      <Size>250</Size>
+      <ArmorPiercing />
+      <MultiHit />
+      <ConditionEffect duration="20">Unstable</ConditionEffect>
+    </Projectile>
+  </Object>
+  <Object type="0xac67" id="CHS Void Emperor Anchor">
+    <Class>GameObject</Class>
+    <AnimatedTexture>
+      <File>innerWorkingsChars16x16</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xac68" id="CHS Void Emperor Blackhole Spawner">
+    <Class>GameObject</Class>
+    <AnimatedTexture>
+      <File>innerWorkingsChars16x16</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xac69" id="CHS Void Emperor Gravity Controller">
+    <Class>GameObject</Class>
+    <AnimatedTexture>
+      <File>innerWorkingsChars16x16</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xac6a" id="CHS Void Emperor Teleportation Controller">
+    <Class>GameObject</Class>
+    <AnimatedTexture>
+      <File>innerWorkingsChars16x16</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xac6b" id="CHS Void Emperor Controller">
+    <Class>GameObject</Class>
+    <AnimatedTexture>
+      <File>innerWorkingsChars16x16</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <Size>0</Size>
+  </Object>
+  <Object type="0xac51" id="CHS Explain Dropper">
+    <Class>Container</Class>
+    <Container />
+    <Loot />
+    <Texture>
+      <File>lofiObj</File>
+      <Index>0x02</Index>
+    </Texture>
+    <Size>100</Size>
+    <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0x37bb, 0x37bb, 0x37bb, 0x37bb, 0x37bb, 0x37bb, 0x37bb, 0x37bb</Equipment>
   </Object>
 </Objects>

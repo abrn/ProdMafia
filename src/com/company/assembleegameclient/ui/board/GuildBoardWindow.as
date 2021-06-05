@@ -43,7 +43,7 @@ package com.company.assembleegameclient.ui.board {
          var _loc1_:Account = StaticInjectorContext.getInjector().getInstance(Account);
          this.client = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
          this.client.complete.addOnce(this.onGetBoardComplete);
-         this.client.sendRequest("/guild/getBoard",_loc1_.getCredentials());
+         this.client.sendRequest("/guild/getBoard",_loc1_.getAccessToken());
          this.dialog_ = new Dialog(null,"Loading...",null,null,null);
          addChild(this.dialog_);
          this.darkBox_.visible = false;
@@ -116,7 +116,7 @@ package com.company.assembleegameclient.ui.board {
       private function onEditComplete(param1:Event) : void {
          var _loc2_:Account = StaticInjectorContext.getInjector().getInstance(Account);
          var _loc3_:Object = {"board":this.editBoard_.getText()};
-         MoreObjectUtil.addToObject(_loc3_,_loc2_.getCredentials());
+         MoreObjectUtil.addToObject(_loc3_,_loc2_.getAccessToken());
          this.client = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
          this.client.complete.addOnce(this.onSetBoardComplete);
          this.client.sendRequest("/guild/setBoard",_loc3_);

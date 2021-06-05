@@ -77,21 +77,6 @@
     <Soulbound />
     <feedPower>50000</feedPower>
   </Object>
-  <Object type="0x025c" id="LH Lost Halls Debug Item">
-    <Class>Equipment</Class>
-    <Item />
-    <Texture>
-      <File>lostHallsObjects8x8</File>
-      <Index>29</Index>
-    </Texture>
-    <SlotType>10</SlotType>
-    <Description>For all Lost Halls Testing needs! For testing purposes only!</Description>
-    <Sound>use_potion</Sound>
-    <Consumable />
-    <BagType>0</BagType>
-    <Soulbound />
-    <Activate id="LH Lost Halls Debug">Create</Activate>
-  </Object>
   <Object type="0x174f" id="Test TP">
     <DisplayId>Godlands Teleporter</DisplayId>
     <Class>Equipment</Class>
@@ -104,21 +89,6 @@
     <Description>Teleports the user near the mountains.</Description>
     <Soulbound />
     <Activate id="Death Flower">TeleportToObject</Activate>
-    <BagType>8</BagType>
-    <InvUse />
-  </Object>
-  <Object type="0x10a2" id="Shatters TP">
-    <DisplayId>Cursed Crown Teleporter</DisplayId>
-    <Class>Equipment</Class>
-    <Item />
-    <AnimatedTexture>
-      <File>chars16x16dEncounters2</File>
-      <Index>87</Index>
-    </AnimatedTexture>
-    <SlotType>10</SlotType>
-    <Description>Teleports the user to the Cursed Crown in the Shatters.</Description>
-    <Soulbound />
-    <Activate id="shtrs The Cursed Crown">TeleportToObject</Activate>
     <BagType>8</BagType>
     <InvUse />
   </Object>
@@ -141,7 +111,7 @@
     <DisplayId>Creator's Ring</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-2" yOffset="2">
       <File>lofiObj</File>
       <Index>0x2d</Index>
     </Texture>
@@ -153,23 +123,6 @@
     <BagType>8</BagType>
     <feedPower>1500</feedPower>
     <Soulbound />
-  </Object>
-  <Object type="0x1a50" id="Snowy Spawner">
-    <DisplayId>Snowy Spawner</DisplayId>
-    <Class>Equipment</Class>
-    <Item />
-    <Texture>
-      <File>oryxHordeObjects8x8</File>
-      <Index>0x29</Index>
-    </Texture>
-    <SlotType>10</SlotType>
-    <Description>Use this to spawn Snowy for testing purposes!</Description>
-    <Sound>use_potion</Sound>
-    <Activate id="Spawner">Create</Activate>
-    <InvUse />
-    <BagType>8</BagType>
-    <Soulbound />
-    <feedPower>10</feedPower>
   </Object>
   <Object type="0x705e" id="InvinceMe">
     <DisplayId>Testosterone</DisplayId>
@@ -186,175 +139,10 @@
     <Activate effect="Invincible" duration="86400">ConditionEffectSelf</Activate>
     <Soulbound />
   </Object>
-  <Object type="0x710c" id="tots">
-    <Class>Equipment</Class>
-    <Item />
-    <DisplayId>Totalia Summoner</DisplayId>
-    <AnimatedTexture>
-      <File>chars16x16dEncounters</File>
-      <Index>37</Index>
-    </AnimatedTexture>
-    <SlotType>10</SlotType>
-    <Description>Summons Totalia.</Description>
-    <Sound>use_key</Sound>
-    <Soulbound />
-    <Activate id="Totalia the Malevolent" cooldown="30">Create</Activate>
-    <feedPower>200</feedPower>
-    <BagType>8</BagType>
-    <InvUse />
-  </Object>
-  <Object type="0x1aa8" id="frpk">
-    <Class>Equipment</Class>
-    <Item />
-    <DisplayId>FR Test Permakey</DisplayId>
-    <Texture>
-      <File>d3LofiObjEmbed</File>
-      <Index>0x0fe</Index>
-    </Texture>
-    <SlotType>10</SlotType>
-    <Description>A key which opens an entrance to FR Test FOREVER, AND EVER, AND EVER... \n\nKeys can only be used once you have 10 or more stars!</Description>
-    <Sound>use_key</Sound>
-    <Soulbound />
-    <Activate id="FR Test Portal" cooldown="30">CreatePortal</Activate>
-    <feedPower>200</feedPower>
-    <BagType>8</BagType>
-    <Track />
-    <InvUse />
-  </Object>
-  <Object type="0x1fe3" id="frs">
-    <Class>Equipment</Class>
-    <Item />
-    <DisplayId>FR God Spawner</DisplayId>
-    <AnimatedTexture>
-      <File>d3Chars16x16rEmbed</File>
-      <Index>34</Index>
-    </AnimatedTexture>
-    <SlotType>10</SlotType>
-    <Description>Spawn a Snow Construct.\n\nBe a responsible tester and don't use this in the Nexus!</Description>
-    <Sound>use_key</Sound>
-    <Soulbound />
-    <Activate id="FR God">Create</Activate>
-    <feedPower>200</feedPower>
-    <BagType>8</BagType>
-    <Track />
-    <InvUse />
-  </Object>
-  <Object type="0x1958" id="tgs">
-    <Class>Equipment</Class>
-    <Item />
-    <DisplayId>Test Guill Spawner</DisplayId>
-    <AnimatedTexture>
-      <File>d3Chars8x8rEmbed</File>
-      <Index>17</Index>
-    </AnimatedTexture>
-    <SlotType>10</SlotType>
-    <Description>Spawns Test Guill!</Description>
-    <Sound>use_key</Sound>
-    <Soulbound />
-    <Activate id="TG">Create</Activate>
-    <feedPower>200</feedPower>
-    <BagType>8</BagType>
-    <Track />
-    <InvUse />
-  </Object>
-  <Object type="0xbb2" id="Prod Enemy Item">
-    <DisplayId>Enemy Spawner</DisplayId>
-    <Class>Equipment</Class>
-    <Item />
-    <Texture>
-      <File>lofiChar8x8</File>
-      <Index>0xb5</Index>
-    </Texture>
-    <SlotType>10</SlotType>
-    <Description>Can spawn certain enemies. For testing purposes.</Description>
-    <Sound>use_key</Sound>
-    <InvUse />
-    <Soulbound />
-    <BagType>5</BagType>
-    <Activate id="Prod Enemy Spawner">Create</Activate>
-  </Object>
-  <Object id="BurstTest1" type="0x225a">
-    <Class>Equipment</Class>
-    <Item />
-    <Texture>
-      <File>lofiObj5</File>
-      <Index>0x61</Index>
-    </Texture>
-    <SlotType>2</SlotType>
-    <Description>BurstCount: 3, BurstDelay: 1.2, BurstMinDelay: 0.6, RoF: 1</Description>
-    <RateOfFire>1</RateOfFire>
-    <BurstCount>3</BurstCount>
-    <BurstDelay>1.2</BurstDelay>
-    <BurstMinDelay>0.6</BurstMinDelay>
-    <Projectile>
-      <ObjectId>Blue Magic</ObjectId>
-      <Speed>140</Speed>
-      <MinDamage>20</MinDamage>
-      <MaxDamage>70</MaxDamage>
-      <LifetimeMS>400</LifetimeMS>
-    </Projectile>
-    <BagType>1</BagType>
-    <Sound>weapon/dirk</Sound>
-    <OldSound>daggerSwing</OldSound>
-    <feedPower>7</feedPower>
-    <DropTradable />
-  </Object>
-  <Object id="BurstTest2" type="0x25c5">
-    <Class>Equipment</Class>
-    <Item />
-    <Texture>
-      <File>lofiObj5</File>
-      <Index>0x61</Index>
-    </Texture>
-    <SlotType>2</SlotType>
-    <Description>BurstCount: 5, BurstDelay: 2, BurstMinDelay: 1, RoF: 1</Description>
-    <RateOfFire>1</RateOfFire>
-    <BurstCount>5</BurstCount>
-    <BurstDelay>2</BurstDelay>
-    <BurstMinDelay>1</BurstMinDelay>
-    <Projectile>
-      <ObjectId>Blue Magic</ObjectId>
-      <Speed>140</Speed>
-      <MinDamage>20</MinDamage>
-      <MaxDamage>70</MaxDamage>
-      <LifetimeMS>400</LifetimeMS>
-    </Projectile>
-    <BagType>1</BagType>
-    <Sound>weapon/dirk</Sound>
-    <OldSound>daggerSwing</OldSound>
-    <feedPower>7</feedPower>
-    <DropTradable />
-  </Object>
-  <Object id="BurstTest3" type="0x25c6">
-    <Class>Equipment</Class>
-    <Item />
-    <Texture>
-      <File>lofiObj5</File>
-      <Index>0x61</Index>
-    </Texture>
-    <SlotType>2</SlotType>
-    <Description>BurstCount: 2, BurstDelay: 1, BurstMinDelay: 0.8, RoF: 0.8</Description>
-    <RateOfFire>0.8</RateOfFire>
-    <BurstCount>2</BurstCount>
-    <BurstDelay>1</BurstDelay>
-    <BurstMinDelay>0.8</BurstMinDelay>
-    <Projectile>
-      <ObjectId>Blue Magic</ObjectId>
-      <Speed>140</Speed>
-      <MinDamage>20</MinDamage>
-      <MaxDamage>70</MaxDamage>
-      <LifetimeMS>400</LifetimeMS>
-    </Projectile>
-    <BagType>1</BagType>
-    <Sound>weapon/dirk</Sound>
-    <OldSound>daggerSwing</OldSound>
-    <feedPower>7</feedPower>
-    <DropTradable />
-  </Object>
   <Object type="0x47e" id="Campaign Points Test">
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="-2">
       <File>lofiObj2</File>
       <Index>0xac</Index>
     </Texture>

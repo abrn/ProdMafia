@@ -956,6 +956,36 @@
     </Projectile>
     <KillStat stat="ConstructKills" />
   </Object>
+  <Object type="0x3790" id="Summoner Puppet">
+    <DisplayId>Summoner Puppet</DisplayId>
+    <Class>Character</Class>
+    <Group>DPS</Group>
+    <Enemy />
+    <AnimatedTexture>
+      <File>chars8x8rEncounters</File>
+      <Index>161</Index>
+    </AnimatedTexture>
+    <HitSound>monster/skeletons_hit</HitSound>
+    <DeathSound>monster/skeletons_death</DeathSound>
+    <Size>100</Size>
+    <ShadowSize>25</ShadowSize>
+    <MaxHitPoints>1500</MaxHitPoints>
+    <Defense>10</Defense>
+    <Exp>100</Exp>
+    <Projectile id="0">
+      <ObjectId>Purple Magic</ObjectId>
+      <Speed>50</Speed>
+      <Damage>75</Damage>
+      <LifetimeMS>1200</LifetimeMS>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Purple Magic</ObjectId>
+      <Speed>60</Speed>
+      <Damage>65</Damage>
+      <LifetimeMS>2000</LifetimeMS>
+    </Projectile>
+    <KillStat stat="ConstructKills" />
+  </Object>
   <Object type="0x7441" id="Puppet Loot Chest">
     <Class>Character</Class>
     <Enemy />

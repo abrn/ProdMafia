@@ -555,6 +555,7 @@
     <DamageBasedXP />
   </Object>
   <Object type="0x0d7a" id="Oryx Guardian TaskMaster">
+    <BlockPlayerPortals />
     <Group>Oryx Minions</Group>
     <Enemy />
     <Invincible />
@@ -1072,6 +1073,7 @@
     <EnemyOccupySquare />
   </Object>
   <Object type="0xb3a6" id="Infested pD Boss Target">
+    <BlockPlayerPortals />
     <Class>GameObject</Class>
     <Texture>
       <File>lofiEnvironment</File>

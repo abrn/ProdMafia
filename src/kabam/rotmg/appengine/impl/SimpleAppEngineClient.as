@@ -55,7 +55,7 @@ package kabam.rotmg.appengine.impl {
       }
       
       private function makeURL(param1:String) : String {
-         if(param1.charAt(0) != "/") {
+         if (param1.charAt(0) != "/") {
             param1 = "/" + param1;
          }
          return this.setup.getAppEngineUrl() + param1;

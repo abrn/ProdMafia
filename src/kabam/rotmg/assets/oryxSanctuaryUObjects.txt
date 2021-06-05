@@ -9879,4 +9879,12 @@
     <ShadowSize>0</ShadowSize>
     <BlocksSight />
   </Object>
+  <Object type="0x582" id="O3B Crusty Pathfinding">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>oryxSanctuaryObjects8x8</File>
+      <Index>0x0</Index>
+    </Texture>
+    <Size>0</Size>
+  </Object>
 </Objects>

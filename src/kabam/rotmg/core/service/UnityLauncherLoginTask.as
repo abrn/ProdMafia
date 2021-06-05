@@ -31,7 +31,7 @@ package kabam.rotmg.core.service {
                "secret":this.account.getSecret()
             },true);
          } else {
-            this.client.sendRequest("/account/verify",this.account.getCredentials(),true);
+            this.client.sendRequest("/account/verify",this.account.getAccessToken(),true);
          }
       }
       

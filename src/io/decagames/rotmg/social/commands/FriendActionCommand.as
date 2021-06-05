@@ -41,8 +41,8 @@ package io.decagames.rotmg.social.commands {
             this.addTextLine.dispatch(ChatMessage.make("","Friend request sent"));
          }
          var _loc2_:String = FriendsActions.getURL(this.vo.request);
-         var _loc1_:Object = this.account.getCredentials();
-         MoreObjectUtil.addToObject(_loc1_,this.account.getCredentials());
+         var _loc1_:Object = this.account.getAccessToken();
+         MoreObjectUtil.addToObject(_loc1_,this.account.getAccessToken());
          _loc1_.game_net_user_id = this.account.gameNetworkUserId();
          _loc1_.game_net = this.account.gameNetwork();
          _loc1_.play_platform = this.account.playPlatform();

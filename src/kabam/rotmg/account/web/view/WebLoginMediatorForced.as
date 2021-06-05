@@ -1,5 +1,7 @@
 package kabam.rotmg.account.web.view {
-   import kabam.rotmg.account.core.Account;
+import com.company.assembleegameclient.parameters.Parameters;
+
+import kabam.rotmg.account.core.Account;
    import kabam.rotmg.account.core.signals.LoginSignal;
    import kabam.rotmg.account.web.model.AccountData;
    import kabam.rotmg.appengine.api.AppEngineClient;
@@ -54,13 +56,14 @@ package kabam.rotmg.account.web.view {
          this.view.disable();
          if(this.account.getUserId().toLowerCase() == param1.username.toLowerCase()) {
             _loc2_ = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
-            if(param1.secret != "") {
+            if (param1.secret != "") {
                _loc2_.sendRequest("/account/verify",{
                   "game_net":"Unity",
                   "play_platform":"Unity",
                   "game_net_user_id":"",
                   "guid":param1.username,
-                  "secret":param1.secret
+                  "secret":param1.secret,
+                  "clientToken":Parameters.data.clientToken
                });
             } else {
                _loc2_.sendRequest("/account/verify",{
@@ -68,7 +71,8 @@ package kabam.rotmg.account.web.view {
                   "play_platform":"Unity",
                   "game_net_user_id":"",
                   "guid":param1.username,
-                  "password":param1.password
+                  "password":param1.password,
+                  "clientToken":Parameters.data.clientToken
                });
             }
             _loc2_.complete.addOnce(this.onComplete);

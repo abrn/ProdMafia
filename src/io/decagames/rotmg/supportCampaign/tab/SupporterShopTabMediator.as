@@ -196,7 +196,7 @@ package io.decagames.rotmg.supportCampaign.tab {
             return;
          }
          this.showFade.dispatch();
-         var _loc2_:Object = this.account.getCredentials();
+         var _loc2_:Object = this.account.getAccessToken();
          this.client.sendRequest("/supportCampaign/unlock",_loc2_);
          this.client.complete.addOnce(this.onUnlockComplete);
       }

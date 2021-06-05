@@ -29,9 +29,9 @@ package kabam.rotmg.core.service {
          this.client.setMaxRetries(2);
          this.client.complete.addOnce(this.onComplete);
          this.client.sendRequest("/app/init?platform=standalonewindows64&key=9KnJFxtTvLu2frXv",{
-            "game_net":"rotmg",
-            "guid":"",
-            "password":""
+            "game_net":"Unity",
+            "play_platform":"Unity",
+            "game_net_user_id":""
          },true);
       }
       

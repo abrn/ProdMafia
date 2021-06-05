@@ -5304,7 +5304,7 @@
     </ExtraTooltipData>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="0" yOffset="2">
       <File>xmasNexusObjects8x8</File>
       <Index>0x9d</Index>
     </Texture>
@@ -5323,7 +5323,7 @@
     </ExtraTooltipData>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="0" yOffset="2">
       <File>xmasNexusObjects8x8</File>
       <Index>0x97</Index>
     </Texture>
@@ -5399,7 +5399,7 @@
     </ExtraTooltipData>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="0" yOffset="2">
       <File>xmasNexusObjects8x8</File>
       <Index>0x9b</Index>
     </Texture>
@@ -5418,7 +5418,7 @@
     </ExtraTooltipData>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="0" yOffset="2">
       <File>xmasNexusObjects8x8</File>
       <Index>0x9c</Index>
     </Texture>
@@ -5433,7 +5433,7 @@
     <DisplayId>XN Test Sn Base</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="2" yOffset="2">
       <File>xmasNexusObjects16x16</File>
       <Index>0x146</Index>
     </Texture>
@@ -5450,7 +5450,7 @@
     <DisplayId>Test Dropper</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="0" yOffset="2">
       <File>xmasNexusObjects8x8</File>
       <Index>0x9c</Index>
     </Texture>
@@ -6260,10 +6260,10 @@
   <Object type="0x3fd8" id="XN Craig">
     <DisplayId>Craig The Intern</DisplayId>
     <Class>Character</Class>
-    <Texture>
-      <File>santaWorkshopObjects8x8</File>
-      <Index>0x0b</Index>
-    </Texture>
+    <AnimatedTexture>
+      <File>d3Chars8x8rEmbed</File>
+      <Index>22</Index>
+    </AnimatedTexture>
     <Size>100</Size>
     <NoMiniMap />
   </Object>

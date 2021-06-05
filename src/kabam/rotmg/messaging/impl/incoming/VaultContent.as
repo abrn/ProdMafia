@@ -3,20 +3,15 @@ package kabam.rotmg.messaging.impl.incoming {
    import kabam.rotmg.messaging.impl.data.CompressedInt;
    
    public class VaultContent extends IncomingMessage {
-       
-      
+      public var vaultObjId:int;
+      public var giftObjId:int;
+      public var potionObjId:int;
       public var vaultContents:Vector.<int>;
-      
       public var giftContents:Vector.<int>;
-      
       public var potionContents:Vector.<int>;
-      
       public var vaultUpgradeCost:int;
-      
       public var potionUpgradeCost:int;
-      
       public var currentPotionMax:int;
-      
       public var nextPotionMax:int;
       
       public function VaultContent(param1:uint, param2:Function) {
@@ -28,10 +23,10 @@ package kabam.rotmg.messaging.impl.incoming {
       
       override public function parseFromInput(param1:IDataInput) : void {
          var _loc4_:int = 0;
-         CompressedInt.read(param1);
-         CompressedInt.read(param1);
-         CompressedInt.read(param1);
-         CompressedInt.read(param1);
+         param1.readBoolean();
+         this.vaultObjId = CompressedInt.read(param1);
+         this.giftObjId = CompressedInt.read(param1);
+         this.potionObjId = CompressedInt.read(param1);
          var _loc3_:int = CompressedInt.read(param1);
          _loc4_ = 0;
          while(_loc4_ < _loc3_) {

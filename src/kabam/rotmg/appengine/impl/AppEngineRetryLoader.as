@@ -7,34 +7,30 @@ import flash.events.Event;
    import flash.net.URLLoader;
    import flash.net.URLRequest;
    import flash.net.URLRequestHeader;
-   import flash.net.URLVariables;
+import flash.net.URLRequestMethod;
+import flash.net.URLVariables;
    import flash.system.Capabilities;
    import flash.utils.ByteArray;
-   import kabam.rotmg.appengine.api.RetryLoader;
-   import org.osflash.signals.OnceSignal;
+
+import kabam.rotmg.account.core.Account;
+import kabam.rotmg.appengine.api.RetryLoader;
+import kabam.rotmg.core.StaticInjectorContext;
+
+import org.osflash.signals.OnceSignal;
    
    public class AppEngineRetryLoader implements RetryLoader {
-       
-      
       private const _complete:OnceSignal = new OnceSignal(Boolean);
-      
       private var maxRetries:int;
-      
       private var dataFormat:String;
-      
       private var url:String;
-      
       private var params:Object;
-      
       private var urlRequest:URLRequest;
-      
       private var urlLoader:URLLoader;
-      
       private var retriesLeft:int;
-      
       private var inProgress:Boolean;
-      
       private var fromLauncher:Boolean;
+      private var atLoader:URLLoader;
+      private var account:Account;
       
       public function AppEngineRetryLoader() {
          super();
@@ -70,50 +66,35 @@ import flash.events.Event;
       
       private function internalSendRequest() : void {
          this.cancelPendingRequest();
+
          this.urlRequest = this.makeUrlRequest();
          this.urlLoader = this.makeUrlLoader();
          this.urlLoader.load(this.urlRequest);
       }
       
       private function makeUrlRequest() : URLRequest {
-         var _loc2_:Array = [new URLRequestHeader("Accept","*/*")];
-         if(Capabilities.playerType == "Desktop") {
-            _loc2_.push(new URLRequestHeader("Referer",null));
-            if(this.fromLauncher) {
-               _loc2_.push(new URLRequestHeader("User-Agent","UnityPlayer/" + Parameters.UNITY_LAUNCHER_VERSION + " (UnityWebRequest/1.0, libcurl/7.52.0-DEV)"));
-               _loc2_.push(new URLRequestHeader("X-Unity-Version",Parameters.UNITY_LAUNCHER_VERSION));
-            } else {
-               _loc2_.push(new URLRequestHeader("User-Agent","UnityPlayer/" + Parameters.UNITY_GAME_VERSION
-                       + " (UnityWebRequest/1.0, libcurl/7.52.0-DEV)"));
-               _loc2_.push(new URLRequestHeader("X-Unity-Version",Parameters.UNITY_GAME_VERSION));
-            }
-         }
-         var _loc1_:URLRequest = new URLRequest(this.url);
-         _loc1_.method = "POST";
-         _loc1_.data = this.makeUrlVariables(this.url);
-         _loc1_.requestHeaders = _loc2_;
-         return _loc1_;
+         var headers:Array = [new URLRequestHeader("Accept", "*/*")];
+         headers.push(new URLRequestHeader("Referer", null));
+         headers.push(new URLRequestHeader("User-Agent", "UnityPlayer/" +
+                 (this.fromLauncher ? Parameters.UNITY_LAUNCHER_VERSION : Parameters.UNITY_GAME_VERSION) +
+                 " (UnityWebRequest/1.0, libcurl/7.52.0-DEV)"));
+         headers.push(new URLRequestHeader("X-Unity-Version",
+                 this.fromLauncher ? Parameters.UNITY_LAUNCHER_VERSION : Parameters.UNITY_GAME_VERSION));
+
+         var request:URLRequest = new URLRequest(this.url);
+         request.method = URLRequestMethod.POST;
+         request.data = this.makeUrlVariables();
+         request.requestHeaders = headers;
+         return request;
       }
 
-      private function makeUrlVariables(url:String) : URLVariables {
+      private function makeUrlVariables() : URLVariables {
          var objName:* = null;
-         var _loc3_:URLVariables = new URLVariables();
-         var _loc2_:String = "";
-         for (objName in this.params) {
-            if(!this.fromLauncher &&
-                    url.indexOf("app/init") == -1 &&
-                    url.indexOf("account/verify") == -1 &&
-                    url.indexOf("char/list") == -1 &&
-                    url.indexOf("account/getOwnedPetSkins") == -1 &&
-                    (objName == "guid" || objName == "password")) {
-               _loc2_ = _loc2_ + ((_loc2_.length > 0?"&":"") + objName + "=" + this.params[objName]);
-            }
-            _loc3_[objName] = this.params[objName];
-         }
-         if(_loc2_.length > 0) {
-            _loc3_[""] = _loc2_;
-         }
-         return _loc3_;
+         var vars:URLVariables = new URLVariables();
+         for (objName in this.params)
+            vars[objName] = this.params[objName];
+
+         return vars;
       }
       
       private function makeUrlLoader() : URLLoader {

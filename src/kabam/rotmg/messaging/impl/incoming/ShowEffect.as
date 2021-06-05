@@ -50,6 +50,7 @@ package kabam.rotmg.messaging.impl.incoming {
       public const THUNDER_BUFF_EFFECT_TYPE:int = 30;
       public const STATUS_FLASH_EFFECT_TYPE:int = 31;
       public const FIRE_ORB_BUFF_EFFECT_TYPE:int = 32;
+      public const SUMMONER_MAGIC_CIRCLE_EFFECT_TYPE:int = 35;
       
       public var effectType_:uint;
       public var targetObjectId_:int;
@@ -105,11 +106,9 @@ package kabam.rotmg.messaging.impl.incoming {
             this.duration_ = 1;
          }
          if (_loc2_ & 128) {
-            if (effectType_ != 15)
-               trace("Size exported, id: " + effectType_);
             this.size = param1.readByte();
-            if (this.size != 100)
-               trace("Size != 100, id: " + effectType_);
+         } else {
+            this.size = 100;
          }
       }
       

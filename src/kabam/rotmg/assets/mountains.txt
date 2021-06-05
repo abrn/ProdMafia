@@ -812,6 +812,60 @@
     <KillStat stat="CritterKills" />
     <KillStat stat="GodKills" />
   </Object>
+  <Object type="0xaabf" id="Corsair Crab">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dMountains1</File>
+      <Index>38</Index>
+    </AnimatedTexture>
+    <HitSound>monster/scorpions_hit</HitSound>
+    <DeathSound>monster/scorpions_death</DeathSound>
+    <Size>120</Size>
+    <Enemy />
+    <MaxHitPoints>12000</MaxHitPoints>
+    <Defense>15</Defense>
+    <Terrain>Mountains</Terrain>
+    <SpawnProb>0.045</SpawnProb>
+    <Exp>136</Exp>
+    <Projectile id="0">
+      <ObjectId>Corsair Crab Claw</ObjectId>
+      <Damage>120</Damage>
+      <Speed>80</Speed>
+      <Size>140</Size>
+      <LifetimeMS>2000</LifetimeMS>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Corsair Crab Claw</ObjectId>
+      <Damage>130</Damage>
+      <Speed>90</Speed>
+      <Size>140</Size>
+      <LifetimeMS>1200</LifetimeMS>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Corsair Crab Orb</ObjectId>
+      <Damage>110</Damage>
+      <Speed>80</Speed>
+      <Size>100</Size>
+      <LifetimeMS>1200</LifetimeMS>
+    </Projectile>
+    <Projectile id="3">
+      <ObjectId>Corsair Crab Orb</ObjectId>
+      <Damage>90</Damage>
+      <Speed>70</Speed>
+      <Size>80</Size>
+      <LifetimeMS>1200</LifetimeMS>
+    </Projectile>
+    <Projectile id="4">
+      <ObjectId>Corsair Crab Wave</ObjectId>
+      <Damage>120</Damage>
+      <Speed>80</Speed>
+      <Size>120</Size>
+      <LifetimeMS>1500</LifetimeMS>
+      <ConditionEffect duration="3">Exposed</ConditionEffect>
+    </Projectile>
+    <KillStat stat="CritterKills" />
+    <KillStat stat="GodKills" />
+  </Object>
   <Object type="0xc4db" id="Lucky White Demon">
     <Group>Greater Demons</Group>
     <Enemy />

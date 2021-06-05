@@ -8,7 +8,7 @@ package kabam.rotmg.account {
    import kabam.rotmg.account.core.model.OfferModel;
    import kabam.rotmg.account.core.services.GetCharListTask;
    import kabam.rotmg.account.core.services.GetConCharListTask;
-   import kabam.rotmg.account.core.services.GetConServersTask;
+   import kabam.rotmg.account.core.services.GetServersTask;
    import kabam.rotmg.account.core.services.VerifyAgeTask;
    import kabam.rotmg.account.core.signals.PurchaseGoldSignal;
    import kabam.rotmg.account.core.signals.UpdateAccountInfoSignal;
@@ -70,7 +70,7 @@ package kabam.rotmg.account {
          this.injector.map(VerifyAgeTask);
          this.injector.map(GetCharListTask);
          this.injector.map(GetConCharListTask);
-         this.injector.map(GetConServersTask);
+         this.injector.map(GetServersTask);
          this.injector.map(MoneyFrameEnableCancelSignal).asSingleton();
          this.injector.map(SecurityQuestionsModel).asSingleton();
          this.injector.map(OfferModel).asSingleton();

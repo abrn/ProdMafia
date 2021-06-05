@@ -29,16 +29,10 @@ package kabam.rotmg.core.service {
          this.client.setMaxRetries(2);
          this.client.complete.addOnce(this.onComplete);
          var _loc1_:Object = {
-            "guid":"",
-            "game_net":"Unity",
-            "play_platform":"Unity",
-            "game_net_user_id":""
+            "game_net": "Unity",
+            "play_platform": "Unity",
+            "game_net_user_id": ""
          };
-         if(this.account.getSecret() == "" || this.account.getSecret() == null) {
-            _loc1_.password = "";
-         } else {
-            _loc1_.secret = "";
-         }
          this.client.sendRequest("/app/init",_loc1_);
       }
       

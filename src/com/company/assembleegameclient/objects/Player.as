@@ -4,7 +4,8 @@ package com.company.assembleegameclient.objects {
    import com.company.assembleegameclient.map.mapoverlay.CharacterStatusText;
    import com.company.assembleegameclient.objects.particles.HealingEffect;
    import com.company.assembleegameclient.objects.particles.LevelUpEffect;
-   import com.company.assembleegameclient.parameters.Parameters;
+import com.company.assembleegameclient.parameters.Parameters;
+import com.company.assembleegameclient.parameters.Parameters;
    import com.company.assembleegameclient.sound.SoundEffectLibrary;
    import com.company.assembleegameclient.util.AnimatedChar;
    import com.company.assembleegameclient.util.FameUtil;
@@ -511,21 +512,19 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          var _loc21_:int = 0;
          var _loc12_:Number = NaN;
          if(this.map_.player_ == this) {
-            if(this.isPaused) {
-               return true;
-            }
             this.calcHealth(param1 - map_.gs_.lastUpdate_);
             if(this.checkHealth(param1)) {
                return false;
             }
             _loc17_ = this.equipment_[0];
             _loc23_ = this.prevWeaponId != _loc17_;
-            _loc15_ = this.prevLifeMult != this.projectileLifeMult;
-            _loc19_ = this.prevSpeedMult != this.projectileSpeedMult;
+            _loc15_ = this.prevLifeMult != (Parameters.data.lifeMul == 1.0 ? this.projectileLifeMult : Parameters.data.lifeMul);
+            _loc19_ = this.prevSpeedMult != (Parameters.data.speedMul == 1.0 ? this.projectileSpeedMult : Parameters.data.speedMul);
             if(_loc17_ != -1) {
                if(this.range == -1 || _loc23_ || _loc15_ || _loc19_) {
                   _loc7_ = ObjectLibrary.propsLibrary_[_loc17_].projectiles_[0];
-                  this.range = _loc7_.calcMaxRange(this.projectileSpeedMult, this.projectileLifeMult);
+                  this.range = _loc7_.calcMaxRange((Parameters.data.speedMul == 1.0 ? this.projectileSpeedMult : Parameters.data.speedMul),
+                          (Parameters.data.lifeMul == 1.0 ? this.projectileLifeMult : Parameters.data.lifeMul));
                   this.range = Math.min(this.range, 16);
                   if(_loc23_) {
                      this.prevWeaponId = _loc17_;
@@ -540,7 +539,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
             } else {
                this.range = -1;
             }
-            if(this.icMS != -1 && TimeUtil.getTrueTime() - this.icMS >= this.icTime() * Parameters.data.timeScale) {
+            if (this.icMS != -1 && TimeUtil.getTrueTime() - this.icMS >= this.icTime() * Parameters.data.timeScale) {
                this.icMS = -1;
             }
             this.checkMana(param1);
@@ -648,7 +647,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
                this.followVec.y = 0;
             }
             if(!(map_.isVault && !Parameters.data.autoLootInVault)
-                    && !isPaused && Parameters.data.AutoLootOn) {
+                    && Parameters.data.AutoLootOn) {
                this.autoLoot(param1);
             }
             if(Parameters.swapINVandBP) {
@@ -680,32 +679,30 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          var _loc16_:Number = NaN;
          var _loc3_:int = 0;
          var _loc8_:Vector.<uint> = null;
-         if(!this.isPaused) {
-            if(!this.map_.gs_.isSafeMap) {
-               if(this.tierBoost) {
-                  this.tierBoost = this.tierBoost - param2;
-                  if(this.tierBoost < 0) {
-                     this.tierBoost = 0;
-                  }
-               }
-               if(this.dropBoost) {
-                  this.dropBoost = this.dropBoost - param2;
-                  if(this.dropBoost < 0) {
-                     this.dropBoost = 0;
-                  }
+         if(!this.map_.gs_.isSafeMap) {
+            if(this.tierBoost) {
+               this.tierBoost = this.tierBoost - param2;
+               if(this.tierBoost < 0) {
+                  this.tierBoost = 0;
                }
             }
-            if(this.xpTimer) {
-               this.xpTimer = this.xpTimer - param2;
-               if(this.xpTimer < 0) {
-                  this.xpTimer = 0;
+            if(this.dropBoost) {
+               this.dropBoost = this.dropBoost - param2;
+               if(this.dropBoost < 0) {
+                  this.dropBoost = 0;
                }
             }
-            if(this.isHealing && !Parameters.data.noParticlesMaster) {
-               if(this.healingEffect_ == null) {
-                  this.healingEffect_ = new HealingEffect(this);
-                  this.map_.addObj(this.healingEffect_,x_,y_);
-               }
+         }
+         if(this.xpTimer) {
+            this.xpTimer = this.xpTimer - param2;
+            if(this.xpTimer < 0) {
+               this.xpTimer = 0;
+            }
+         }
+         if(this.isHealing && !Parameters.data.noParticlesMaster) {
+            if(this.healingEffect_ == null) {
+               this.healingEffect_ = new HealingEffect(this);
+               this.map_.addObj(this.healingEffect_,x_,y_);
             }
          }
          if(this.healingEffect_) {
@@ -942,7 +939,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          }
          if(Parameters.data.alphaOnOthers && (this.objectId_ != map_.player_.objectId_ && (!this.starred_ || this.isFellowGuild_ && Parameters.data.showAOGuildies))) {
             _loc12_ = CachingColorTransformer.alphaBitmapData(_loc12_,Parameters.data.alphaMan);
-         } else if(this.isPaused || this.isStasis || this.isPetrified) {
+         } else if(this.isStasis || this.isPetrified) {
             _loc12_ = CachingColorTransformer.filterBitmapData(_loc12_,PAUSED_FILTER);
          } else if(this.isInvisible) {
             _loc12_ = CachingColorTransformer.alphaBitmapData(_loc12_,0.4);
@@ -1154,7 +1151,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
       }
 
       public function isTeleportEligible(param1:Player) : Boolean {
-         return !(param1.dead_ || param1.isPaused || param1.isInvisible);
+         return !(param1.dead_ || param1.isInvisible);
       }
 
       public function msUtilTeleport() : int {
@@ -1484,7 +1481,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          var _loc7_:int = 0;
          var _loc6_:* = this.map_.goDict_;
          for each(var _loc5_ in this.map_.goDict_) {
-            if(_loc5_ is Player && !_loc5_.isInvisible && !_loc5_.isPaused) {
+            if(_loc5_ is Player && !_loc5_.isInvisible) {
                _loc3_ = (_loc5_.x_ - param1.x) * (_loc5_.x_ - param1.x) + (_loc5_.y_ - param1.y) * (_loc5_.y_ - param1.y);
                if(_loc3_ < _loc4_) {
                   _loc4_ = _loc3_;
@@ -1538,7 +1535,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          var _loc5_:Number = NaN;
          var _loc6_:* = null;
          var _loc7_:Number = NaN;
-         if(this.isStunned_() || this.isPaused_() || this.isPetrified_()) {
+         if(this.isStunned_() || this.isPetrified_()) {
             return false;
          }
          var _loc3_:ObjectProperties = ObjectLibrary.getPropsFromType(param1);
@@ -2030,7 +2027,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          var _loc11_:int = 0;
          var _loc10_:* = map_.vulnEnemyDict_;
          for each(var _loc2_ in map_.vulnEnemyDict_) {
-            if(!_loc2_.isInvulnerable && !_loc2_.isStasis && !_loc2_.isInvincible && !_loc2_.isPaused) {
+            if(!_loc2_.isInvulnerable && !_loc2_.isStasis && !_loc2_.isInvincible) {
                if(_loc2_.maxHP_ >= _loc7_ && _loc2_ is Character && this.getDistSquared(_loc2_.x_,_loc2_.y_,this.x_,this.y_) <= 225) {
                   _loc9_ = this.getNumNearbyEnemies(_loc2_,_loc8_);
                   if(_loc9_ > _loc1_ && _loc9_ > _loc3_) {
@@ -2400,9 +2397,6 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          if(this.isSilenced) {
             return false;
          }
-         if(this.isPaused) {
-            return false;
-         }
          if(param1 < this.nextAltAttack_) {
             return false;
          }
@@ -2458,7 +2452,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
          if(param4 == -1) {
             param4 = TimeUtil.getModdedTime();
          }
-         if(map_ == null || this.isPaused) {
+         if(map_ == null) {
             return false;
          }
          var _loc10_:int = equipment_[1];
@@ -3068,7 +3062,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
 
       private function calcHealth(param1:int) : void {
          var _loc5_:Number = param1 * 0.001;
-         var _loc6_:Number = 1 + 0.12 * this.vitality_ * (this.icMS != -1?1:2);
+         var _loc6_:Number = 1 + 0.12 * this.vitality_ * (this.isInCombat_()?1:2);
          var _loc3_:Boolean = this.map_.isTrench && this.breath_ == 0;
          if(!this.isSick && !this.isBleeding_()) {
             this.hpLog = this.hpLog + _loc6_ * _loc5_;
@@ -3177,7 +3171,7 @@ import io.decagames.rotmg.supportCampaign.data.SupporterCampaignModel;
       }
 
       private function shoot(param1:Number, param2:int = -1, param3:Boolean = false) : void {
-         if(map_ == null || this.isStunned_() || this.isPaused_() || this.isPetrified_()) {
+         if(map_ == null || this.isStunned_() || this.isInCombat_() || this.isPetrified_()) {
             return;
          }
          var _loc5_:int = equipment_[0];

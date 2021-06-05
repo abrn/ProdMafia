@@ -14,15 +14,10 @@ package kabam.rotmg.messaging.impl.incoming {
       public var allowPlayerTeleport_:Boolean;
       public var showDisplays_:Boolean;
       public var maxPlayers_:int;
-      public var clientXML_:Vector.<String>;
-      public var extraXML_:Vector.<String>;
-      public var connectionGuid_:String;
       public var gameOpenedTime_:int;
       public var version:String;
       
       public function MapInfo(param1:uint, param2:Function) {
-         this.clientXML_ = new Vector.<String>();
-         this.extraXML_ = new Vector.<String>();
          super(param1,param2);
       }
       
@@ -38,32 +33,8 @@ package kabam.rotmg.messaging.impl.incoming {
          this.allowPlayerTeleport_ = param1.readBoolean();
          this.showDisplays_ = param1.readBoolean();
          this.maxPlayers_ = param1.readShort();
-         this.connectionGuid_ = param1.readUTF();
          this.gameOpenedTime_ = param1.readUnsignedInt();
-         this.parseXML(param1);
          this.version = param1.readUTF();
-      }
-      
-      private function parseXML(param1:IDataInput) : void {
-         var _loc2_:int = 0;
-         var _loc3_:int = 0;
-         var _loc4_:int = 0;
-         _loc2_ = param1.readShort();
-         this.clientXML_.length = 0;
-         _loc3_ = 0;
-         while(_loc3_ < _loc2_) {
-            _loc4_ = param1.readInt();
-            this.clientXML_.push(param1.readUTFBytes(_loc4_));
-            _loc3_++;
-         }
-         _loc2_ = param1.readShort();
-         this.extraXML_.length = 0;
-         _loc3_ = 0;
-         while(_loc3_ < _loc2_) {
-            _loc4_ = param1.readInt();
-            this.extraXML_.push(param1.readUTFBytes(_loc4_));
-            _loc3_++;
-         }
       }
       
       override public function toString() : String {

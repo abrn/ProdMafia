@@ -91,7 +91,7 @@ package kabam.rotmg.account.web.view {
       }
       
       private function onResetPhase2() : void {
-         var _loc1_:Object = this.account.getCredentials();
+         var _loc1_:Object = this.account.getAccessToken();
          this.email = this.account.getUserId();
          this.pass = this.account.getPassword();
          this.logout.dispatch();

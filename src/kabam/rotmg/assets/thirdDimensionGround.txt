@@ -473,6 +473,7 @@
       <File>thirdDimensionObjects8x8</File>
       <Index>0xbe</Index>
     </Texture>
+    <Alpha />
     <NoWalk />
   </Ground>
   <Ground type="0x3d2d" id="tD Void Walk">
@@ -510,6 +511,38 @@
     <Texture>
       <File>thirdDimensionObjects8x8</File>
       <Index>0xe4</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x1f1" id="tD Diagonal TL Ground">
+    <Alpha />
+    <NoWalk />
+    <Texture>
+      <File>thirdDimensionObjects8x8</File>
+      <Index>0x52</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x1f2" id="tD Diagonal TR Ground">
+    <Alpha />
+    <NoWalk />
+    <Texture>
+      <File>thirdDimensionObjects8x8</File>
+      <Index>0x53</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x1f3" id="tD Diagonal BL Ground">
+    <Alpha />
+    <NoWalk />
+    <Texture>
+      <File>thirdDimensionObjects8x8</File>
+      <Index>0x62</Index>
+    </Texture>
+  </Ground>
+  <Ground type="0x1f4" id="tD Diagonal BR Ground">
+    <Alpha />
+    <NoWalk />
+    <Texture>
+      <File>thirdDimensionObjects8x8</File>
+      <Index>0x63</Index>
     </Texture>
   </Ground>
   <Ground type="0x3d2f" id="tD Inner Diagonal TR">

@@ -614,7 +614,7 @@
     <Class>Equipment</Class>
     <Item />
     <DisplayId>Oryx Horde key</DisplayId>
-    <Texture>
+    <Texture xOffset="-2" yOffset="0">
       <File>mountainTempleObjects8x8</File>
       <Index>0xcb</Index>
     </Texture>
@@ -922,6 +922,7 @@
     <Size>140</Size>
     <Defense>100</Defense>
     <Exp>26</Exp>
+    <KeepDamageRecord />
     <HealthBarBoss radius="30" />
     <KillStat stat="ConstructKills" />
     <KillStat stat="GodKills" />
@@ -1115,8 +1116,8 @@
     <Class>Character</Class>
     <StasisImmune />
     <AnimatedTexture>
-      <File>chars8x8rMid</File>
-      <Index>0x02</Index>
+      <File>spriteWorldChars8x8</File>
+      <Index>3</Index>
     </AnimatedTexture>
     <HitSound>monster/ogres_hit</HitSound>
     <DeathSound>monster/ogres_death</DeathSound>

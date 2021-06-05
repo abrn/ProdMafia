@@ -6,55 +6,33 @@ package kabam.rotmg.account.web {
    import kabam.rotmg.account.core.Account;
    
    public class WebAccount implements Account {
-      
       public static const NETWORK_NAME:String = "rotmg";
-      
       private static const WEB_USER_ID:String = "";
-      
       public static const NETWORK_NAME_EXALT:String = "Unity";
-      
       public static const WEB_PLAY_PLATFORM_NAME:String = "rotmg";
-      
       public static const WEB_PLAY_PLATFORM_NAME_EXALT:String = "Unity";
-       
-      
+
       public var signedRequest:String;
-      
       public var kabamId:String;
-      
       private var userId:String = "";
-      
       private var password:String;
-      
       private var secret:String = "";
-      
       private var token:String = "";
-      
+      private var accessToken:String = "";
+      private var accessTokenExpiry:int = -1;
       private var entryTag:String = "";
-      
       private var isVerifiedEmail:Boolean;
-      
       private var platformToken:String;
       
       private var _userDisplayName:String = "";
-      
       private var _rememberMe:Boolean = true;
-      
       private var _paymentProvider:String = "";
-      
       private var _paymentData:String = "";
-      
       private var _creationDate:Date;
       
       public function WebAccount() {
          super();
-         try {
-            this.entryTag = ExternalInterface.call("rotmg.UrlLib.getParam","entrypt");
-            return;
-         }
-         catch(error:Error) {
-            return;
-         }
+         this.entryTag = "";
       }
       
       public function get userDisplayName() : String {
@@ -115,46 +93,50 @@ package kabam.rotmg.account.web {
          return "";
       }
       
+      public function getAccessToken() : String {
+         return this.accessToken;
+      }
+
+      public function getAccessTokenExpiry() : int {
+         return this.accessTokenExpiry;
+      }
+
       public function getCredentials() : Object {
-         if(this.getSecret() != "") {
+         if (this.getSecret() != "") {
             return {
-               "guid":this.getUserId(),
-               "secret":this.getSecret()
+               "guid": this.getUserId(),
+               "secret": this.getSecret()
             };
          }
          return {
-            "guid":this.getUserId(),
-            "password":this.getPassword()
+            "guid": this.getUserId(),
+            "password": this.getPassword()
          };
-      }
-      
-      public function getVaults() : Object {
-         return {"muleDump":"true"};
       }
       
       public function isRegistered() : Boolean {
          return this.getPassword() != "" || this.getSecret() != "" || this.getToken() != "";
       }
       
-      public function updateUser(param1:String, param2:String, param3:String, param4:String) : void {
-         var _loc5_:* = null;
-         this.userId = param1;
-         this.password = param2;
-         this.secret = param4;
-         this.token = param3;
-         try {
-            if(this._rememberMe) {
-               _loc5_ = SharedObject.getLocal("login","/");
-               _loc5_.data["GUID"] = param1;
-               _loc5_.data["Token"] = param3;
-               _loc5_.data["Password"] = param2;
-               _loc5_.data["Secret"] = param4;
-               _loc5_.flush();
-            }
-            return;
-         }
-         catch(error:Error) {
-            return;
+      public function updateUser(userName:String, password:String, token:String,
+                                 secret:String, accessToken:String = "", accessTokenExpiry:int = -1) : void {
+         this.userId = userName;
+         this.password = password;
+         this.token = token;
+         this.secret = secret;
+         this.accessToken = accessToken;
+         this.accessTokenExpiry = accessTokenExpiry;
+
+         if (this._rememberMe) {
+            var loginSO:Object;
+            loginSO = SharedObject.getLocal("login", "/");
+            loginSO.data["GUID"] = userName;
+            loginSO.data["Password"] = password;
+            loginSO.data["Token"] = token;
+            loginSO.data["Secret"] = secret;
+            loginSO.data["AccessToken"] = accessToken;
+            loginSO.data["AccessTokenExpiry"] = accessTokenExpiry;
+            loginSO.flush();
          }
       }
       

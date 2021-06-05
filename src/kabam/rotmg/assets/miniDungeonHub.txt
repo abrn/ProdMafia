@@ -683,8 +683,8 @@
   <Object type="0x2005" id="Craig, Intern of the Mad God">
     <Class>Character</Class>
     <AnimatedTexture>
-      <File>oryxHordeChars8x8</File>
-      <Index>21</Index>
+      <File>spriteWorldChars8x8</File>
+      <Index>3</Index>
     </AnimatedTexture>
     <HitSound>monster/slimes_death</HitSound>
     <DeathSound>monster/flying_brain_death</DeathSound>

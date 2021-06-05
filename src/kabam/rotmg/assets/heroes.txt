@@ -943,20 +943,20 @@
     <Group>Greater Nature Sprites</Group>
     <Enemy />
     <Class>Character</Class>
-    <Texture>
-      <File>lofiChar28x8</File>
-      <Index>0x30</Index>
-    </Texture>
+    <AnimatedTexture>
+      <File>spriteWorldChars16x16</File>
+      <Index>7</Index>
+    </AnimatedTexture>
     <HitSound>monster/sprites_hit</HitSound>
     <DeathSound>monster/sprites_death</DeathSound>
-    <Size>140</Size>
+    <Size>110</Size>
     <MaxHitPoints>3600</MaxHitPoints>
     <Defense>7</Defense>
     <Flying />
     <Exp>0</Exp>
     <StasisImmune />
     <Projectile id="0">
-      <ObjectId>Green Bolt</ObjectId>
+      <ObjectId>Green Sprite Bolt</ObjectId>
       <Damage>45</Damage>
       <Speed>80</Speed>
       <LifetimeMS>1700</LifetimeMS>
@@ -970,13 +970,13 @@
     <Group>Greater Nature Sprites</Group>
     <Enemy />
     <Class>Character</Class>
-    <Texture>
-      <File>lofiChar28x8</File>
-      <Index>0x30</Index>
-    </Texture>
+    <AnimatedTexture>
+      <File>spriteWorldChars16x16</File>
+      <Index>7</Index>
+    </AnimatedTexture>
     <HitSound>monster/sprites_hit</HitSound>
     <DeathSound>monster/sprites_death</DeathSound>
-    <Size>140</Size>
+    <Size>110</Size>
     <MaxHitPoints>3600</MaxHitPoints>
     <Defense>7</Defense>
     <Flying />
@@ -984,7 +984,7 @@
     <StasisImmune />
     <TrackLoot />
     <Projectile id="0">
-      <ObjectId>Green Bolt</ObjectId>
+      <ObjectId>Green Sprite Bolt</ObjectId>
       <Damage>55</Damage>
       <Speed>80</Speed>
       <LifetimeMS>1700</LifetimeMS>

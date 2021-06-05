@@ -6786,24 +6786,24 @@
     <TrackLoot />
     <RandomTexture>
       <Texture>
-        <File>santaWorkshopObjects16x16</File>
-        <Index>0x1a</Index>
+        <File>buffedBunnyObjects16x16</File>
+        <Index>0x0</Index>
       </Texture>
       <Texture>
-        <File>santaWorkshopObjects16x16</File>
-        <Index>0x1b</Index>
+        <File>buffedBunnyObjects16x16</File>
+        <Index>0x1</Index>
       </Texture>
       <Texture>
-        <File>santaWorkshopObjects16x16</File>
-        <Index>0x1c</Index>
+        <File>buffedBunnyObjects16x16</File>
+        <Index>0x2</Index>
       </Texture>
       <Texture>
-        <File>santaWorkshopObjects16x16</File>
-        <Index>0x1d</Index>
+        <File>buffedBunnyObjects16x16</File>
+        <Index>0x3</Index>
       </Texture>
       <Texture>
-        <File>santaWorkshopObjects16x16</File>
-        <Index>0x1e</Index>
+        <File>buffedBunnyObjects16x16</File>
+        <Index>0xc</Index>
       </Texture>
     </RandomTexture>
     <MaxHitPoints>20000</MaxHitPoints>
@@ -6851,5 +6851,231 @@
     <SpawnProb>1</SpawnProb>
     <PerRealmMax>10</PerRealmMax>
     <Terrain>Mountains</Terrain>
+  </Object>
+  <Object type="0x8105" id="The Gardener">
+    <Enemy />
+    <Class>Character</Class>
+    <StasisImmune />
+    <ParalyzeImmune />
+    <StunImmune />
+    <TrackLoot />
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>165</Index>
+    </AnimatedTexture>
+    <HitSound>monster/lizard_god_hit</HitSound>
+    <DeathSound>monster/lizard_god_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>180000</MaxHitPoints>
+    <Defense>10</Defense>
+    <Quest />
+    <Level>20</Level>
+    <Exp>4000</Exp>
+    <PerRealmMax>1</PerRealmMax>
+    <Projectile id="0">
+      <ObjectId>Blue Bubble</ObjectId>
+      <Damage>145</Damage>
+      <Speed>85</Speed>
+      <Size>150</Size>
+      <LifetimeMS>2000</LifetimeMS>
+      <Acceleration>-45</Acceleration>
+      <AccelerationDelay>1000</AccelerationDelay>
+      <SpeedClamp>0</SpeedClamp>
+      <PassesCover />
+      <MultiHit />
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Gardener Water Bolt</ObjectId>
+      <Damage>150</Damage>
+      <Speed>45</Speed>
+      <Size>120</Size>
+      <PassesCover />
+      <MultiHit />
+      <LifetimeMS>3000</LifetimeMS>
+      <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Gardener Water Combo</ObjectId>
+      <Damage>125</Damage>
+      <Speed>45</Speed>
+      <Size>100</Size>
+      <LifetimeMS>2000</LifetimeMS>
+      <Acceleration>135</Acceleration>
+      <AccelerationDelay>1000</AccelerationDelay>
+      <SpeedClamp>100</SpeedClamp>
+      <PassesCover />
+      <MultiHit />
+      <ArmorPiercing />
+    </Projectile>
+    <Projectile id="3">
+      <ObjectId>Watering Can</ObjectId>
+      <Damage>125</Damage>
+      <Speed>65</Speed>
+      <Size>100</Size>
+      <LifetimeMS>4000</LifetimeMS>
+      <PassesCover />
+      <MultiHit />
+      <ArmorPiercing />
+    </Projectile>
+    <Projectile id="4">
+      <ObjectId>Gardener Water Splash</ObjectId>
+      <Damage>110</Damage>
+      <Speed>15</Speed>
+      <Size>100</Size>
+      <LifetimeMS>1200</LifetimeMS>
+      <PassesCover />
+      <MultiHit />
+      <ArmorPiercing />
+      <Parametric />
+      <Magnitude>1.6</Magnitude>
+    </Projectile>
+      â
+      â
+      <HealthBarBoss radius="30" /><KillStat stat="HumanoidKills" /><KillStat stat="GodKills" /></Object>
+  <Object type="0x8106" id="Bella Seed Encounter">
+    <DisplayId>Bucket of Water</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x1e5</Index>
+    </Texture>
+    <Size>100</Size>
+    <Invincible />
+    <NoCollisionWhenMovement />
+    <Projectile id="0">
+      <ObjectId>Gardener Water Combo</ObjectId>
+      <Speed>85</Speed>
+      <Damage>100</Damage>
+      <LifetimeMS>1000</LifetimeMS>
+      <Size>120</Size>
+      <ArmorPiercing />
+      <MultiHit />
+    </Projectile>
+    <KillStat stat="NatureKills" />
+  </Object>
+  <Object type="0x8107" id="Gardener Lawnmower">
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x1e6</Index>
+    </Texture>
+    <Size>100</Size>
+    <Invincible />
+    <NoCollisionWhenMovement />
+    <Projectile id="0">
+      <ObjectId>Gardener Water Splash</ObjectId>
+      <Speed>0</Speed>
+      <Damage>120</Damage>
+      <Size>100</Size>
+      <LifetimeMS>3000</LifetimeMS>
+    </Projectile>
+    <KillStat stat="NatureKills" />
+  </Object>
+  <Object type="0x8108" id="Gardener Lawnmower 2">
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x1e6</Index>
+    </Texture>
+    <Size>100</Size>
+    <Invincible />
+    <NoCollisionWhenMovement />
+    <Projectile id="0">
+      <ObjectId>Gardener Water Splash</ObjectId>
+      <Speed>0</Speed>
+      <Damage>100</Damage>
+      <Size>100</Size>
+      <LifetimeMS>3000</LifetimeMS>
+    </Projectile>
+    <KillStat stat="NatureKills" />
+  </Object>
+  <Object type="0x8109" id="Gardener Initiator">
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+    <ShadowSize>0</ShadowSize>
+    <NoMiniMap />
+  </Object>
+  <Object type="0x810a" id="Gardener Spawner">
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+    <ShadowSize>0</ShadowSize>
+    <NoMiniMap />
+    <Terrain>HighForest</Terrain>
+    <SpawnProb>1</SpawnProb>
+    <PerRealmMax>1</PerRealmMax>
+  </Object>
+  <Object type="0xb60a" id="Lair of Shaitan Spawner">
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>-1</Size>
+  </Object>
+  <Object type="0xb60b" id="Puppet Encore Spawner">
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>-1</Size>
+  </Object>
+  <Object type="0xb60c" id="Cnidarian Reef Spawner">
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>-1</Size>
+  </Object>
+  <Object type="0xb60d" id="Secluded Thicket Spawner">
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>-1</Size>
+  </Object>
+  <Object type="0xb60e" id="High Tech Terror Spawner">
+    <Class>GameObject</Class>
+    <Enemy />
+    <Invincible />
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>-1</Size>
+  </Object>
+  <Object type="0xb60f" id="Court Event Spawner">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>-1</Size>
   </Object>
 </Objects>

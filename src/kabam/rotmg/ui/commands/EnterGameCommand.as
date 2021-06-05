@@ -50,8 +50,6 @@ package kabam.rotmg.ui.commands {
             this.showNoServersDialog();
          } else if(!this.account.isRegistered()) {
             this.launchGame();
-         } else if(!this.playerModel.getIsAgeVerified()) {
-            this.showAgeVerificationDialog();
          } else if(this.seasonalEventModel.isSeasonalMode) {
             this.showCharacterTypeSelectionScreen();
          } else {

@@ -3025,10 +3025,10 @@
   <Object type="0x3d2a" id="Strange Voice">
     <DisplayId>Craig the Intern</DisplayId>
     <Class>Character</Class>
-    <Texture>
-      <File>santaWorkshopObjects8x8</File>
-      <Index>0x0b</Index>
-    </Texture>
+    <AnimatedTexture>
+      <File>d3Chars8x8rEmbed</File>
+      <Index>22</Index>
+    </AnimatedTexture>
     <Size>100</Size>
   </Object>
 </Objects>

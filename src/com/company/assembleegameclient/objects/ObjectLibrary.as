@@ -92,6 +92,7 @@ package com.company.assembleegameclient.objects {
          "Sign":Sign,
          "SpiderWeb":GameObject,
          "Stalagmite":GameObject,
+         "Summon": GameObject,
          "Wall":Wall,
          "Pet":Pet,
          "PetUpgrader":PetUpgrader,
@@ -327,6 +328,8 @@ package com.company.assembleegameclient.objects {
       }
       
       public static function getRedrawnTextureFromType(param1:int, param2:int, param3:Boolean, param4:Boolean = true, param5:Number = 5) : BitmapData {
+         if (param1 == -1)
+            param1 = 0x5e4d;
          var _loc8_:BitmapData = getBitmapData(param1);
          var _loc10_:BitmapData = param1 in typeToTextureData_ && typeToTextureData_[param1]?typeToTextureData_[param1].mask_:null;
          var _loc9_:XML = xmlLibrary_[param1];

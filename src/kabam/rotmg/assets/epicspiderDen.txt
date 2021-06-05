@@ -225,7 +225,7 @@
     <HitSound>monster/spiders_hit</HitSound>
     <DeathSound>monster/spiders_death</DeathSound>
     <Size>75</Size>
-    <MaxHitPoints>500</MaxHitPoints>
+    <MaxHitPoints>300</MaxHitPoints>
     <Enemy />
     <Exp>10</Exp>
     <Projectile id="0">
@@ -247,7 +247,7 @@
     <HitSound>monster/spiders_hit</HitSound>
     <DeathSound>monster/spiders_death</DeathSound>
     <Size>115</Size>
-    <MaxHitPoints>2000</MaxHitPoints>
+    <MaxHitPoints>1750</MaxHitPoints>
     <Defense>15</Defense>
     <Exp>150</Exp>
     <Enemy />
@@ -272,7 +272,7 @@
     <HitSound>monster/spiders_hit</HitSound>
     <DeathSound>monster/spiders_death</DeathSound>
     <Size>100</Size>
-    <MaxHitPoints>2000</MaxHitPoints>
+    <MaxHitPoints>1750</MaxHitPoints>
     <Defense>15</Defense>
     <Exp>150</Exp>
     <Enemy />
@@ -309,7 +309,7 @@
     <HitSound>monster/spiders_hit</HitSound>
     <DeathSound>monster/spiders_death</DeathSound>
     <Size>90</Size>
-    <MaxHitPoints>2500</MaxHitPoints>
+    <MaxHitPoints>2000</MaxHitPoints>
     <Defense>15</Defense>
     <Exp>150</Exp>
     <Enemy />
@@ -792,6 +792,7 @@
   <Object type="0x707d" id="Silver Son of Arachna Giant Egg Sac">
     <Enemy />
     <Class>Character</Class>
+    <Color>0x41466D</Color>
     <Texture>
       <File>spiderDenObjects16x16</File>
       <Index>0x1b</Index>
@@ -822,6 +823,7 @@
   <Object type="0x707e" id="Red Son of Arachna Giant Egg Sac">
     <Enemy />
     <Class>Character</Class>
+    <Color>0xCD293F</Color>
     <Texture>
       <File>spiderDenObjects16x16</File>
       <Index>0x1a</Index>
@@ -852,6 +854,7 @@
   <Object type="0x707f" id="Blue Son of Arachna Giant Egg Sac">
     <Enemy />
     <Class>Character</Class>
+    <Color>0x2C98D5</Color>
     <Texture>
       <File>spiderDenObjects16x16</File>
       <Index>0x18</Index>
@@ -882,6 +885,7 @@
   <Object type="0x708a" id="Green Son of Arachna Giant Egg Sac">
     <Enemy />
     <Class>Character</Class>
+    <Color>0x99C63F</Color>
     <Texture>
       <File>spiderDenObjects16x16</File>
       <Index>0x19</Index>
@@ -913,6 +917,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -937,14 +942,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -954,7 +959,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -964,6 +969,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -988,14 +994,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1005,7 +1011,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -1015,6 +1021,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -1039,14 +1046,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1056,7 +1063,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -1066,6 +1073,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -1090,14 +1098,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1107,7 +1115,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -1117,6 +1125,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -1141,14 +1150,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1158,7 +1167,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -1168,6 +1177,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -1192,14 +1202,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1209,7 +1219,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>2030</LifetimeMS>
+      <LifetimeMS>3030</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -1219,6 +1229,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -1243,14 +1254,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>1230</LifetimeMS>
+      <LifetimeMS>1630</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1260,7 +1271,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>1230</LifetimeMS>
+      <LifetimeMS>1630</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -1270,6 +1281,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -1294,14 +1306,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>1230</LifetimeMS>
+      <LifetimeMS>1630</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1311,7 +1323,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>1230</LifetimeMS>
+      <LifetimeMS>1630</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
@@ -1321,6 +1333,7 @@
     <DisplayId>Arachna Element</DisplayId>
     <Group>AttackType</Group>
     <Class>Character</Class>
+    <Color>0xFFFFFF</Color>
     <Texture>
       <File>spiderDenObjects8x8</File>
       <Index>0x25</Index>
@@ -1345,14 +1358,14 @@
       <Damage>0</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>1230</LifetimeMS>
+      <LifetimeMS>1630</LifetimeMS>
       <ConditionEffect duration="3">Slowed</ConditionEffect>
       <MultiHit />
     </Projectile>
     <Projectile id="1">
       <ObjectId>Web Star</ObjectId>
       <Damage>80</Damage>
-      <Speed>40</Speed>
+      <Speed>20</Speed>
       <Size>100</Size>
       <LifetimeMS>5000</LifetimeMS>
       <ConditionEffect duration="2">Slowed</ConditionEffect>
@@ -1362,7 +1375,7 @@
       <Damage>40</Damage>
       <Size>170</Size>
       <Speed>50</Speed>
-      <LifetimeMS>1230</LifetimeMS>
+      <LifetimeMS>1630</LifetimeMS>
       <MultiHit />
       <ArmorPiercing />
     </Projectile>
